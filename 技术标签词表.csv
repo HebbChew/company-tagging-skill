@@ -1,0 +1,664 @@
+﻿tech_id,体系,一级,二级,三级,层级类型,别名,标准路径
+TECH_DRUG_001,drug,药物,生物药-偶联药物,Fc偶联药物,药物研发与产品层,drug Fc conjugate,药物 > 生物药-偶联药物 > Fc偶联药物
+TECH_DRUG_002,drug,药物,生物药-偶联药物,centyrin偶联寡核苷酸,药物研发与产品层,centyrin oligonucleotide conjugate; centyrin偶联小核酸; centyrin偶联寡核苷酸,药物 > 生物药-偶联药物 > centyrin偶联寡核苷酸
+TECH_DRUG_003,drug,药物,生物药-偶联药物,probody-drug conjugate,药物研发与产品层,probody偶联药物,药物 > 生物药-偶联药物 > probody-drug conjugate
+TECH_DRUG_004,drug,药物,生物药-偶联药物,多肽偶联核素,药物研发与产品层,peptide radionuclide conjugates; 多肽-放射性核素偶联药物; PRC,药物 > 生物药-偶联药物 > 多肽偶联核素
+TECH_DRUG_005,drug,药物,生物药-偶联药物,多肽偶联药物,药物研发与产品层,peptide drug conjugate,药物 > 生物药-偶联药物 > 多肽偶联药物
+TECH_DRUG_006,drug,药物,生物药-偶联药物,小分子偶联药物,药物研发与产品层,small molecule drug conjugate,药物 > 生物药-偶联药物 > 小分子偶联药物
+TECH_DRUG_007,drug,药物,生物药-偶联药物,抗体偶联寡核苷酸,药物研发与产品层,antibody oligonucleotide conjugate; 抗体偶联小核酸,药物 > 生物药-偶联药物 > 抗体偶联寡核苷酸
+TECH_DRUG_008,drug,药物,生物药-偶联药物,抗体偶联核素,药物研发与产品层,antibody radionuclide conjugates; 抗体核素偶联物,药物 > 生物药-偶联药物 > 抗体偶联核素
+TECH_DRUG_009,drug,药物,生物药-偶联药物,抗体偶联药物,药物研发与产品层,antibody drug conjugate; 抗体药物偶联物; ADC,药物 > 生物药-偶联药物 > 抗体偶联药物
+TECH_DRUG_010,drug,药物,生物药-偶联药物,蛋白偶联药物,药物研发与产品层,protein drug conjugate,药物 > 生物药-偶联药物 > 蛋白偶联药物
+TECH_DRUG_011,drug,药物,生物药-偶联药物,适体偶联药物,药物研发与产品层,aptamer-drug conjugate; 核酸适体偶联药物,药物 > 生物药-偶联药物 > 适体偶联药物
+TECH_DRUG_012,drug,药物,其他,5-HT重摄取抑制剂,药物研发与产品层,serotonin reuptake inhibitor; 5-羟色胺再摄取抑制剂,药物 > 其他 > 5-HT重摄取抑制剂
+TECH_DRUG_013,drug,药物,其他,Apitope,药物研发与产品层,,药物 > 其他 > Apitope
+TECH_DRUG_014,drug,药物,其他,CAR T engager,药物研发与产品层,,药物 > 其他 > CAR T engager
+TECH_DRUG_015,drug,药物,其他,DUBTAC,药物研发与产品层,deubiquitinase targeting chimera; 去泛素化酶靶向嵌合体,药物 > 其他 > DUBTAC
+TECH_DRUG_016,drug,药物,其他,HIV-1成熟抑制剂,药物研发与产品层,HIV-1 maturation inhibitor,药物 > 其他 > HIV-1成熟抑制剂
+TECH_DRUG_017,drug,药物,其他,SURTAC,药物研发与产品层,,药物 > 其他 > SURTAC
+TECH_DRUG_018,drug,药物,其他,TCR,药物研发与产品层,T细胞受体,药物 > 其他 > TCR
+TECH_DRUG_019,drug,药物,其他,antagomir,药物研发与产品层,,药物 > 其他 > antagomir
+TECH_DRUG_020,drug,药物,其他,centyrin,药物研发与产品层,,药物 > 其他 > centyrin
+TECH_DRUG_021,drug,药物,其他,exon skipping drug,药物研发与产品层,外显子跳跃疗法,药物 > 其他 > exon skipping drug
+TECH_DRUG_022,drug,药物,其他,spiegelmer,药物研发与产品层,L-RNA aptamer; 镜像适配体,药物 > 其他 > spiegelmer
+TECH_DRUG_023,drug,药物,其他,translational read-through drug,药物研发与产品层,翻译通读药物,药物 > 其他 > translational read-through drug
+TECH_DRUG_024,drug,药物,其他,γ-氨基丁酸重摄取抑制剂,药物研发与产品层,GABA uptake inhibitor,药物 > 其他 > γ-氨基丁酸重摄取抑制剂
+TECH_DRUG_025,drug,药物,其他,三唑类抗真菌药,药物研发与产品层,triazole antifungal,药物 > 其他 > 三唑类抗真菌药
+TECH_DRUG_026,drug,药物,其他,三环类抗抑郁药,药物研发与产品层,tricyclic antidepressant,药物 > 其他 > 三环类抗抑郁药
+TECH_DRUG_027,drug,药物,其他,丝裂霉素,药物研发与产品层,mitomycin,药物 > 其他 > 丝裂霉素
+TECH_DRUG_028,drug,药物,其他,人参皂苷类化合物,药物研发与产品层,ginsenoside,药物 > 其他 > 人参皂苷类化合物
+TECH_DRUG_029,drug,药物,其他,修饰性肽配体,药物研发与产品层,altered peptide ligand,药物 > 其他 > 修饰性肽配体
+TECH_DRUG_030,drug,药物,其他,光敏剂,药物研发与产品层,photosensitizer,药物 > 其他 > 光敏剂
+TECH_DRUG_031,drug,药物,其他,光遗传学疗法,药物研发与产品层,optogenetic therapy,药物 > 其他 > 光遗传学疗法
+TECH_DRUG_032,drug,药物,其他,免疫毒素,药物研发与产品层,immunotoxin,药物 > 其他 > 免疫毒素
+TECH_DRUG_033,drug,药物,其他,全身吸入麻醉剂,药物研发与产品层,general inhalation anesthetic,药物 > 其他 > 全身吸入麻醉剂
+TECH_DRUG_034,drug,药物,其他,分子伴侣,药物研发与产品层,chaperone; 侣伴蛋白; 伴护蛋白; 分子伴护蛋白,药物 > 其他 > 分子伴侣
+TECH_DRUG_035,drug,药物,其他,分子胶,药物研发与产品层,molecular glue,药物 > 其他 > 分子胶
+TECH_DRUG_036,drug,药物,其他,利福霉素类抗生素,药物研发与产品层,rifamycin antibiotic,药物 > 其他 > 利福霉素类抗生素
+TECH_DRUG_037,drug,药物,其他,刺激性泻剂,药物研发与产品层,stimulant laxative,药物 > 其他 > 刺激性泻剂
+TECH_DRUG_038,drug,药物,其他,剪接调节剂,药物研发与产品层,splicing modulator,药物 > 其他 > 剪接调节剂
+TECH_DRUG_039,drug,药物,其他,剪接转换寡核苷酸,药物研发与产品层,splice-switching oligonucleotides; 剪接转换小核酸,药物 > 其他 > 剪接转换寡核苷酸
+TECH_DRUG_040,drug,药物,其他,单环β-内酰胺类抗生素,药物研发与产品层,monobactam antibiotic,药物 > 其他 > 单环β-内酰胺类抗生素
+TECH_DRUG_041,drug,药物,其他,博来霉素,药物研发与产品层,bleomycin,药物 > 其他 > 博来霉素
+TECH_DRUG_042,drug,药物,其他,原小蘗碱,药物研发与产品层,protoberberine,药物 > 其他 > 原小蘗碱
+TECH_DRUG_043,drug,药物,其他,去甲肾上腺素重摄取抑制剂,药物研发与产品层,norepinephrine reuptake inhibitor,药物 > 其他 > 去甲肾上腺素重摄取抑制剂
+TECH_DRUG_044,drug,药物,其他,双抗原导向T细胞嵌合活化疗法,药物研发与产品层,TEAC,药物 > 其他 > 双抗原导向T细胞嵌合活化疗法
+TECH_DRUG_045,drug,药物,其他,双胍类降糖药,药物研发与产品层,biguanide,药物 > 其他 > 双胍类降糖药
+TECH_DRUG_046,drug,药物,其他,双膦酸盐,药物研发与产品层,bisphosphonate; drug,药物 > 其他 > 双膦酸盐
+TECH_DRUG_047,drug,药物,其他,变应原提取物,药物研发与产品层,allergen extract; 过敏原提取物,药物 > 其他 > 变应原提取物
+TECH_DRUG_048,drug,药物,其他,吗啉类抗真菌药,药物研发与产品层,morpholine antifungal,药物 > 其他 > 吗啉类抗真菌药
+TECH_DRUG_049,drug,药物,其他,吡咯并苯二氮卓类抗生素,药物研发与产品层,pyrrolobenzodiazepine antibiotic,药物 > 其他 > 吡咯并苯二氮卓类抗生素
+TECH_DRUG_050,drug,药物,其他,含氙造影剂,药物研发与产品层,Xenon-based contrast agent,药物 > 其他 > 含氙造影剂
+TECH_DRUG_051,drug,药物,其他,含硼抗真菌药,药物研发与产品层,boron-based antifungal,药物 > 其他 > 含硼抗真菌药
+TECH_DRUG_052,drug,药物,其他,含碘造影剂,药物研发与产品层,iodinated contrast agent,药物 > 其他 > 含碘造影剂
+TECH_DRUG_053,drug,药物,其他,含钆造影剂,药物研发与产品层,gadolinium-based contrast agent,药物 > 其他 > 含钆造影剂
+TECH_DRUG_054,drug,药物,其他,含锰造影剂,药物研发与产品层,manganese-based contrast agent,药物 > 其他 > 含锰造影剂
+TECH_DRUG_055,drug,药物,其他,咪唑类抗真菌药,药物研发与产品层,imidazole antifungal,药物 > 其他 > 咪唑类抗真菌药
+TECH_DRUG_056,drug,药物,其他,喜树碱,药物研发与产品层,camptothecin,药物 > 其他 > 喜树碱
+TECH_DRUG_057,drug,药物,其他,喹诺酮类抗生素,药物研发与产品层,quinolone antibiotic,药物 > 其他 > 喹诺酮类抗生素
+TECH_DRUG_058,drug,药物,其他,噁唑烷酮类抗生素,药物研发与产品层,oxazolidinone antibiotic,药物 > 其他 > 噁唑烷酮类抗生素
+TECH_DRUG_059,drug,药物,其他,噬菌体疗法,药物研发与产品层,bacteriophages,药物 > 其他 > 噬菌体疗法
+TECH_DRUG_060,drug,药物,其他,四唑类抗真菌药,药物研发与产品层,tetrazole antifungal,药物 > 其他 > 四唑类抗真菌药
+TECH_DRUG_061,drug,药物,其他,四环素类抗生素,药物研发与产品层,tetracycline antibiotic,药物 > 其他 > 四环素类抗生素
+TECH_DRUG_062,drug,药物,其他,埃博霉素,药物研发与产品层,epothilone,药物 > 其他 > 埃博霉素
+TECH_DRUG_063,drug,药物,其他,多巴胺重摄取抑制剂,药物研发与产品层,dopamine reuptake inhibitor,药物 > 其他 > 多巴胺重摄取抑制剂
+TECH_DRUG_064,drug,药物,其他,多粘菌素类抗生素,药物研发与产品层,polymyxin antibiotic,药物 > 其他 > 多粘菌素类抗生素
+TECH_DRUG_065,drug,药物,其他,多肽类抗生素,药物研发与产品层,polypeptide; antibiotic,药物 > 其他 > 多肽类抗生素
+TECH_DRUG_066,drug,药物,其他,多胺类似物,药物研发与产品层,polyamine analogue,药物 > 其他 > 多胺类似物
+TECH_DRUG_067,drug,药物,其他,大环内酯类抗生素,药物研发与产品层,macrolide antibiotic,药物 > 其他 > 大环内酯类抗生素
+TECH_DRUG_068,drug,药物,其他,大环多烯类抗真菌药,药物研发与产品层,macrocyclic polyene antifungal,药物 > 其他 > 大环多烯类抗真菌药
+TECH_DRUG_069,drug,药物,其他,大麻素类药物,药物研发与产品层,cannabinoids,药物 > 其他 > 大麻素类药物
+TECH_DRUG_070,drug,药物,其他,头孢菌素类抗生素,药物研发与产品层,cephalosporin antibiotic,药物 > 其他 > 头孢菌素类抗生素
+TECH_DRUG_071,drug,药物,其他,容积性泻药,药物研发与产品层,osmotic laxative,药物 > 其他 > 容积性泻药
+TECH_DRUG_072,drug,药物,其他,巴比妥类药物,药物研发与产品层,barbiturate derivative,药物 > 其他 > 巴比妥类药物
+TECH_DRUG_073,drug,药物,其他,异烟酸类抗生素,药物研发与产品层,isonicotinic acid derivative,药物 > 其他 > 异烟酸类抗生素
+TECH_DRUG_074,drug,药物,其他,强心苷类药物,药物研发与产品层,cardiac glycoside,药物 > 其他 > 强心苷类药物
+TECH_DRUG_075,drug,药物,抗体技术,DNA编码的单抗,药物研发与产品层,DNA-encoded mAb; DNA编码的单克隆抗体; DNA encoded monoclonal antibody,药物 > 抗体技术 > DNA编码的单抗
+TECH_DRUG_076,drug,药物,抗体技术,mRNA编码的单抗,药物研发与产品层,mRNA encoded mAb; mRNA编码的单克隆抗体; mRNA encoded monoclonal antibody,药物 > 抗体技术 > mRNA编码的单抗
+TECH_DRUG_077,drug,药物,抗体技术,mRNA编码的双特异性抗体,药物研发与产品层,mRNA encoded bispecific antibody; mRNA编码的双抗; mRNA encoded BsAb,药物 > 抗体技术 > mRNA编码的双特异性抗体
+TECH_DRUG_078,drug,药物,抗体技术,三特异性抗体,药物研发与产品层,trispecific antibody; 三抗,药物 > 抗体技术 > 三特异性抗体
+TECH_DRUG_079,drug,药物,抗体技术,单域抗体,药物研发与产品层,single-domain antibody; 纳米抗体; nanobody; VHH; sdAb,药物 > 抗体技术 > 单域抗体
+TECH_DRUG_080,drug,药物,抗体技术,单抗,药物研发与产品层,monoclonal antibody; 单克隆抗体; mAb,药物 > 抗体技术 > 单抗
+TECH_DRUG_081,drug,药物,抗体技术,单链抗体,药物研发与产品层,single-chain antibody; single chain fragment variable; scFv,药物 > 抗体技术 > 单链抗体
+TECH_DRUG_082,drug,药物,抗体技术,双特异性抗体,药物研发与产品层,bispecific antibody; 双抗; BsAb,药物 > 抗体技术 > 双特异性抗体
+TECH_DRUG_083,drug,药物,抗体技术,多特异性抗体,药物研发与产品层,multispecific antibody,药物 > 抗体技术 > 多特异性抗体
+TECH_DRUG_084,drug,药物,抗体技术,抗体偶联寡核苷酸,药物研发与产品层,antibody oligonucleotide conjugate; 抗体偶联小核酸,药物 > 抗体技术 > 抗体偶联寡核苷酸
+TECH_DRUG_085,drug,药物,抗体技术,抗体偶联核素,药物研发与产品层,antibody radionuclide conjugates; 抗体核素偶联物,药物 > 抗体技术 > 抗体偶联核素
+TECH_DRUG_086,drug,药物,抗体技术,抗体偶联药物,药物研发与产品层,antibody drug conjugate; 抗体药物偶联物; ADC,药物 > 抗体技术 > 抗体偶联药物
+TECH_DRUG_087,drug,药物,抗体技术,抗体片段,药物研发与产品层,antibody fragment,药物 > 抗体技术 > 抗体片段
+TECH_DRUG_088,drug,药物,抗体技术,抗体融合蛋白,药物研发与产品层,antibody fusion protein,药物 > 抗体技术 > 抗体融合蛋白
+TECH_DRUG_089,drug,药物,放射性药物技术,11C标记的PET药物,药物研发与产品层,11C-labeled PET agent; 碳-11标记的PET药物,药物 > 放射性药物技术 > 11C标记的PET药物
+TECH_DRUG_090,drug,药物,放射性药物技术,123I标记的放射性示踪剂,药物研发与产品层,123I-labeled radioactive tracer; 碘-123标记的放射性示踪剂,药物 > 放射性药物技术 > 123I标记的放射性示踪剂
+TECH_DRUG_091,drug,药物,放射性药物技术,124I标记的放射性示踪剂,药物研发与产品层,124I-labeled radioactive tracer; 碘-124标记的放射性示踪剂,药物 > 放射性药物技术 > 124I标记的放射性示踪剂
+TECH_DRUG_092,drug,药物,放射性药物技术,124I标记的放射性药物,药物研发与产品层,124I-based radiopharmaceuticals; 碘-124标记的放射性药物,药物 > 放射性药物技术 > 124I标记的放射性药物
+TECH_DRUG_093,drug,药物,放射性药物技术,125I标记的放射性示踪剂,药物研发与产品层,125I-labeled radioactive tracer; 碘-125标记的放射性示踪剂,药物 > 放射性药物技术 > 125I标记的放射性示踪剂
+TECH_DRUG_094,drug,药物,放射性药物技术,125I标记的放射性药物,药物研发与产品层,125I-based radiopharmaceuticals; 碘-125标记的放射性药物,药物 > 放射性药物技术 > 125I标记的放射性药物
+TECH_DRUG_095,drug,药物,放射性药物技术,131Cs标记的放射性药物,药物研发与产品层,131Cs-based radiopharmaceuticals; 铯-131标记的放射性药物,药物 > 放射性药物技术 > 131Cs标记的放射性药物
+TECH_DRUG_096,drug,药物,放射性药物技术,131I标记的放射性药物,药物研发与产品层,131I based radiopharmaceuticals; 碘-131标记的放射性药物,药物 > 放射性药物技术 > 131I标记的放射性药物
+TECH_DRUG_097,drug,药物,放射性药物技术,13C标记的放射性药物,药物研发与产品层,13C-based radiopharmaceuticals; 碳-13标记的放射性药物,药物 > 放射性药物技术 > 13C标记的放射性药物
+TECH_DRUG_098,drug,药物,放射性药物技术,140Nd标记的PET药物,药物研发与产品层,140Nd-labeled PET agent; 钕-140标记的PET药物,药物 > 放射性药物技术 > 140Nd标记的PET药物
+TECH_DRUG_099,drug,药物,放射性药物技术,153Sm标记的放射性药物,药物研发与产品层,samarium-153 based radiopharmaceuticals,药物 > 放射性药物技术 > 153Sm标记的放射性药物
+TECH_DRUG_100,drug,药物,放射性药物技术,15O标记的放射性示踪剂,药物研发与产品层,15O-labeled radioactive tracer; 氧-15标记的放射性示踪剂,药物 > 放射性药物技术 > 15O标记的放射性示踪剂
+TECH_DRUG_101,drug,药物,放射性药物技术,161Tb标记的放射性药物,药物研发与产品层,161Tb-based radiopharmaceuticals; 铽-161标记的放射性药物,药物 > 放射性药物技术 > 161Tb标记的放射性药物
+TECH_DRUG_102,drug,药物,放射性药物技术,166Ho标记的放射性药物,药物研发与产品层,166Ho-based radiopharmaceuticals; 钬-166标记的放射性药物,药物 > 放射性药物技术 > 166Ho标记的放射性药物
+TECH_DRUG_103,drug,药物,放射性药物技术,177Lu标记的放射性药物,药物研发与产品层,177Lu-based radiopharmaceuticals; 镥-177标记的放射性药物,药物 > 放射性药物技术 > 177Lu标记的放射性药物
+TECH_DRUG_104,drug,药物,放射性药物技术,186Re标记的放射性药物,药物研发与产品层,186Re-based radiopharmaceuticals; 铼-186标记的放射性药物,药物 > 放射性药物技术 > 186Re标记的放射性药物
+TECH_DRUG_105,drug,药物,放射性药物技术,188Re标记的放射性药物,药物研发与产品层,188Re-based radiopharmaceuticals; 铼-188标记的放射性药物,药物 > 放射性药物技术 > 188Re标记的放射性药物
+TECH_DRUG_106,drug,药物,放射性药物技术,18F标记的PET药物,药物研发与产品层,18F-labeled PET agent; 氟-18标记的PET药物,药物 > 放射性药物技术 > 18F标记的PET药物
+TECH_DRUG_107,drug,药物,放射性药物技术,203Pb标记的放射性示踪剂,药物研发与产品层,203Pb-based radioactive tracer; 铅-203标记的放射性示踪剂,药物 > 放射性药物技术 > 203Pb标记的放射性示踪剂
+TECH_DRUG_108,drug,药物,放射性药物技术,211At标记的放射性药物,药物研发与产品层,211At based radiopharmaceuticals; 砹-211标记的放射性药物,药物 > 放射性药物技术 > 211At标记的放射性药物
+TECH_DRUG_109,drug,药物,放射性药物技术,212Pb标记的放射性药物,药物研发与产品层,212Pb-based radiopharmaceuticals; 铅-212标记的放射性药物,药物 > 放射性药物技术 > 212Pb标记的放射性药物
+TECH_DRUG_110,drug,药物,放射性药物技术,213Bi标记的放射性药物,药物研发与产品层,213Bi-based radiopharmaceuticals; 铋-213标记的放射性药物,药物 > 放射性药物技术 > 213Bi标记的放射性药物
+TECH_DRUG_111,drug,药物,放射性药物技术,223Ra标记的放射性药物,药物研发与产品层,223Ra-based radiopharmaceuticals; 镭-223标记的放射性药物,药物 > 放射性药物技术 > 223Ra标记的放射性药物
+TECH_DRUG_112,drug,药物,放射性药物技术,225Ac标记的放射性药物,药物研发与产品层,225Ac-based radiopharmaceuticals; 锕-225标记的放射性药物,药物 > 放射性药物技术 > 225Ac标记的放射性药物
+TECH_DRUG_113,drug,药物,放射性药物技术,227Th标记的放射性药物,药物研发与产品层,227Th-based radiopharmaceuticals; 钍-227标记的放射性药物,药物 > 放射性药物技术 > 227Th标记的放射性药物
+TECH_DRUG_114,drug,药物,放射性药物技术,3H标记的PET药物,药物研发与产品层,3H-labeled PET agent; 氢-3标记的PET药物,药物 > 放射性药物技术 > 3H标记的PET药物
+TECH_DRUG_115,drug,药物,放射性药物技术,44Sc标记的PET药物,药物研发与产品层,44Sc-labeled PET agent; 钪-44标记的PET药物,药物 > 放射性药物技术 > 44Sc标记的PET药物
+TECH_DRUG_116,drug,药物,放射性药物技术,52Mn标记的PET药物,药物研发与产品层,52Mn-labeled PET agent; 锰-52标记的PET药物,药物 > 放射性药物技术 > 52Mn标记的PET药物
+TECH_DRUG_117,drug,药物,放射性药物技术,61Cu标记的PET药物,药物研发与产品层,61Cu-labeled PET agent; 铜-61标记的PET药物,药物 > 放射性药物技术 > 61Cu标记的PET药物
+TECH_DRUG_118,drug,药物,放射性药物技术,64Cu标记的放射性示踪剂,药物研发与产品层,64Cu-labeled radioactive tracer; 铜-64标记的放射性示踪剂,药物 > 放射性药物技术 > 64Cu标记的放射性示踪剂
+TECH_DRUG_119,drug,药物,放射性药物技术,64Zn标记的放射性药物,药物研发与产品层,64Zn-labeled radiopharmaceuticals; 锌-64标记的放射性药物,药物 > 放射性药物技术 > 64Zn标记的放射性药物
+TECH_DRUG_120,drug,药物,放射性药物技术,67Cu标记的放射性药物,药物研发与产品层,67Cu based radiopharmaceuticals; 铜-67标记的放射性药物,药物 > 放射性药物技术 > 67Cu标记的放射性药物
+TECH_DRUG_121,drug,药物,放射性药物技术,68Ga标记的PET药物,药物研发与产品层,68Ga-labeled PET agent; 镓-68标记的PET药物,药物 > 放射性药物技术 > 68Ga标记的PET药物
+TECH_DRUG_122,drug,药物,放射性药物技术,89Sr标记的放射性药物,药物研发与产品层,89Sr-based radiopharmaceuticals; 锶-89标记的放射性药物,药物 > 放射性药物技术 > 89Sr标记的放射性药物
+TECH_DRUG_123,drug,药物,放射性药物技术,89Zr标记的PET药物,药物研发与产品层,A11789Zr-labeled PET agent; 锆-89标记的PET药物,药物 > 放射性药物技术 > 89Zr标记的PET药物
+TECH_DRUG_124,drug,药物,生物药-核酸技术,DNAi疗法,药物研发与产品层,DNAi therapy; DNA干扰疗法,药物 > 生物药-核酸技术 > DNAi疗法
+TECH_DRUG_125,drug,药物,生物药-核酸技术,DNA疫苗,药物研发与产品层,DNA vaccine,药物 > 生物药-核酸技术 > DNA疫苗
+TECH_DRUG_126,drug,药物,生物药-核酸技术,DNA编码的单抗,药物研发与产品层,DNA-encoded mAb; DNA编码的单克隆抗体; DNA encoded monoclonal antibody,药物 > 生物药-核酸技术 > DNA编码的单抗
+TECH_DRUG_127,drug,药物,生物药-核酸技术,RNAi疗法,药物研发与产品层,RNAi therapy; RNA干扰疗法; siRNA疗法; miRNA疗法,药物 > 生物药-核酸技术 > RNAi疗法
+TECH_DRUG_128,drug,药物,生物药-核酸技术,RNA疗法,药物研发与产品层,RNA therapy,药物 > 生物药-核酸技术 > RNA疗法
+TECH_DRUG_129,drug,药物,生物药-核酸技术,centyrin偶联寡核苷酸,药物研发与产品层,centyrin oligonucleotide conjugate; centyrin偶联小核酸; centyrin偶联寡核苷酸,药物 > 生物药-核酸技术 > centyrin偶联寡核苷酸
+TECH_DRUG_130,drug,药物,生物药-核酸技术,mRNA疗法,药物研发与产品层,mRNA-based therapy,药物 > 生物药-核酸技术 > mRNA疗法
+TECH_DRUG_131,drug,药物,生物药-核酸技术,mRNA编码的单抗,药物研发与产品层,mRNA encoded mAb; mRNA编码的单克隆抗体; mRNA encoded monoclonal antibody,药物 > 生物药-核酸技术 > mRNA编码的单抗
+TECH_DRUG_132,drug,药物,生物药-核酸技术,mRNA编码的双特异性抗体,药物研发与产品层,mRNA encoded bispecific antibody; mRNA编码的双抗; mRNA encoded BsAb,药物 > 生物药-核酸技术 > mRNA编码的双特异性抗体
+TECH_DRUG_133,drug,药物,生物药-核酸技术,saRNA疗法,药物研发与产品层,small activating RNA therapeutic; 小激活RNA疗法,药物 > 生物药-核酸技术 > saRNA疗法
+TECH_DRUG_134,drug,药物,生物药-核酸技术,tRNA疗法,药物研发与产品层,tRNA-based therapy; 转运RNA疗法,药物 > 生物药-核酸技术 > tRNA疗法
+TECH_DRUG_135,drug,药物,生物药-核酸技术,反义疗法,药物研发与产品层,antisense therapy; 反义寡核苷酸疗法; ASO疗法,药物 > 生物药-核酸技术 > 反义疗法
+TECH_DRUG_136,drug,药物,生物药-核酸技术,小分子缀合小核酸,药物研发与产品层,Small molecule conjugated small nucleic acid; 小分子-寡核苷酸缀合物,药物 > 生物药-核酸技术 > 小分子缀合小核酸
+TECH_DRUG_137,drug,药物,生物药-核酸技术,环状RNA疗法,药物研发与产品层,circRNA-based therapy; circRNA疗法,药物 > 生物药-核酸技术 > 环状RNA疗法
+TECH_DRUG_138,drug,药物,生物药-核酸技术,适体,药物研发与产品层,aptamer; 核酸适体; 适配体,药物 > 生物药-核酸技术 > 适体
+TECH_DRUG_139,drug,药物,疫苗技术,DNA疫苗,药物研发与产品层,DNA vaccine,药物 > 疫苗技术 > DNA疫苗
+TECH_DRUG_140,drug,药物,疫苗技术,mRNA疫苗,药物研发与产品层,mRNA-based vaccine,药物 > 疫苗技术 > mRNA疫苗
+TECH_DRUG_141,drug,药物,疫苗技术,减毒活疫苗,药物研发与产品层,live-attenuated vaccine,药物 > 疫苗技术 > 减毒活疫苗
+TECH_DRUG_142,drug,药物,疫苗技术,合成疫苗,药物研发与产品层,synthetic vaccine,药物 > 疫苗技术 > 合成疫苗
+TECH_DRUG_143,drug,药物,疫苗技术,多糖疫苗,药物研发与产品层,polysaccharide vaccine,药物 > 疫苗技术 > 多糖疫苗
+TECH_DRUG_144,drug,药物,疫苗技术,多糖结合疫苗,药物研发与产品层,polysaccharide conjugate vaccine,药物 > 疫苗技术 > 多糖结合疫苗
+TECH_DRUG_145,drug,药物,疫苗技术,多肽结合疫苗,药物研发与产品层,peptide conjugate vaccine,药物 > 疫苗技术 > 多肽结合疫苗
+TECH_DRUG_146,drug,药物,疫苗技术,寄生虫载体疫苗,药物研发与产品层,parasite vector vaccine,药物 > 疫苗技术 > 寄生虫载体疫苗
+TECH_DRUG_147,drug,药物,疫苗技术,活疫苗,药物研发与产品层,live vaccine,药物 > 疫苗技术 > 活疫苗
+TECH_DRUG_148,drug,药物,疫苗技术,灭活疫苗,药物研发与产品层,inactived vaccine,药物 > 疫苗技术 > 灭活疫苗
+TECH_DRUG_149,drug,药物,疫苗技术,环状RNA疫苗,药物研发与产品层,circRNA-based vaccine; circRNA疫苗,药物 > 疫苗技术 > 环状RNA疫苗
+TECH_DRUG_150,drug,药物,疫苗技术,病毒样颗粒疫苗,药物研发与产品层,viral like particles vaccine; VLP疫苗; 类病毒颗粒疫苗,药物 > 疫苗技术 > 病毒样颗粒疫苗
+TECH_DRUG_151,drug,药物,疫苗技术,病毒载体疫苗,药物研发与产品层,viral vector vaccine,药物 > 疫苗技术 > 病毒载体疫苗
+TECH_DRUG_152,drug,药物,疫苗技术,癌症疫苗,药物研发与产品层,cancer vaccine; 肿瘤疫苗,药物 > 疫苗技术 > 癌症疫苗
+TECH_DRUG_153,drug,药物,疫苗技术,类毒素疫苗,药物研发与产品层,toxoid vaccine,药物 > 疫苗技术 > 类毒素疫苗
+TECH_DRUG_154,drug,药物,疫苗技术,纳米颗粒疫苗,药物研发与产品层,nanoparticle vaccine,药物 > 疫苗技术 > 纳米颗粒疫苗
+TECH_DRUG_155,drug,药物,疫苗技术,细菌样颗粒疫苗,药物研发与产品层,bacterial like particles vaccine,药物 > 疫苗技术 > 细菌样颗粒疫苗
+TECH_DRUG_156,drug,药物,疫苗技术,细菌载体疫苗,药物研发与产品层,bacterial vector vaccine,药物 > 疫苗技术 > 细菌载体疫苗
+TECH_DRUG_157,drug,药物,疫苗技术,脱敏疫苗,药物研发与产品层,desensitising vaccine,药物 > 疫苗技术 > 脱敏疫苗
+TECH_DRUG_158,drug,药物,疫苗技术,重组蛋白疫苗,药物研发与产品层,recombinant protein vaccine,药物 > 疫苗技术 > 重组蛋白疫苗
+TECH_DRUG_159,drug,药物,疫苗技术,重组蛋白结合疫苗,药物研发与产品层,recombinant protein-conjugate vaccine,药物 > 疫苗技术 > 重组蛋白结合疫苗
+TECH_DRUG_160,drug,药物,细胞与基因治疗 (CGT),CAR CIK细胞,药物研发与产品层,CAR modified cytokine induced killer cells; CAR-细胞因子诱导的杀伤细胞疗法,药物 > 细胞与基因治疗 (CGT) > CAR CIK细胞
+TECH_DRUG_161,drug,药物,细胞与基因治疗 (CGT),CAR M细胞疗法,药物研发与产品层,CAR M cell therapy; CAR-巨噬细胞疗法,药物 > 细胞与基因治疗 (CGT) > CAR M细胞疗法
+TECH_DRUG_162,drug,药物,细胞与基因治疗 (CGT),CAR NKT细胞疗法,药物研发与产品层,CAR NKT cell therapy; CAR-自然杀伤性T细胞疗法,药物 > 细胞与基因治疗 (CGT) > CAR NKT细胞疗法
+TECH_DRUG_163,drug,药物,细胞与基因治疗 (CGT),CAR NK细胞疗法,药物研发与产品层,CAR NK cell therapy; CAR-自然杀伤细胞疗法,药物 > 细胞与基因治疗 (CGT) > CAR NK细胞疗法
+TECH_DRUG_164,drug,药物,细胞与基因治疗 (CGT),CAR Treg细胞疗法,药物研发与产品层,CAR Treg cell therapy; CAR-调节性T细胞疗法,药物 > 细胞与基因治疗 (CGT) > CAR Treg细胞疗法
+TECH_DRUG_165,drug,药物,细胞与基因治疗 (CGT),CAR T细胞疗法,药物研发与产品层,CAR T cell therapy,药物 > 细胞与基因治疗 (CGT) > CAR T细胞疗法
+TECH_DRUG_166,drug,药物,细胞与基因治疗 (CGT),CAR γδ T细胞疗法,药物研发与产品层,CAR γδ T cell therapy,药物 > 细胞与基因治疗 (CGT) > CAR γδ T细胞疗法
+TECH_DRUG_167,drug,药物,细胞与基因治疗 (CGT),CIK细胞,药物研发与产品层,cytokine-induced killer cells; 细胞因子诱导的杀伤细胞,药物 > 细胞与基因治疗 (CGT) > CIK细胞
+TECH_DRUG_168,drug,药物,细胞与基因治疗 (CGT),NK细胞疗法,药物研发与产品层,natural killer cell therapy; 自然杀伤细胞疗法,药物 > 细胞与基因治疗 (CGT) > NK细胞疗法
+TECH_DRUG_169,drug,药物,细胞与基因治疗 (CGT),RNA编辑疗法,药物研发与产品层,RNA editing therapy,药物 > 细胞与基因治疗 (CGT) > RNA编辑疗法
+TECH_DRUG_170,drug,药物,细胞与基因治疗 (CGT),TCR NK细胞疗法,药物研发与产品层,TCR NK cell therapy; TCR-自然杀伤细胞疗法,药物 > 细胞与基因治疗 (CGT) > TCR NK细胞疗法
+TECH_DRUG_171,drug,药物,细胞与基因治疗 (CGT),TCR T细胞疗法,药物研发与产品层,TCR T cell therapy,药物 > 细胞与基因治疗 (CGT) > TCR T细胞疗法
+TECH_DRUG_172,drug,药物,细胞与基因治疗 (CGT),TCR γδ T细胞疗法,药物研发与产品层,TCR γδ T cell therapy,药物 > 细胞与基因治疗 (CGT) > TCR γδ T细胞疗法
+TECH_DRUG_173,drug,药物,细胞与基因治疗 (CGT),Treg细胞疗法,药物研发与产品层,T-regulatory cell therapy; 调节性T细胞疗法,药物 > 细胞与基因治疗 (CGT) > Treg细胞疗法
+TECH_DRUG_174,drug,药物,细胞与基因治疗 (CGT),T细胞疗法,药物研发与产品层,T cell therapy,药物 > 细胞与基因治疗 (CGT) > T细胞疗法
+TECH_DRUG_175,drug,药物,细胞与基因治疗 (CGT),γδ T细胞疗法,药物研发与产品层,γδ T cell therapy,药物 > 细胞与基因治疗 (CGT) > γδ T细胞疗法
+TECH_DRUG_176,drug,药物,细胞与基因治疗 (CGT),基因疗法,药物研发与产品层,gene therapy,药物 > 细胞与基因治疗 (CGT) > 基因疗法
+TECH_DRUG_177,drug,药物,细胞与基因治疗 (CGT),基因编辑疗法,药物研发与产品层,genome editing therapy,药物 > 细胞与基因治疗 (CGT) > 基因编辑疗法
+TECH_DRUG_178,drug,药物,细胞与基因治疗 (CGT),外泌体,药物研发与产品层,exosomes,药物 > 细胞与基因治疗 (CGT) > 外泌体
+TECH_DRUG_179,drug,药物,细胞与基因治疗 (CGT),封装细胞疗法,药物研发与产品层,encapsulated cell therapy,药物 > 细胞与基因治疗 (CGT) > 封装细胞疗法
+TECH_DRUG_180,drug,药物,细胞与基因治疗 (CGT),巨噬细胞疗法,药物研发与产品层,macrophages,药物 > 细胞与基因治疗 (CGT) > 巨噬细胞疗法
+TECH_DRUG_181,drug,药物,细胞与基因治疗 (CGT),干细胞疗法,药物研发与产品层,stem cell therapy,药物 > 细胞与基因治疗 (CGT) > 干细胞疗法
+TECH_DRUG_182,drug,药物,细胞与基因治疗 (CGT),心肌细胞,药物研发与产品层,cardiomyocytes,药物 > 细胞与基因治疗 (CGT) > 心肌细胞
+TECH_DRUG_183,drug,药物,细胞与基因治疗 (CGT),成纤维细胞,药物研发与产品层,fibroblasts; 纤维母细胞,药物 > 细胞与基因治疗 (CGT) > 成纤维细胞
+TECH_DRUG_184,drug,药物,细胞与基因治疗 (CGT),树突细胞疗法,药物研发与产品层,dendritic cell; DC细胞疗法,药物 > 细胞与基因治疗 (CGT) > 树突细胞疗法
+TECH_DRUG_185,drug,药物,细胞与基因治疗 (CGT),溶瘤病毒,药物研发与产品层,oncolytic virus,药物 > 细胞与基因治疗 (CGT) > 溶瘤病毒
+TECH_DRUG_186,drug,药物,细胞与基因治疗 (CGT),溶瘤细菌,药物研发与产品层,oncolytic bacteria,药物 > 细胞与基因治疗 (CGT) > 溶瘤细菌
+TECH_DRUG_187,drug,药物,细胞与基因治疗 (CGT),神经干细胞,药物研发与产品层,neural stem cells,药物 > 细胞与基因治疗 (CGT) > 神经干细胞
+TECH_DRUG_188,drug,药物,细胞与基因治疗 (CGT),神经细胞,药物研发与产品层,neuron cells,药物 > 细胞与基因治疗 (CGT) > 神经细胞
+TECH_DRUG_189,drug,药物,细胞与基因治疗 (CGT),红细胞疗法,药物研发与产品层,red cell therapy,药物 > 细胞与基因治疗 (CGT) > 红细胞疗法
+TECH_DRUG_190,drug,药物,细胞与基因治疗 (CGT),组织疗法,药物研发与产品层,tissue-based therapy,药物 > 细胞与基因治疗 (CGT) > 组织疗法
+TECH_DRUG_191,drug,药物,细胞与基因治疗 (CGT),细胞疗法,药物研发与产品层,cell therapy,药物 > 细胞与基因治疗 (CGT) > 细胞疗法
+TECH_DRUG_192,drug,药物,细胞与基因治疗 (CGT),肌母细胞,药物研发与产品层,myoblasts,药物 > 细胞与基因治疗 (CGT) > 肌母细胞
+TECH_DRUG_193,drug,药物,细胞与基因治疗 (CGT),肝细胞,药物研发与产品层,hepatocytes,药物 > 细胞与基因治疗 (CGT) > 肝细胞
+TECH_DRUG_194,drug,药物,细胞与基因治疗 (CGT),肿瘤浸润淋巴细胞,药物研发与产品层,TIL,药物 > 细胞与基因治疗 (CGT) > 肿瘤浸润淋巴细胞
+TECH_DRUG_195,drug,药物,细胞与基因治疗 (CGT),胰岛细胞,药物研发与产品层,islet cells,药物 > 细胞与基因治疗 (CGT) > 胰岛细胞
+TECH_DRUG_196,drug,药物,细胞与基因治疗 (CGT),血小板,药物研发与产品层,platelet,药物 > 细胞与基因治疗 (CGT) > 血小板
+TECH_DRUG_197,drug,药物,细胞与基因治疗 (CGT),血管内皮细胞,药物研发与产品层,vascular endothelial cells,药物 > 细胞与基因治疗 (CGT) > 血管内皮细胞
+TECH_DRUG_198,drug,药物,细胞与基因治疗 (CGT),表观遗传编辑疗法,药物研发与产品层,epigenome editing therapy,药物 > 细胞与基因治疗 (CGT) > 表观遗传编辑疗法
+TECH_DRUG_199,drug,药物,细胞与基因治疗 (CGT),视网膜色素上皮细胞,药物研发与产品层,RPE,药物 > 细胞与基因治疗 (CGT) > 视网膜色素上皮细胞
+TECH_DRUG_200,drug,药物,细胞与基因治疗 (CGT),角膜内皮细胞,药物研发与产品层,cornea endothelial cells,药物 > 细胞与基因治疗 (CGT) > 角膜内皮细胞
+TECH_DRUG_201,drug,药物,细胞与基因治疗 (CGT),角质形成细胞,药物研发与产品层,keratinocytes,药物 > 细胞与基因治疗 (CGT) > 角质形成细胞
+TECH_DRUG_202,drug,药物,细胞与基因治疗 (CGT),软骨细胞,药物研发与产品层,chondrocytes,药物 > 细胞与基因治疗 (CGT) > 软骨细胞
+TECH_DRUG_203,drug,药物,细胞与基因治疗 (CGT),造血干细胞和祖细胞,药物研发与产品层,HSPCs,药物 > 细胞与基因治疗 (CGT) > 造血干细胞和祖细胞
+TECH_DRUG_204,drug,药物,细胞与基因治疗 (CGT),间充质干细胞,药物研发与产品层,mesenchymal stem cells; MSCs,药物 > 细胞与基因治疗 (CGT) > 间充质干细胞
+TECH_DRUG_205,drug,药物,融合蛋白技术,CTP融合蛋白,药物研发与产品层,CTP fusion protein,药物 > 融合蛋白技术 > CTP融合蛋白
+TECH_DRUG_206,drug,药物,融合蛋白技术,Fc融合蛋白,药物研发与产品层,Fc fusion protein,药物 > 融合蛋白技术 > Fc融合蛋白
+TECH_DRUG_207,drug,药物,融合蛋白技术,XTEN融合蛋白,药物研发与产品层,XTEN fusion protein,药物 > 融合蛋白技术 > XTEN融合蛋白
+TECH_DRUG_208,drug,药物,融合蛋白技术,白蛋白结合区融合蛋白,药物研发与产品层,albumin binding domain fusion protein,药物 > 融合蛋白技术 > 白蛋白结合区融合蛋白
+TECH_DRUG_209,drug,药物,融合蛋白技术,白蛋白融合蛋白,药物研发与产品层,HSA fusion protein,药物 > 融合蛋白技术 > 白蛋白融合蛋白
+TECH_DRUG_210,drug,药物,降解类药物,AUTAC,药物研发与产品层,Antibody-based PROTAC; 抗体介导的靶蛋白降解技术,药物 > 降解类药物 > AUTAC
+TECH_DRUG_211,drug,药物,降解类药物,AUTOTAC,药物研发与产品层,,药物 > 降解类药物 > AUTOTAC
+TECH_DRUG_212,drug,药物,降解类药物,AbTAC,药物研发与产品层,Antibody-based PROTAC; 抗体介导的靶蛋白降解技术,药物 > 降解类药物 > AbTAC
+TECH_DRUG_213,drug,药物,降解类药物,LYTAC,药物研发与产品层,Lysosome targeting chimera; 溶酶体靶向嵌合体,药物 > 降解类药物 > LYTAC
+TECH_DRUG_214,drug,药物,降解类药物,PROTAC,药物研发与产品层,Protein degradation targeting chimera; 蛋白降解靶向嵌合体,药物 > 降解类药物 > PROTAC
+TECH_DRUG_215,drug,药物,降解类药物,RIBOTAC,药物研发与产品层,Ribonuclease targeting chimeras; 核糖核酸酶靶向嵌合体,药物 > 降解类药物 > RIBOTAC
+TECH_DRUG_216,drug,药物,降解类药物,RIPTAC,药物研发与产品层,,药物 > 降解类药物 > RIPTAC
+TECH_DRUG_217,drug,药物,小分子药物,抑制剂/拮抗剂,药物研发与产品层,,药物 > 小分子药物 > 抑制剂/拮抗剂
+TECH_DRUG_217B,drug,药物,小分子药物,激活剂,药物研发与产品层,,药物 > 小分子药物 > 激活剂
+TECH_DRUG_218,drug,药物,靶向蛋白降解技术,PROTAC,药物研发与产品层,蛋白降解靶向嵌合体,药物 > 靶向蛋白降解技术 > PROTAC
+TECH_DRUG_219,drug,药物,口服制剂技术,缓释制剂,药物研发与产品层,,药物 > 口服制剂技术 > 缓释制剂
+TECH_DRUG_220,drug,药物,中药复方技术,复方颗粒,药物研发与产品层,,药物 > 中药复方技术 > 复方颗粒
+TECH_DRUG_221,drug,药物,中药现代制剂,口服液/注射剂,药物研发与产品层,,药物 > 中药现代制剂 > 口服液/注射剂
+TECH_DRUG_222,drug,药物,中药提取纯化技术,提取分离纯化,药物研发与产品层,,药物 > 中药提取纯化技术 > 提取分离纯化
+TECH_EN_001,enabling,计算与AI,AI药物研发,分子生成模型,算法与模型层,,计算与AI > AI药物研发 > 分子生成模型
+TECH_EN_002,enabling,计算与AI,AI药物研发,蛋白结构预测,算法与模型层,AlphaFold,计算与AI > AI药物研发 > 蛋白结构预测
+TECH_EN_003,enabling,计算与AI,AI药物研发,ADMET预测,算法与模型层,,计算与AI > AI药物研发 > ADMET预测
+TECH_EN_004,enabling,计算与AI,生物知识图谱,药物靶点知识图谱,语义与知识层,,计算与AI > 生物知识图谱 > 药物靶点知识图谱
+TECH_EN_005,enabling,计算与AI,生物知识图谱,真实世界数据分析,语义与知识层,,计算与AI > 生物知识图谱 > 真实世界数据分析
+TECH_EN_006,enabling,计算与AI,数字生命,数字孪生细胞,算法与模型层,,计算与AI > 数字生命 > 数字孪生细胞
+TECH_EN_007,enabling,生物检测与测序,单细胞技术,单细胞测序,其他,,生物检测与测序 > 单细胞技术 > 单细胞测序
+TECH_EN_008,enabling,生物检测与测序,单细胞技术,空间组学,其他,,生物检测与测序 > 单细胞技术 > 空间组学
+TECH_EN_009,enabling,生物检测与测序,组学技术,蛋白组学,其他,,生物检测与测序 > 组学技术 > 蛋白组学
+TECH_EN_010,enabling,生物检测与测序,组学技术,代谢组学,其他,,生物检测与测序 > 组学技术 > 代谢组学
+TECH_EN_011,enabling,生物检测与测序,表观组学,ATAC‑seq,其他,,生物检测与测序 > 表观组学 > ATAC‑seq
+TECH_EN_012,enabling,模型系统与平台,类器官与器官芯片,3D类器官,其他,,模型系统与平台 > 类器官与器官芯片 > 3D类器官
+TECH_EN_013,enabling,模型系统与平台,类器官与器官芯片,器官芯片,其他,,模型系统与平台 > 类器官与器官芯片 > 器官芯片
+TECH_EN_014,enabling,模型系统与平台,动物模型创新,人源化小鼠,其他,,模型系统与平台 > 动物模型创新 > 人源化小鼠
+TECH_EN_015,enabling,模型系统与平台,动物模型创新,斑马鱼模型,其他,,模型系统与平台 > 动物模型创新 > 斑马鱼模型
+TECH_EN_016,enabling,生物制造与递送,外泌体递送,外泌体递送系统,其他,,生物制造与递送 > 外泌体递送 > 外泌体递送系统
+TECH_EN_017,enabling,生物制造与递送,纳米递送,LNP脂质体,其他,,生物制造与递送 > 纳米递送 > LNP脂质体
+TECH_EN_018,enabling,生物制造与递送,合成生物学,基因线路设计,其他,,生物制造与递送 > 合成生物学 > 基因线路设计
+TECH_EN_019,enabling,生物制造与递送,合成生物学,代谢通路优化,其他,,生物制造与递送 > 合成生物学 > 代谢通路优化
+TECH_EN_020,enabling,数据与自动化,智能实验室,自动化合成系统,其他,,数据与自动化 > 智能实验室 > 自动化合成系统
+TECH_EN_021,enabling,数据与自动化,智能实验室,高通量筛选平台,其他,,数据与自动化 > 智能实验室 > 高通量筛选平台
+TECH_EN_023,enabling,数据与自动化,实验信息管理,LIMS系统,其他,,数据与自动化 > 实验信息管理 > LIMS系统
+TECH_EN_024,enabling,医药研究支撑,真实世界数据,RWD整合平台,其他,,医药研究支撑 > 真实世界数据 > RWD整合平台
+TECH_EN_025,enabling,医药研究支撑,医学影像AI,病理影像识别,其他,,医药研究支撑 > 医学影像AI > 病理影像识别
+TECH_EN_026,enabling,医药研究支撑,临床试验数字化,虚拟临床试验,其他,,医药研究支撑 > 临床试验数字化 > 虚拟临床试验
+TECH_DEV_IMG_001,device,医疗器械,影像设备,X线DR/CR,成像与感知层,digital radiography; computed radiography; DR/CR,医疗器械 > 影像设备 > X线DR/CR
+TECH_DEV_IMG_002,device,医疗器械,影像设备,CT,成像与感知层,computed tomography; CT,医疗器械 > 影像设备 > CT
+TECH_DEV_IMG_003,device,医疗器械,影像设备,MRI,成像与感知层,magnetic resonance imaging; MRI,医疗器械 > 影像设备 > MRI
+TECH_DEV_IMG_004,device,医疗器械,影像设备,超声成像,成像与感知层,ultrasound imaging; diagnostic ultrasound,医疗器械 > 影像设备 > 超声成像
+TECH_DEV_IMG_005,device,医疗器械,影像设备,PET/CT,成像与感知层,positron emission tomography; PET/CT,医疗器械 > 影像设备 > PET/CT
+TECH_DEV_IMG_006,device,医疗器械,影像设备,SPECT,成像与感知层,single-photon emission computed tomography; SPECT,医疗器械 > 影像设备 > SPECT
+TECH_DEV_IMG_007,device,医疗器械,影像设备,乳腺X线/断层摄影,成像与感知层,mammography; digital breast tomosynthesis,医疗器械 > 影像设备 > 乳腺X线/断层摄影
+TECH_DEV_IMG_008,device,医疗器械,影像设备,介入影像C臂/DSA,成像与感知层,C-arm; digital subtraction angiography; DSA,医疗器械 > 影像设备 > 介入影像C臂/DSA
+TECH_DEV_IMG_009,device,医疗器械,影像设备,骨密度DXA,成像与感知层,dual-energy X-ray absorptiometry; DXA,医疗器械 > 影像设备 > 骨密度DXA
+TECH_DEV_IMG_010,device,医疗器械,影像设备,便携/床旁影像,成像与感知层,point-of-care imaging; portable imaging,医疗器械 > 影像设备 > 便携/床旁影像
+TECH_DEV_IMG_011,device,医疗器械,影像设备,影像重建算法,成像与感知层,image reconstruction algorithms,医疗器械 > 影像设备 > 影像重建算法
+TECH_DEV_IMG_012,device,医疗器械,影像设备,迭代重建/降噪,成像与感知层,iterative reconstruction; denoising,医疗器械 > 影像设备 > 迭代重建/降噪
+TECH_DEV_IMG_013,device,医疗器械,影像设备,低剂量成像,成像与感知层,low-dose imaging,医疗器械 > 影像设备 > 低剂量成像
+TECH_DEV_IMG_014,device,医疗器械,影像设备,对比增强技术,成像与感知层,contrast enhancement,医疗器械 > 影像设备 > 对比增强技术
+TECH_DEV_IMG_015,device,医疗器械,影像设备,影像后处理工作站,成像与感知层,image post-processing workstation,医疗器械 > 影像设备 > 影像后处理工作站
+TECH_DEV_IMG_016,device,医疗器械,影像设备,影像三维重建,成像与感知层,3D reconstruction,医疗器械 > 影像设备 > 影像三维重建
+TECH_DEV_IMG_017,device,医疗器械,影像设备,影像配准/融合,成像与感知层,image registration; fusion,医疗器械 > 影像设备 > 影像配准/融合
+TECH_DEV_IMG_018,device,医疗器械,影像设备,影像定量分析/放射组学,成像与感知层,quantitative imaging; radiomics,医疗器械 > 影像设备 > 影像定量分析/放射组学
+TECH_DEV_IMG_019,device,医疗器械,影像设备,AI影像辅助诊断(CAD),成像与感知层,computer-aided diagnosis; CAD,医疗器械 > 影像设备 > AI影像辅助诊断(CAD)
+TECH_DEV_IMG_020,device,医疗器械,影像设备,PACS,成像与感知层,picture archiving and communication system; PACS,医疗器械 > 影像设备 > PACS
+TECH_DEV_IMG_021,device,医疗器械,影像设备,RIS,成像与感知层,radiology information system; RIS,医疗器械 > 影像设备 > RIS
+TECH_DEV_IMG_022,device,医疗器械,影像设备,影像云/远程阅片,成像与感知层,teleradiology; imaging cloud,医疗器械 > 影像设备 > 影像云/远程阅片
+TECH_DEV_IVD_001,device,医疗器械,IVD-平台技术,化学发光免疫CLIA,检测与诊断产品层,chemiluminescence immunoassay; CLIA,医疗器械 > IVD-平台技术 > 化学发光免疫CLIA
+TECH_DEV_IVD_002,device,医疗器械,IVD-平台技术,电化学发光ECLIA,检测与诊断产品层,electrochemiluminescence immunoassay; ECLIA,医疗器械 > IVD-平台技术 > 电化学发光ECLIA
+TECH_DEV_IVD_003,device,医疗器械,IVD-平台技术,酶联免疫ELISA,检测与诊断产品层,enzyme-linked immunosorbent assay; ELISA,医疗器械 > IVD-平台技术 > 酶联免疫ELISA
+TECH_DEV_IVD_004,device,医疗器械,IVD-平台技术,荧光免疫FIA,检测与诊断产品层,fluorescence immunoassay; FIA,医疗器械 > IVD-平台技术 > 荧光免疫FIA
+TECH_DEV_IVD_005,device,医疗器械,IVD-平台技术,胶体金侧向层析LFA,检测与诊断产品层,lateral flow assay; LFA,医疗器械 > IVD-平台技术 > 胶体金侧向层析LFA
+TECH_DEV_IVD_006,device,医疗器械,IVD-平台技术,免疫比浊,检测与诊断产品层,immunoturbidimetry,医疗器械 > IVD-平台技术 > 免疫比浊
+TECH_DEV_IVD_007,device,医疗器械,IVD-平台技术,散射比浊,检测与诊断产品层,nephelometry,医疗器械 > IVD-平台技术 > 散射比浊
+TECH_DEV_IVD_008,device,医疗器械,IVD-平台技术,生化分析,检测与诊断产品层,clinical chemistry,医疗器械 > IVD-平台技术 > 生化分析
+TECH_DEV_IVD_009,device,医疗器械,IVD-平台技术,血液学分析,检测与诊断产品层,hematology,医疗器械 > IVD-平台技术 > 血液学分析
+TECH_DEV_IVD_010,device,医疗器械,IVD-平台技术,凝血分析,检测与诊断产品层,coagulation testing,医疗器械 > IVD-平台技术 > 凝血分析
+TECH_DEV_IVD_011,device,医疗器械,IVD-平台技术,血气/电解质分析,检测与诊断产品层,blood gas; electrolyte,医疗器械 > IVD-平台技术 > 血气/电解质分析
+TECH_DEV_IVD_012,device,医疗器械,IVD-平台技术,尿液分析,检测与诊断产品层,urinalysis,医疗器械 > IVD-平台技术 > 尿液分析
+TECH_DEV_IVD_013,device,医疗器械,IVD-平台技术,微生物培养与鉴定,检测与诊断产品层,microbiology culture; identification,医疗器械 > IVD-平台技术 > 微生物培养与鉴定
+TECH_DEV_IVD_014,device,医疗器械,IVD-平台技术,药敏试验AST,检测与诊断产品层,antimicrobial susceptibility testing; AST,医疗器械 > IVD-平台技术 > 药敏试验AST
+TECH_DEV_IVD_015,device,医疗器械,IVD-平台技术,MALDI-TOF微生物鉴定,检测与诊断产品层,MALDI-TOF MS microbiology,医疗器械 > IVD-平台技术 > MALDI-TOF微生物鉴定
+TECH_DEV_IVD_016,device,医疗器械,IVD-平台技术,流式细胞术,检测与诊断产品层,flow cytometry,医疗器械 > IVD-平台技术 > 流式细胞术
+TECH_DEV_IVD_017,device,医疗器械,IVD-平台技术,多重免疫检测,检测与诊断产品层,multiplex immunoassay,医疗器械 > IVD-平台技术 > 多重免疫检测
+TECH_DEV_IVD_018,device,医疗器械,IVD-平台技术,PCR,检测与诊断产品层,polymerase chain reaction; PCR,医疗器械 > IVD-平台技术 > PCR
+TECH_DEV_IVD_019,device,医疗器械,IVD-平台技术,荧光定量PCR(qPCR),检测与诊断产品层,quantitative PCR; qPCR,医疗器械 > IVD-平台技术 > 荧光定量PCR(qPCR)
+TECH_DEV_IVD_020,device,医疗器械,IVD-平台技术,数字PCR(dPCR),检测与诊断产品层,digital PCR; dPCR,医疗器械 > IVD-平台技术 > 数字PCR(dPCR)
+TECH_DEV_IVD_021,device,医疗器械,IVD-平台技术,等温扩增LAMP,检测与诊断产品层,loop-mediated isothermal amplification; LAMP,医疗器械 > IVD-平台技术 > 等温扩增LAMP
+TECH_DEV_IVD_022,device,医疗器械,IVD-平台技术,等温扩增RPA,检测与诊断产品层,recombinase polymerase amplification; RPA,医疗器械 > IVD-平台技术 > 等温扩增RPA
+TECH_DEV_IVD_023,device,医疗器械,IVD-平台技术,CRISPR分子诊断,检测与诊断产品层,CRISPR diagnostics,医疗器械 > IVD-平台技术 > CRISPR分子诊断
+TECH_DEV_IVD_024,device,医疗器械,IVD-平台技术,NGS测序诊断,检测与诊断产品层,next-generation sequencing diagnostics; NGS,医疗器械 > IVD-平台技术 > NGS测序诊断
+TECH_DEV_IVD_025,device,医疗器械,IVD-平台技术,Sanger测序诊断,检测与诊断产品层,Sanger sequencing diagnostics,医疗器械 > IVD-平台技术 > Sanger测序诊断
+TECH_DEV_IVD_026,device,医疗器械,IVD-平台技术,基因芯片,检测与诊断产品层,DNA microarray,医疗器械 > IVD-平台技术 > 基因芯片
+TECH_DEV_IVD_027,device,医疗器械,IVD-平台技术,蛋白芯片,检测与诊断产品层,protein microarray,医疗器械 > IVD-平台技术 > 蛋白芯片
+TECH_DEV_IVD_028,device,医疗器械,IVD-平台技术,质谱检测(临床),检测与诊断产品层,clinical mass spectrometry,医疗器械 > IVD-平台技术 > 质谱检测(临床)
+TECH_DEV_IVD_029,device,医疗器械,IVD-平台技术,样本前处理自动化,检测与诊断产品层,pre-analytical automation,医疗器械 > IVD-平台技术 > 样本前处理自动化
+TECH_DEV_IVD_030,device,医疗器械,IVD-平台技术,实验室自动化流水线TLA,检测与诊断产品层,total laboratory automation; TLA,医疗器械 > IVD-平台技术 > 实验室自动化流水线TLA
+TECH_DEV_IVD_031,device,医疗器械,IVD-平台技术,分子POCT一体机,检测与诊断产品层,sample-to-answer molecular POCT,医疗器械 > IVD-平台技术 > 分子POCT一体机
+TECH_DEV_IVD_032,device,医疗器械,IVD-平台技术,POCT血糖,检测与诊断产品层,POCT glucose,医疗器械 > IVD-平台技术 > POCT血糖
+TECH_DEV_IVD_033,device,医疗器械,IVD-平台技术,POCT心肌标志物,检测与诊断产品层,POCT cardiac markers,医疗器械 > IVD-平台技术 > POCT心肌标志物
+TECH_DEV_IVD_034,device,医疗器械,IVD-平台技术,POCT炎症标志物,检测与诊断产品层,POCT inflammation markers,医疗器械 > IVD-平台技术 > POCT炎症标志物
+TECH_DEV_IVD_035,device,医疗器械,IVD-平台技术,POCT传染病快检,检测与诊断产品层,POCT infectious disease,医疗器械 > IVD-平台技术 > POCT传染病快检
+TECH_DEV_IVDAPP_001,device,医疗器械,IVD-临床应用,液体活检ctDNA,检测与诊断产品层,liquid biopsy; ctDNA,医疗器械 > IVD-临床应用 > 液体活检ctDNA
+TECH_DEV_IVDAPP_002,device,医疗器械,IVD-临床应用,伴随诊断CDx,检测与诊断产品层,companion diagnostics; CDx,医疗器械 > IVD-临床应用 > 伴随诊断CDx
+TECH_DEV_IVDAPP_003,device,医疗器械,IVD-临床应用,肿瘤多基因检测,检测与诊断产品层,oncology multigene panel,医疗器械 > IVD-临床应用 > 肿瘤多基因检测
+TECH_DEV_IVDAPP_004,device,医疗器械,IVD-临床应用,遗传病筛查,检测与诊断产品层,genetic disorder screening,医疗器械 > IVD-临床应用 > 遗传病筛查
+TECH_DEV_IVDAPP_005,device,医疗器械,IVD-临床应用,新生儿筛查,检测与诊断产品层,newborn screening,医疗器械 > IVD-临床应用 > 新生儿筛查
+TECH_DEV_IVDAPP_006,device,医疗器械,IVD-临床应用,感染病原体核酸检测,检测与诊断产品层,pathogen NAAT,医疗器械 > IVD-临床应用 > 感染病原体核酸检测
+TECH_DEV_IVDAPP_007,device,医疗器械,IVD-临床应用,耐药基因检测,检测与诊断产品层,antimicrobial resistance genes,医疗器械 > IVD-临床应用 > 耐药基因检测
+TECH_DEV_IVDAPP_008,device,医疗器械,IVD-临床应用,HPV检测,检测与诊断产品层,HPV testing,医疗器械 > IVD-临床应用 > HPV检测
+TECH_DEV_IVDAPP_009,device,医疗器械,IVD-临床应用,乙肝/丙肝病毒载量,检测与诊断产品层,HBV/HCV viral load,医疗器械 > IVD-临床应用 > 乙肝/丙肝病毒载量
+TECH_DEV_IVDAPP_010,device,医疗器械,IVD-临床应用,HIV病毒载量,检测与诊断产品层,HIV viral load,医疗器械 > IVD-临床应用 > HIV病毒载量
+TECH_DEV_IVDAPP_011,device,医疗器械,IVD-临床应用,结核分子诊断,检测与诊断产品层,TB molecular diagnostics,医疗器械 > IVD-临床应用 > 结核分子诊断
+TECH_DEV_IVDAPP_012,device,医疗器械,IVD-临床应用,药物浓度监测TDM,检测与诊断产品层,therapeutic drug monitoring; TDM,医疗器械 > IVD-临床应用 > 药物浓度监测TDM
+TECH_DEV_IVDAPP_013,device,医疗器械,IVD-临床应用,自身免疫抗体谱,检测与诊断产品层,autoantibody panel,医疗器械 > IVD-临床应用 > 自身免疫抗体谱
+TECH_DEV_IVDAPP_014,device,医疗器械,IVD-临床应用,过敏原检测,检测与诊断产品层,allergen testing,医疗器械 > IVD-临床应用 > 过敏原检测
+TECH_DEV_IVDAPP_015,device,医疗器械,IVD-临床应用,生殖激素/不孕检测,检测与诊断产品层,fertility hormones,医疗器械 > IVD-临床应用 > 生殖激素/不孕检测
+TECH_DEV_IVDAPP_016,device,医疗器械,IVD-临床应用,心血管风险标志物,检测与诊断产品层,cardiovascular biomarkers,医疗器械 > IVD-临床应用 > 心血管风险标志物
+TECH_DEV_IVDAPP_017,device,医疗器械,IVD-临床应用,代谢病标志物,检测与诊断产品层,metabolic biomarkers,医疗器械 > IVD-临床应用 > 代谢病标志物
+TECH_DEV_IVDAPP_018,device,医疗器械,IVD-临床应用,肝肾功能检测,检测与诊断产品层,liver/kidney function testing,医疗器械 > IVD-临床应用 > 肝肾功能检测
+TECH_DEV_INT_001,device,医疗器械,介入与植入,冠脉药物支架DES,治疗与操作层,drug eluting stent; DES,医疗器械 > 介入与植入 > 冠脉药物支架DES
+TECH_DEV_INT_002,device,医疗器械,介入与植入,冠脉金属裸支架BMS,治疗与操作层,bare metal stent; BMS,医疗器械 > 介入与植入 > 冠脉金属裸支架BMS
+TECH_DEV_INT_003,device,医疗器械,介入与植入,冠脉球囊(普通/药物球囊DCB),治疗与操作层,balloon catheter; drug-coated balloon; DCB,医疗器械 > 介入与植入 > 冠脉球囊(普通/药物球囊DCB)
+TECH_DEV_INT_004,device,医疗器械,介入与植入,导丝,治疗与操作层,guidewire,医疗器械 > 介入与植入 > 导丝
+TECH_DEV_INT_005,device,医疗器械,介入与植入,微导管,治疗与操作层,microcatheter,医疗器械 > 介入与植入 > 微导管
+TECH_DEV_INT_006,device,医疗器械,介入与植入,鞘管/穿刺器,治疗与操作层,introducer sheath,医疗器械 > 介入与植入 > 鞘管/穿刺器
+TECH_DEV_INT_007,device,医疗器械,介入与植入,血管闭合器,治疗与操作层,vascular closure device,医疗器械 > 介入与植入 > 血管闭合器
+TECH_DEV_INT_008,device,医疗器械,介入与植入,外周血管支架,治疗与操作层,peripheral vascular stent,医疗器械 > 介入与植入 > 外周血管支架
+TECH_DEV_INT_009,device,医疗器械,介入与植入,静脉支架/滤器,治疗与操作层,venous stent; IVC filter,医疗器械 > 介入与植入 > 静脉支架/滤器
+TECH_DEV_INT_010,device,医疗器械,介入与植入,结构性心脏介入TAVR/TAVI,治疗与操作层,transcatheter aortic valve replacement; TAVR,医疗器械 > 介入与植入 > 结构性心脏介入TAVR/TAVI
+TECH_DEV_INT_011,device,医疗器械,介入与植入,二尖瓣/三尖瓣介入修复,治疗与操作层,transcatheter valve repair,医疗器械 > 介入与植入 > 二尖瓣/三尖瓣介入修复
+TECH_DEV_INT_012,device,医疗器械,介入与植入,房缺/卵圆孔未闭封堵器,治疗与操作层,ASD/PFO occluder,医疗器械 > 介入与植入 > 房缺/卵圆孔未闭封堵器
+TECH_DEV_INT_013,device,医疗器械,介入与植入,左心耳封堵器LAAO,治疗与操作层,left atrial appendage occlusion; LAAO,医疗器械 > 介入与植入 > 左心耳封堵器LAAO
+TECH_DEV_INT_014,device,医疗器械,介入与植入,血栓抽吸/取栓,治疗与操作层,thrombectomy; aspiration,医疗器械 > 介入与植入 > 血栓抽吸/取栓
+TECH_DEV_INT_015,device,医疗器械,介入与植入,神经介入取栓支架,治疗与操作层,stent retriever,医疗器械 > 介入与植入 > 神经介入取栓支架
+TECH_DEV_INT_016,device,医疗器械,介入与植入,弹簧圈栓塞,治疗与操作层,embolization coils,医疗器械 > 介入与植入 > 弹簧圈栓塞
+TECH_DEV_INT_017,device,医疗器械,介入与植入,栓塞微球,治疗与操作层,embolization microspheres,医疗器械 > 介入与植入 > 栓塞微球
+TECH_DEV_INT_018,device,医疗器械,介入与植入,颅内动脉瘤流量导向,治疗与操作层,flow diverter,医疗器械 > 介入与植入 > 颅内动脉瘤流量导向
+TECH_DEV_INT_019,device,医疗器械,介入与植入,IVUS,治疗与操作层,intravascular ultrasound; IVUS,医疗器械 > 介入与植入 > IVUS
+TECH_DEV_INT_020,device,医疗器械,介入与植入,血管OCT,治疗与操作层,intravascular OCT,医疗器械 > 介入与植入 > 血管OCT
+TECH_DEV_INT_021,device,医疗器械,介入与植入,电生理消融(射频/冷冻),治疗与操作层,RF ablation; cryoablation,医疗器械 > 介入与植入 > 电生理消融(射频/冷冻)
+TECH_DEV_INT_022,device,医疗器械,介入与植入,三维电解剖标测,治疗与操作层,3D electroanatomical mapping,医疗器械 > 介入与植入 > 三维电解剖标测
+TECH_DEV_INT_023,device,医疗器械,介入与植入,起搏器,治疗与操作层,pacemaker,医疗器械 > 介入与植入 > 起搏器
+TECH_DEV_INT_024,device,医疗器械,介入与植入,植入式除颤器ICD,治疗与操作层,implantable cardioverter-defibrillator; ICD,医疗器械 > 介入与植入 > 植入式除颤器ICD
+TECH_DEV_INT_025,device,医疗器械,介入与植入,心脏再同步化CRT,治疗与操作层,cardiac resynchronization therapy; CRT,医疗器械 > 介入与植入 > 心脏再同步化CRT
+TECH_DEV_INT_026,device,医疗器械,介入与植入,植入式循环记录器ILR,治疗与操作层,implantable loop recorder; ILR,医疗器械 > 介入与植入 > 植入式循环记录器ILR
+TECH_DEV_INT_027,device,医疗器械,介入与植入,左心室辅助装置LVAD,治疗与操作层,left ventricular assist device; LVAD,医疗器械 > 介入与植入 > 左心室辅助装置LVAD
+TECH_DEV_INT_028,device,医疗器械,介入与植入,人工血管/血管补片,治疗与操作层,vascular graft; patch,医疗器械 > 介入与植入 > 人工血管/血管补片
+TECH_DEV_INT_029,device,医疗器械,介入与植入,血液透析通路介入,治疗与操作层,dialysis access intervention,医疗器械 > 介入与植入 > 血液透析通路介入
+TECH_DEV_INT_030,device,医疗器械,介入与植入,泌尿介入(输尿管支架/取石),治疗与操作层,ureteral stent; lithotripsy devices,医疗器械 > 介入与植入 > 泌尿介入(输尿管支架/取石)
+TECH_DEV_INT_031,device,医疗器械,介入与植入,消化内镜介入(止血/ERCP耗材),治疗与操作层,endoscopic hemostasis; ERCP accessories,医疗器械 > 介入与植入 > 消化内镜介入(止血/ERCP耗材)
+TECH_DEV_INT_032,device,医疗器械,介入与植入,胆道/胰管支架,治疗与操作层,biliary/pancreatic stent,医疗器械 > 介入与植入 > 胆道/胰管支架
+TECH_DEV_INT_033,device,医疗器械,介入与植入,肿瘤介入(微波/射频消融),治疗与操作层,microwave ablation; RF ablation,医疗器械 > 介入与植入 > 肿瘤介入(微波/射频消融)
+TECH_DEV_INT_034,device,医疗器械,介入与植入,介入放射粒子植入,治疗与操作层,brachytherapy seed implantation,医疗器械 > 介入与植入 > 介入放射粒子植入
+TECH_DEV_INT_035,device,医疗器械,介入与植入,骨科人工关节(髋/膝),治疗与操作层,hip/knee arthroplasty implant,医疗器械 > 介入与植入 > 骨科人工关节(髋/膝)
+TECH_DEV_INT_036,device,医疗器械,介入与植入,脊柱内固定系统,治疗与操作层,spinal fixation system,医疗器械 > 介入与植入 > 脊柱内固定系统
+TECH_DEV_INT_037,device,医疗器械,介入与植入,骨折内固定(钢板/螺钉),治疗与操作层,plate and screw fixation,医疗器械 > 介入与植入 > 骨折内固定(钢板/螺钉)
+TECH_DEV_INT_038,device,医疗器械,介入与植入,髓内钉,治疗与操作层,intramedullary nail,医疗器械 > 介入与植入 > 髓内钉
+TECH_DEV_INT_039,device,医疗器械,介入与植入,外固定支架,治疗与操作层,external fixator,医疗器械 > 介入与植入 > 外固定支架
+TECH_DEV_INT_040,device,医疗器械,介入与植入,可吸收骨固定材料,治疗与操作层,resorbable fixation,医疗器械 > 介入与植入 > 可吸收骨固定材料
+TECH_DEV_INT_041,device,医疗器械,介入与植入,骨修复材料(羟基磷灰石/β-TCP),治疗与操作层,HA; beta-TCP bone graft,医疗器械 > 介入与植入 > 骨修复材料(羟基磷灰石/β-TCP)
+TECH_DEV_INT_042,device,医疗器械,介入与植入,骨水泥,治疗与操作层,bone cement,医疗器械 > 介入与植入 > 骨水泥
+TECH_DEV_INT_043,device,医疗器械,介入与植入,牙科种植体,治疗与操作层,dental implant,医疗器械 > 介入与植入 > 牙科种植体
+TECH_DEV_INT_044,device,医疗器械,介入与植入,口腔正畸(隐形矫治),治疗与操作层,clear aligner orthodontics,医疗器械 > 介入与植入 > 口腔正畸(隐形矫治)
+TECH_DEV_INT_045,device,医疗器械,介入与植入,眼科人工晶体IOL,治疗与操作层,intraocular lens; IOL,医疗器械 > 介入与植入 > 眼科人工晶体IOL
+TECH_DEV_INT_046,device,医疗器械,介入与植入,角膜接触镜(治疗/屈光),治疗与操作层,therapeutic contact lens,医疗器械 > 介入与植入 > 角膜接触镜(治疗/屈光)
+TECH_DEV_INT_047,device,医疗器械,介入与植入,玻璃体切割耗材,治疗与操作层,vitrectomy consumables,医疗器械 > 介入与植入 > 玻璃体切割耗材
+TECH_DEV_INT_048,device,医疗器械,介入与植入,人工耳蜗,治疗与操作层,cochlear implant,医疗器械 > 介入与植入 > 人工耳蜗
+TECH_DEV_INT_049,device,医疗器械,介入与植入,神经刺激(脊髓/迷走),治疗与操作层,neuromodulation; VNS; SCS,医疗器械 > 介入与植入 > 神经刺激(脊髓/迷走)
+TECH_DEV_SUR_001,device,医疗器械,手术系统与机器人,腹腔镜系统,治疗与操作层,laparoscopy system,医疗器械 > 手术系统与机器人 > 腹腔镜系统
+TECH_DEV_SUR_002,device,医疗器械,手术系统与机器人,胸腔镜系统,治疗与操作层,thoracoscopy system,医疗器械 > 手术系统与机器人 > 胸腔镜系统
+TECH_DEV_SUR_003,device,医疗器械,手术系统与机器人,消化内镜系统,治疗与操作层,GI endoscopy system,医疗器械 > 手术系统与机器人 > 消化内镜系统
+TECH_DEV_SUR_004,device,医疗器械,手术系统与机器人,支气管镜系统,治疗与操作层,bronchoscopy system,医疗器械 > 手术系统与机器人 > 支气管镜系统
+TECH_DEV_SUR_005,device,医疗器械,手术系统与机器人,关节镜系统,治疗与操作层,arthroscopy system,医疗器械 > 手术系统与机器人 > 关节镜系统
+TECH_DEV_SUR_006,device,医疗器械,手术系统与机器人,手术能量平台(电刀),治疗与操作层,electrosurgery unit,医疗器械 > 手术系统与机器人 > 手术能量平台(电刀)
+TECH_DEV_SUR_007,device,医疗器械,手术系统与机器人,超声刀/超声能量,治疗与操作层,ultrasonic energy device,医疗器械 > 手术系统与机器人 > 超声刀/超声能量
+TECH_DEV_SUR_008,device,医疗器械,手术系统与机器人,等离子/射频手术系统,治疗与操作层,plasma/RF surgery,医疗器械 > 手术系统与机器人 > 等离子/射频手术系统
+TECH_DEV_SUR_009,device,医疗器械,手术系统与机器人,吻合器/缝合器,治疗与操作层,surgical stapler; suturing device,医疗器械 > 手术系统与机器人 > 吻合器/缝合器
+TECH_DEV_SUR_010,device,医疗器械,手术系统与机器人,手术显微镜,治疗与操作层,surgical microscope,医疗器械 > 手术系统与机器人 > 手术显微镜
+TECH_DEV_SUR_011,device,医疗器械,手术系统与机器人,术中神经监测IONM,治疗与操作层,intraoperative neuromonitoring; IONM,医疗器械 > 手术系统与机器人 > 术中神经监测IONM
+TECH_DEV_SUR_012,device,医疗器械,手术系统与机器人,手术导航,治疗与操作层,surgical navigation,医疗器械 > 手术系统与机器人 > 手术导航
+TECH_DEV_SUR_013,device,医疗器械,手术系统与机器人,术中影像(术中CT),治疗与操作层,intraoperative CT,医疗器械 > 手术系统与机器人 > 术中影像(术中CT)
+TECH_DEV_SUR_014,device,医疗器械,手术系统与机器人,术中影像(术中MRI),治疗与操作层,intraoperative MRI,医疗器械 > 手术系统与机器人 > 术中影像(术中MRI)
+TECH_DEV_SUR_015,device,医疗器械,手术系统与机器人,腔镜手术机器人,治疗与操作层,surgical robot (MIS),医疗器械 > 手术系统与机器人 > 腔镜手术机器人
+TECH_DEV_SUR_016,device,医疗器械,手术系统与机器人,骨科手术机器人,治疗与操作层,orthopedic surgical robot,医疗器械 > 手术系统与机器人 > 骨科手术机器人
+TECH_DEV_SUR_017,device,医疗器械,手术系统与机器人,经皮穿刺机器人,治疗与操作层,percutaneous intervention robot,医疗器械 > 手术系统与机器人 > 经皮穿刺机器人
+TECH_DEV_SUR_018,device,医疗器械,手术系统与机器人,康复/护理辅助机器人,治疗与操作层,assistive care robot,医疗器械 > 手术系统与机器人 > 康复/护理辅助机器人
+TECH_DEV_SUR_019,device,医疗器械,手术系统与机器人,力反馈与触觉感知,治疗与操作层,haptics; force feedback,医疗器械 > 手术系统与机器人 > 力反馈与触觉感知
+TECH_DEV_SUR_020,device,医疗器械,手术系统与机器人,术前规划与数字化导板,治疗与操作层,preoperative planning; surgical guide,医疗器械 > 手术系统与机器人 > 术前规划与数字化导板
+TECH_DEV_ICU_001,device,医疗器械,生命支持与重症监护,多参数监护仪,产品与系统层,patient monitor,医疗器械 > 生命支持与重症监护 > 多参数监护仪
+TECH_DEV_ICU_002,device,医疗器械,生命支持与重症监护,床旁心电监测,产品与系统层,bedside ECG monitoring,医疗器械 > 生命支持与重症监护 > 床旁心电监测
+TECH_DEV_ICU_003,device,医疗器械,生命支持与重症监护,动态心电Holter,产品与系统层,Holter monitoring,医疗器械 > 生命支持与重症监护 > 动态心电Holter
+TECH_DEV_ICU_004,device,医疗器械,生命支持与重症监护,动态血压ABPM,产品与系统层,ambulatory blood pressure monitoring; ABPM,医疗器械 > 生命支持与重症监护 > 动态血压ABPM
+TECH_DEV_ICU_005,device,医疗器械,生命支持与重症监护,脉搏血氧SpO2,产品与系统层,pulse oximetry; SpO2,医疗器械 > 生命支持与重症监护 > 脉搏血氧SpO2
+TECH_DEV_ICU_006,device,医疗器械,生命支持与重症监护,无创血压NIBP,产品与系统层,non-invasive blood pressure; NIBP,医疗器械 > 生命支持与重症监护 > 无创血压NIBP
+TECH_DEV_ICU_007,device,医疗器械,生命支持与重症监护,有创血压IBP,产品与系统层,invasive blood pressure; IBP,医疗器械 > 生命支持与重症监护 > 有创血压IBP
+TECH_DEV_ICU_008,device,医疗器械,生命支持与重症监护,呼吸机(有创),产品与系统层,invasive ventilator,医疗器械 > 生命支持与重症监护 > 呼吸机(有创)
+TECH_DEV_ICU_009,device,医疗器械,生命支持与重症监护,呼吸机(无创),产品与系统层,non-invasive ventilation; NIV,医疗器械 > 生命支持与重症监护 > 呼吸机(无创)
+TECH_DEV_ICU_010,device,医疗器械,生命支持与重症监护,高流量氧疗HFNC,产品与系统层,high-flow nasal cannula; HFNC,医疗器械 > 生命支持与重症监护 > 高流量氧疗HFNC
+TECH_DEV_ICU_011,device,医疗器械,生命支持与重症监护,麻醉机,产品与系统层,anesthesia machine,医疗器械 > 生命支持与重症监护 > 麻醉机
+TECH_DEV_ICU_012,device,医疗器械,生命支持与重症监护,麻醉深度监测BIS,产品与系统层,bispectral index; BIS,医疗器械 > 生命支持与重症监护 > 麻醉深度监测BIS
+TECH_DEV_ICU_013,device,医疗器械,生命支持与重症监护,输注泵,产品与系统层,infusion pump,医疗器械 > 生命支持与重症监护 > 输注泵
+TECH_DEV_ICU_014,device,医疗器械,生命支持与重症监护,注射泵,产品与系统层,syringe pump,医疗器械 > 生命支持与重症监护 > 注射泵
+TECH_DEV_ICU_015,device,医疗器械,生命支持与重症监护,除颤仪,产品与系统层,defibrillator,医疗器械 > 生命支持与重症监护 > 除颤仪
+TECH_DEV_ICU_016,device,医疗器械,生命支持与重症监护,AED,产品与系统层,automated external defibrillator; AED,医疗器械 > 生命支持与重症监护 > AED
+TECH_DEV_ICU_017,device,医疗器械,生命支持与重症监护,体温管理,产品与系统层,temperature management,医疗器械 > 生命支持与重症监护 > 体温管理
+TECH_DEV_ICU_018,device,医疗器械,生命支持与重症监护,ECMO,产品与系统层,extracorporeal membrane oxygenation; ECMO,医疗器械 > 生命支持与重症监护 > ECMO
+TECH_DEV_ICU_019,device,医疗器械,生命支持与重症监护,体外循环CPB,产品与系统层,cardiopulmonary bypass; CPB,医疗器械 > 生命支持与重症监护 > 体外循环CPB
+TECH_DEV_ICU_020,device,医疗器械,生命支持与重症监护,血液透析机,产品与系统层,hemodialysis machine,医疗器械 > 生命支持与重症监护 > 血液透析机
+TECH_DEV_ICU_021,device,医疗器械,生命支持与重症监护,CRRT连续性肾替代,产品与系统层,CRRT,医疗器械 > 生命支持与重症监护 > CRRT连续性肾替代
+TECH_DEV_ICU_022,device,医疗器械,生命支持与重症监护,血浆置换,产品与系统层,plasmapheresis,医疗器械 > 生命支持与重症监护 > 血浆置换
+TECH_DEV_ICU_023,device,医疗器械,生命支持与重症监护,人工肝支持,产品与系统层,artificial liver support,医疗器械 > 生命支持与重症监护 > 人工肝支持
+TECH_DEV_ICU_024,device,医疗器械,生命支持与重症监护,床旁超声(重症),产品与系统层,POCUS in ICU,医疗器械 > 生命支持与重症监护 > 床旁超声(重症)
+TECH_DEV_REH_001,device,医疗器械,康复与家用医疗,康复机器人(上肢),产品与系统层,upper-limb rehab robot,医疗器械 > 康复与家用医疗 > 康复机器人(上肢)
+TECH_DEV_REH_002,device,医疗器械,康复与家用医疗,康复机器人(下肢),产品与系统层,lower-limb rehab robot,医疗器械 > 康复与家用医疗 > 康复机器人(下肢)
+TECH_DEV_REH_003,device,医疗器械,康复与家用医疗,步态训练系统,产品与系统层,gait training system,医疗器械 > 康复与家用医疗 > 步态训练系统
+TECH_DEV_REH_004,device,医疗器械,康复与家用医疗,物理治疗(电刺激),产品与系统层,electrical stimulation therapy,医疗器械 > 康复与家用医疗 > 物理治疗(电刺激)
+TECH_DEV_REH_005,device,医疗器械,康复与家用医疗,物理治疗(超声理疗),产品与系统层,therapeutic ultrasound,医疗器械 > 康复与家用医疗 > 物理治疗(超声理疗)
+TECH_DEV_REH_006,device,医疗器械,康复与家用医疗,物理治疗(冲击波),产品与系统层,shockwave therapy,医疗器械 > 康复与家用医疗 > 物理治疗(冲击波)
+TECH_DEV_REH_007,device,医疗器械,康复与家用医疗,矫形器/支具,产品与系统层,orthotics,医疗器械 > 康复与家用医疗 > 矫形器/支具
+TECH_DEV_REH_008,device,医疗器械,康复与家用医疗,助行器/轮椅,产品与系统层,walker; wheelchair,医疗器械 > 康复与家用医疗 > 助行器/轮椅
+TECH_DEV_REH_009,device,医疗器械,康复与家用医疗,家用血压计,产品与系统层,home blood pressure monitor,医疗器械 > 康复与家用医疗 > 家用血压计
+TECH_DEV_REH_010,device,医疗器械,康复与家用医疗,家用血糖仪,产品与系统层,glucometer,医疗器械 > 康复与家用医疗 > 家用血糖仪
+TECH_DEV_REH_011,device,医疗器械,康复与家用医疗,连续血糖监测CGM,产品与系统层,continuous glucose monitoring; CGM,医疗器械 > 康复与家用医疗 > 连续血糖监测CGM
+TECH_DEV_REH_012,device,医疗器械,康复与家用医疗,家用心电(可穿戴ECG),产品与系统层,wearable ECG,医疗器械 > 康复与家用医疗 > 家用心电(可穿戴ECG)
+TECH_DEV_REH_013,device,医疗器械,康复与家用医疗,睡眠呼吸监测,产品与系统层,sleep apnea monitoring,医疗器械 > 康复与家用医疗 > 睡眠呼吸监测
+TECH_DEV_REH_014,device,医疗器械,康复与家用医疗,雾化器,产品与系统层,nebulizer,医疗器械 > 康复与家用医疗 > 雾化器
+TECH_DEV_REH_015,device,医疗器械,康复与家用医疗,家用制氧机,产品与系统层,oxygen concentrator,医疗器械 > 康复与家用医疗 > 家用制氧机
+TECH_DEV_REH_016,device,医疗器械,康复与家用医疗,家庭远程监测网关,产品与系统层,home RPM gateway,医疗器械 > 康复与家用医疗 > 家庭远程监测网关
+TECH_DEV_STE_001,device,医疗器械,院感与消杀,高温高压灭菌,产品与系统层,steam sterilization; autoclave,医疗器械 > 院感与消杀 > 高温高压灭菌
+TECH_DEV_STE_002,device,医疗器械,院感与消杀,低温等离子灭菌,产品与系统层,H2O2 plasma sterilization,医疗器械 > 院感与消杀 > 低温等离子灭菌
+TECH_DEV_STE_003,device,医疗器械,院感与消杀,环氧乙烷灭菌EtO,产品与系统层,ethylene oxide sterilization; EtO,医疗器械 > 院感与消杀 > 环氧乙烷灭菌EtO
+TECH_DEV_STE_004,device,医疗器械,院感与消杀,过氧化氢低温灭菌,产品与系统层,vaporized hydrogen peroxide; VHP,医疗器械 > 院感与消杀 > 过氧化氢低温灭菌
+TECH_DEV_STE_005,device,医疗器械,院感与消杀,消毒供应中心CSSD,产品与系统层,central sterile supply department; CSSD,医疗器械 > 院感与消杀 > 消毒供应中心CSSD
+TECH_DEV_STE_006,device,医疗器械,院感与消杀,院感监测与追溯,产品与系统层,infection control monitoring; traceability,医疗器械 > 院感与消杀 > 院感监测与追溯
+TECH_DEV_STE_007,device,医疗器械,院感与消杀,手卫生监测,产品与系统层,hand hygiene monitoring,医疗器械 > 院感与消杀 > 手卫生监测
+TECH_DEV_STE_008,device,医疗器械,院感与消杀,空气净化/层流,产品与系统层,laminar flow; air purification,医疗器械 > 院感与消杀 > 空气净化/层流
+TECH_DEV_MAT_001,device,医疗器械,医用材料与耗材,医用高分子材料,产品与系统层,medical polymers,医疗器械 > 医用材料与耗材 > 医用高分子材料
+TECH_DEV_MAT_002,device,医疗器械,医用材料与耗材,医用金属材料(钛/不锈钢/镍钛),产品与系统层,titanium; stainless steel; nitinol,医疗器械 > 医用材料与耗材 > 医用金属材料(钛/不锈钢/镍钛)
+TECH_DEV_MAT_003,device,医疗器械,医用材料与耗材,医用陶瓷/生物玻璃,产品与系统层,bioceramics; bioglass,医疗器械 > 医用材料与耗材 > 医用陶瓷/生物玻璃
+TECH_DEV_MAT_004,device,医疗器械,医用材料与耗材,水凝胶,产品与系统层,hydrogel,医疗器械 > 医用材料与耗材 > 水凝胶
+TECH_DEV_MAT_005,device,医疗器械,医用材料与耗材,组织粘合剂/生物胶,产品与系统层,tissue adhesive,医疗器械 > 医用材料与耗材 > 组织粘合剂/生物胶
+TECH_DEV_MAT_006,device,医疗器械,医用材料与耗材,止血材料,产品与系统层,hemostatic materials,医疗器械 > 医用材料与耗材 > 止血材料
+TECH_DEV_MAT_007,device,医疗器械,医用材料与耗材,创面敷料,产品与系统层,wound dressing,医疗器械 > 医用材料与耗材 > 创面敷料
+TECH_DEV_MAT_008,device,医疗器械,医用材料与耗材,负压引流NPWT,产品与系统层,negative pressure wound therapy; NPWT,医疗器械 > 医用材料与耗材 > 负压引流NPWT
+TECH_DEV_MAT_009,device,医疗器械,医用材料与耗材,一次性无菌耗材(注射器),产品与系统层,syringe,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(注射器)
+TECH_DEV_MAT_010,device,医疗器械,医用材料与耗材,一次性无菌耗材(输液器),产品与系统层,infusion set,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(输液器)
+TECH_DEV_MAT_011,device,医疗器械,医用材料与耗材,一次性无菌耗材(导尿管),产品与系统层,urinary catheter,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(导尿管)
+TECH_DEV_MAT_012,device,医疗器械,医用材料与耗材,一次性无菌耗材(引流管),产品与系统层,drainage tube,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(引流管)
+TECH_DEV_MAT_013,device,医疗器械,医用材料与耗材,手套/口罩/防护用品,产品与系统层,PPE,医疗器械 > 医用材料与耗材 > 手套/口罩/防护用品
+TECH_DIG_INF_001,digital,数字医疗,医疗IT基础设施,HIS医院信息系统,医疗信息系统层,hospital information system; HIS,数字医疗 > 医疗IT基础设施 > HIS医院信息系统
+TECH_DIG_INF_002,digital,数字医疗,医疗IT基础设施,EMR电子病历,医疗信息系统层,electronic medical record; EMR,数字医疗 > 医疗IT基础设施 > EMR电子病历
+TECH_DIG_INF_003,digital,数字医疗,医疗IT基础设施,EHR区域健康档案,医疗信息系统层,electronic health record; EHR,数字医疗 > 医疗IT基础设施 > EHR区域健康档案
+TECH_DIG_INF_004,digital,数字医疗,医疗IT基础设施,LIS检验信息系统,医疗信息系统层,laboratory information system; LIS,数字医疗 > 医疗IT基础设施 > LIS检验信息系统
+TECH_DIG_INF_005,digital,数字医疗,医疗IT基础设施,RIS放射信息系统,医疗信息系统层,radiology information system; RIS,数字医疗 > 医疗IT基础设施 > RIS放射信息系统
+TECH_DIG_INF_006,digital,数字医疗,医疗IT基础设施,PACS影像归档与通信,医疗信息系统层,PACS,数字医疗 > 医疗IT基础设施 > PACS影像归档与通信
+TECH_DIG_INF_007,digital,数字医疗,医疗IT基础设施,AIMS麻醉信息系统,医疗信息系统层,anesthesia information management system; AIMS,数字医疗 > 医疗IT基础设施 > AIMS麻醉信息系统
+TECH_DIG_INF_008,digital,数字医疗,医疗IT基础设施,NIS护理信息系统,医疗信息系统层,nursing information system; NIS,数字医疗 > 医疗IT基础设施 > NIS护理信息系统
+TECH_DIG_INF_009,digital,数字医疗,医疗IT基础设施,CPOE医嘱系统,医疗信息系统层,computerized physician order entry; CPOE,数字医疗 > 医疗IT基础设施 > CPOE医嘱系统
+TECH_DIG_INF_010,digital,数字医疗,医疗IT基础设施,药房信息系统PIS,医疗信息系统层,pharmacy information system; PIS,数字医疗 > 医疗IT基础设施 > 药房信息系统PIS
+TECH_DIG_INF_011,digital,数字医疗,医疗IT基础设施,互联互通/HL7,医疗信息系统层,HL7 interoperability,数字医疗 > 医疗IT基础设施 > 互联互通/HL7
+TECH_DIG_INF_012,digital,数字医疗,医疗IT基础设施,FHIR标准,医疗信息系统层,FHIR,数字医疗 > 医疗IT基础设施 > FHIR标准
+TECH_DIG_INF_013,digital,数字医疗,医疗IT基础设施,DICOM标准,医疗信息系统层,DICOM,数字医疗 > 医疗IT基础设施 > DICOM标准
+TECH_DIG_INF_014,digital,数字医疗,医疗IT基础设施,EMPI主索引,医疗信息系统层,enterprise master patient index; EMPI,数字医疗 > 医疗IT基础设施 > EMPI主索引
+TECH_DIG_INF_015,digital,数字医疗,医疗IT基础设施,主数据管理MDM,医疗信息系统层,master data management; MDM,数字医疗 > 医疗IT基础设施 > 主数据管理MDM
+TECH_DIG_INF_016,digital,数字医疗,医疗IT基础设施,数据中台/数据仓库,医疗信息系统层,health data warehouse; data platform,数字医疗 > 医疗IT基础设施 > 数据中台/数据仓库
+TECH_DIG_INF_017,digital,数字医疗,医疗IT基础设施,医疗数据治理与质量,医疗信息系统层,data governance; data quality,数字医疗 > 医疗IT基础设施 > 医疗数据治理与质量
+TECH_DIG_INF_018,digital,数字医疗,医疗IT基础设施,隐私计算,医疗信息系统层,privacy-preserving computation,数字医疗 > 医疗IT基础设施 > 隐私计算
+TECH_DIG_INF_019,digital,数字医疗,医疗IT基础设施,联邦学习,医疗信息系统层,federated learning,数字医疗 > 医疗IT基础设施 > 联邦学习
+TECH_DIG_INF_020,digital,数字医疗,医疗IT基础设施,零信任安全,医疗信息系统层,zero trust security,数字医疗 > 医疗IT基础设施 > 零信任安全
+TECH_DIG_INF_021,digital,数字医疗,医疗IT基础设施,身份认证与IAM,医疗信息系统层,identity and access management; IAM,数字医疗 > 医疗IT基础设施 > 身份认证与IAM
+TECH_DIG_INF_022,digital,数字医疗,医疗IT基础设施,日志审计与合规,医疗信息系统层,audit logging; compliance,数字医疗 > 医疗IT基础设施 > 日志审计与合规
+TECH_DIG_APP_001,digital,数字医疗,临床与患者应用,CDSS临床决策支持,医疗信息系统层,clinical decision support system; CDSS,数字医疗 > 临床与患者应用 > CDSS临床决策支持
+TECH_DIG_APP_002,digital,数字医疗,临床与患者应用,AI影像辅助诊断,医疗信息系统层,AI imaging diagnosis,数字医疗 > 临床与患者应用 > AI影像辅助诊断
+TECH_DIG_APP_003,digital,数字医疗,临床与患者应用,病理AI/数字病理,医疗信息系统层,digital pathology; pathology AI,数字医疗 > 临床与患者应用 > 病理AI/数字病理
+TECH_DIG_APP_004,digital,数字医疗,临床与患者应用,智能分诊导诊,医疗信息系统层,AI triage,数字医疗 > 临床与患者应用 > 智能分诊导诊
+TECH_DIG_APP_005,digital,数字医疗,临床与患者应用,互联网医院/远程门诊,医疗信息系统层,internet hospital; telemedicine,数字医疗 > 临床与患者应用 > 互联网医院/远程门诊
+TECH_DIG_APP_006,digital,数字医疗,临床与患者应用,远程会诊,医疗信息系统层,remote consultation,数字医疗 > 临床与患者应用 > 远程会诊
+TECH_DIG_APP_007,digital,数字医疗,临床与患者应用,远程患者监测RPM,医疗信息系统层,remote patient monitoring; RPM,数字医疗 > 临床与患者应用 > 远程患者监测RPM
+TECH_DIG_APP_008,digital,数字医疗,临床与患者应用,慢病管理平台,医疗信息系统层,chronic disease management,数字医疗 > 临床与患者应用 > 慢病管理平台
+TECH_DIG_APP_009,digital,数字医疗,临床与患者应用,用药依从性管理,医疗信息系统层,medication adherence,数字医疗 > 临床与患者应用 > 用药依从性管理
+TECH_DIG_APP_010,digital,数字医疗,临床与患者应用,患者随访管理,医疗信息系统层,patient follow-up management,数字医疗 > 临床与患者应用 > 患者随访管理
+TECH_DIG_APP_011,digital,数字医疗,临床与患者应用,患者教育与内容平台,医疗信息系统层,patient education platform,数字医疗 > 临床与患者应用 > 患者教育与内容平台
+TECH_DIG_APP_012,digital,数字医疗,临床与患者应用,数字疗法DTx,医疗信息系统层,digital therapeutics; DTx,数字医疗 > 临床与患者应用 > 数字疗法DTx
+TECH_DIG_APP_013,digital,数字医疗,临床与患者应用,可穿戴数据接入,医疗信息系统层,wearable data integration,数字医疗 > 临床与患者应用 > 可穿戴数据接入
+TECH_DIG_APP_014,digital,数字医疗,临床与患者应用,居家护理调度,医疗信息系统层,home care scheduling,数字医疗 > 临床与患者应用 > 居家护理调度
+TECH_DIG_APP_015,digital,数字医疗,临床与患者应用,医保结算对接,医疗信息系统层,insurance claims integration,数字医疗 > 临床与患者应用 > 医保结算对接
+TECH_DIG_APP_016,digital,数字医疗,临床与患者应用,医院运营管理(绩效/排班),医疗信息系统层,hospital operations management,数字医疗 > 临床与患者应用 > 医院运营管理(绩效/排班)
+TECH_DIG_APP_017,digital,数字医疗,临床与患者应用,临床路径管理,医疗信息系统层,clinical pathway management,数字医疗 > 临床与患者应用 > 临床路径管理
+TECH_DIG_APP_018,digital,数字医疗,临床与患者应用,质控与不良事件上报,医疗信息系统层,quality control; adverse event reporting,数字医疗 > 临床与患者应用 > 质控与不良事件上报
+TECH_DIG_APP_019,digital,数字医疗,临床与患者应用,临床试验ePRO/eCOA,医疗信息系统层,ePRO; eCOA,数字医疗 > 临床与患者应用 > 临床试验ePRO/eCOA
+TECH_DIG_APP_020,digital,数字医疗,临床与患者应用,去中心化临床试验DCT,医疗信息系统层,decentralized clinical trials; DCT,数字医疗 > 临床与患者应用 > 去中心化临床试验DCT
+TECH_DIG_APP_021,digital,数字医疗,临床与患者应用,真实世界研究平台RWE/RWD,医疗信息系统层,real-world evidence/data platform,数字医疗 > 临床与患者应用 > 真实世界研究平台RWE/RWD
+TECH_AI_DRUG_001,ai,计算与AI,AI制药-分子层,小分子虚拟筛选,算法与模型层,virtual screening; docking-based screening,计算与AI > AI制药-分子层 > 小分子虚拟筛选
+TECH_AI_DRUG_002,ai,计算与AI,AI制药-分子层,结构基础药物设计SBDD,算法与模型层,structure-based drug design; SBDD,计算与AI > AI制药-分子层 > 结构基础药物设计SBDD
+TECH_AI_DRUG_003,ai,计算与AI,AI制药-分子层,配体基础药物设计LBDD,算法与模型层,ligand-based drug design; LBDD,计算与AI > AI制药-分子层 > 配体基础药物设计LBDD
+TECH_AI_DRUG_004,ai,计算与AI,AI制药-分子层,分子生成模型(扩散/Flow),算法与模型层,molecular generative model; diffusion; flow matching,计算与AI > AI制药-分子层 > 分子生成模型(扩散/Flow)
+TECH_AI_DRUG_005,ai,计算与AI,AI制药-分子层,分子生成模型(VAE/GAN),算法与模型层,VAE; GAN for molecule generation,计算与AI > AI制药-分子层 > 分子生成模型(VAE/GAN)
+TECH_AI_DRUG_006,ai,计算与AI,AI制药-分子层,多目标优化(活性/ADMET/合成),算法与模型层,multi-objective optimization; activity ADMET synth,计算与AI > AI制药-分子层 > 多目标优化(活性/ADMET/合成)
+TECH_AI_DRUG_007,ai,计算与AI,AI制药-分子层,ADMET预测,算法与模型层,ADMET prediction,计算与AI > AI制药-分子层 > ADMET预测
+TECH_AI_DRUG_008,ai,计算与AI,AI制药-分子层,毒性预测,算法与模型层,toxicity prediction,计算与AI > AI制药-分子层 > 毒性预测
+TECH_AI_DRUG_009,ai,计算与AI,AI制药-分子层,溶解度/渗透性预测,算法与模型层,solubility; permeability prediction,计算与AI > AI制药-分子层 > 溶解度/渗透性预测
+TECH_AI_DRUG_010,ai,计算与AI,AI制药-分子层,蛋白-配体亲和力预测,算法与模型层,binding affinity prediction,计算与AI > AI制药-分子层 > 蛋白-配体亲和力预测
+TECH_AI_DRUG_011,ai,计算与AI,AI制药-分子层,反应路径预测,算法与模型层,reaction prediction,计算与AI > AI制药-分子层 > 反应路径预测
+TECH_AI_DRUG_012,ai,计算与AI,AI制药-分子层,逆合成规划,算法与模型层,retrosynthesis planning,计算与AI > AI制药-分子层 > 逆合成规划
+TECH_AI_DRUG_013,ai,计算与AI,AI制药-分子层,可合成性评分/合成可行性,算法与模型层,synthetic accessibility; feasibility scoring,计算与AI > AI制药-分子层 > 可合成性评分/合成可行性
+TECH_AI_DRUG_014,ai,计算与AI,AI制药-分子层,分子动力学模拟MD,算法与模型层,molecular dynamics; MD simulation,计算与AI > AI制药-分子层 > 分子动力学模拟MD
+TECH_AI_DRUG_015,ai,计算与AI,AI制药-分子层,自由能计算FEP,算法与模型层,free energy perturbation; FEP,计算与AI > AI制药-分子层 > 自由能计算FEP
+TECH_AI_DRUG_016,ai,计算与AI,AI制药-分子层,量子化学计算DFT,算法与模型层,density functional theory; DFT,计算与AI > AI制药-分子层 > 量子化学计算DFT
+TECH_AI_PROT_001,ai,计算与AI,AI制药-蛋白层,蛋白结构预测,算法与模型层,protein structure prediction,计算与AI > AI制药-蛋白层 > 蛋白结构预测
+TECH_AI_PROT_002,ai,计算与AI,AI制药-蛋白层,蛋白序列生成,算法与模型层,protein sequence generation,计算与AI > AI制药-蛋白层 > 蛋白序列生成
+TECH_AI_PROT_003,ai,计算与AI,AI制药-蛋白层,蛋白功能注释,算法与模型层,protein function annotation,计算与AI > AI制药-蛋白层 > 蛋白功能注释
+TECH_AI_PROT_004,ai,计算与AI,AI制药-蛋白层,蛋白-蛋白相互作用预测PPI,算法与模型层,protein-protein interaction; PPI prediction,计算与AI > AI制药-蛋白层 > 蛋白-蛋白相互作用预测PPI
+TECH_AI_PROT_005,ai,计算与AI,AI制药-蛋白层,蛋白-核酸相互作用预测,算法与模型层,protein-nucleic acid interaction prediction,计算与AI > AI制药-蛋白层 > 蛋白-核酸相互作用预测
+TECH_AI_PROT_006,ai,计算与AI,AI制药-蛋白层,抗体序列设计,算法与模型层,antibody sequence design,计算与AI > AI制药-蛋白层 > 抗体序列设计
+TECH_AI_PROT_007,ai,计算与AI,AI制药-蛋白层,抗体可开发性评估,算法与模型层,developability assessment,计算与AI > AI制药-蛋白层 > 抗体可开发性评估
+TECH_AI_PROT_008,ai,计算与AI,AI制药-蛋白层,抗体亲和力成熟,算法与模型层,affinity maturation,计算与AI > AI制药-蛋白层 > 抗体亲和力成熟
+TECH_AI_PROT_009,ai,计算与AI,AI制药-蛋白层,抗体构象建模/对接,算法与模型层,antibody modeling; docking,计算与AI > AI制药-蛋白层 > 抗体构象建模/对接
+TECH_AI_PROT_010,ai,计算与AI,AI制药-蛋白层,蛋白稳定性/聚集预测,算法与模型层,protein stability; aggregation prediction,计算与AI > AI制药-蛋白层 > 蛋白稳定性/聚集预测
+TECH_AI_PROT_011,ai,计算与AI,AI制药-蛋白层,蛋白工程位点设计,算法与模型层,protein engineering site design,计算与AI > AI制药-蛋白层 > 蛋白工程位点设计
+TECH_AI_PROT_012,ai,计算与AI,AI制药-蛋白层,酶工程与定向进化设计,算法与模型层,enzyme engineering; directed evolution design,计算与AI > AI制药-蛋白层 > 酶工程与定向进化设计
+TECH_AI_OMICS_001,ai,计算与AI,多组学与生物信息,单细胞数据分析,算法与模型层,single-cell analysis,计算与AI > 多组学与生物信息 > 单细胞数据分析
+TECH_AI_OMICS_002,ai,计算与AI,多组学与生物信息,空间组学分析,算法与模型层,spatial omics analysis,计算与AI > 多组学与生物信息 > 空间组学分析
+TECH_AI_OMICS_003,ai,计算与AI,多组学与生物信息,多组学整合,算法与模型层,multi-omics integration,计算与AI > 多组学与生物信息 > 多组学整合
+TECH_AI_OMICS_004,ai,计算与AI,多组学与生物信息,差异表达与通路富集,算法与模型层,DEG; pathway enrichment,计算与AI > 多组学与生物信息 > 差异表达与通路富集
+TECH_AI_OMICS_005,ai,计算与AI,多组学与生物信息,网络生物学/调控网络,算法与模型层,network biology; regulatory network,计算与AI > 多组学与生物信息 > 网络生物学/调控网络
+TECH_AI_OMICS_006,ai,计算与AI,多组学与生物信息,变异检测/基因分型,算法与模型层,variant calling; genotyping,计算与AI > 多组学与生物信息 > 变异检测/基因分型
+TECH_AI_OMICS_007,ai,计算与AI,多组学与生物信息,基因表达去卷积,算法与模型层,deconvolution,计算与AI > 多组学与生物信息 > 基因表达去卷积
+TECH_AI_OMICS_008,ai,计算与AI,多组学与生物信息,表型-基因关联,算法与模型层,genotype-phenotype association,计算与AI > 多组学与生物信息 > 表型-基因关联
+TECH_AI_OMICS_009,ai,计算与AI,多组学与生物信息,GWAS/PRS风险评分,算法与模型层,GWAS; polygenic risk score; PRS,计算与AI > 多组学与生物信息 > GWAS/PRS风险评分
+TECH_AI_OMICS_010,ai,计算与AI,多组学与生物信息,蛋白质组定量与识别,算法与模型层,proteomics quantification; identification,计算与AI > 多组学与生物信息 > 蛋白质组定量与识别
+TECH_AI_OMICS_011,ai,计算与AI,多组学与生物信息,代谢组峰识别与注释,算法与模型层,metabolomics peak picking; annotation,计算与AI > 多组学与生物信息 > 代谢组峰识别与注释
+TECH_AI_KG_001,ai,计算与AI,知识图谱与RAG,药物-靶点-疾病知识图谱,语义与知识层,drug-target-disease knowledge graph,计算与AI > 知识图谱与RAG > 药物-靶点-疾病知识图谱
+TECH_AI_KG_002,ai,计算与AI,知识图谱与RAG,临床指南/路径知识图谱,语义与知识层,clinical guideline knowledge graph,计算与AI > 知识图谱与RAG > 临床指南/路径知识图谱
+TECH_AI_KG_003,ai,计算与AI,知识图谱与RAG,科研文献知识图谱,语义与知识层,literature knowledge graph,计算与AI > 知识图谱与RAG > 科研文献知识图谱
+TECH_AI_KG_004,ai,计算与AI,知识图谱与RAG,企业/专利/投融资知识图谱,语义与知识层,industry knowledge graph,计算与AI > 知识图谱与RAG > 企业/专利/投融资知识图谱
+TECH_AI_KG_005,ai,计算与AI,知识图谱与RAG,本体构建与对齐(OWL/RDF),语义与知识层,ontology; OWL; RDF alignment,计算与AI > 知识图谱与RAG > 本体构建与对齐(OWL/RDF)
+TECH_AI_KG_006,ai,计算与AI,知识图谱与RAG,实体识别NER,语义与知识层,named entity recognition; NER,计算与AI > 知识图谱与RAG > 实体识别NER
+TECH_AI_KG_007,ai,计算与AI,知识图谱与RAG,关系抽取RE,语义与知识层,relation extraction; RE,计算与AI > 知识图谱与RAG > 关系抽取RE
+TECH_AI_KG_008,ai,计算与AI,知识图谱与RAG,事件抽取/事件时间线,语义与知识层,event extraction; timeline,计算与AI > 知识图谱与RAG > 事件抽取/事件时间线
+TECH_AI_KG_009,ai,计算与AI,知识图谱与RAG,实体消歧/指代消解,语义与知识层,entity disambiguation; coreference resolution,计算与AI > 知识图谱与RAG > 实体消歧/指代消解
+TECH_AI_KG_010,ai,计算与AI,知识图谱与RAG,向量检索/语义召回,语义与知识层,vector search; semantic retrieval,计算与AI > 知识图谱与RAG > 向量检索/语义召回
+TECH_AI_KG_011,ai,计算与AI,知识图谱与RAG,RAG检索增强生成,语义与知识层,retrieval-augmented generation; RAG,计算与AI > 知识图谱与RAG > RAG检索增强生成
+TECH_AI_KG_012,ai,计算与AI,知识图谱与RAG,重排序Rerank,语义与知识层,reranking; cross-encoder rerank,计算与AI > 知识图谱与RAG > 重排序Rerank
+TECH_AI_CLIN_001,ai,计算与AI,临床AI与医疗大模型,医学影像分割,应用智能层,medical image segmentation,计算与AI > 临床AI与医疗大模型 > 医学影像分割
+TECH_AI_CLIN_002,ai,计算与AI,临床AI与医疗大模型,医学影像检测/分类,应用智能层,medical image detection; classification,计算与AI > 临床AI与医疗大模型 > 医学影像检测/分类
+TECH_AI_CLIN_003,ai,计算与AI,临床AI与医疗大模型,数字病理WSI分析,应用智能层,whole slide imaging; WSI analysis,计算与AI > 临床AI与医疗大模型 > 数字病理WSI分析
+TECH_AI_CLIN_004,ai,计算与AI,临床AI与医疗大模型,放射组学建模,应用智能层,radiomics modeling,计算与AI > 临床AI与医疗大模型 > 放射组学建模
+TECH_AI_CLIN_005,ai,计算与AI,临床AI与医疗大模型,临床文本结构化,应用智能层,clinical NLP; structuring,计算与AI > 临床AI与医疗大模型 > 临床文本结构化
+TECH_AI_CLIN_006,ai,计算与AI,临床AI与医疗大模型,医学问答/助手,应用智能层,medical QA assistant,计算与AI > 临床AI与医疗大模型 > 医学问答/助手
+TECH_AI_CLIN_007,ai,计算与AI,临床AI与医疗大模型,病历摘要与随访生成,应用智能层,clinical summarization; follow-up generation,计算与AI > 临床AI与医疗大模型 > 病历摘要与随访生成
+TECH_AI_CLIN_008,ai,计算与AI,临床AI与医疗大模型,临床决策支持CDSS(LLM),应用智能层,LLM-based CDSS,计算与AI > 临床AI与医疗大模型 > 临床决策支持CDSS(LLM)
+TECH_AI_CLIN_009,ai,计算与AI,临床AI与医疗大模型,多模态医疗大模型,应用智能层,multimodal medical foundation model,计算与AI > 临床AI与医疗大模型 > 多模态医疗大模型
+TECH_AI_CLIN_010,ai,计算与AI,临床AI与医疗大模型,智能分诊与导诊,应用智能层,AI triage; navigation,计算与AI > 临床AI与医疗大模型 > 智能分诊与导诊
+TECH_AI_CLIN_011,ai,计算与AI,临床AI与医疗大模型,药事审方与用药安全,应用智能层,medication review; safety,计算与AI > 临床AI与医疗大模型 > 药事审方与用药安全
+TECH_AI_CLIN_012,ai,计算与AI,临床AI与医疗大模型,病程质控与编码辅助,应用智能层,clinical quality control; coding assist,计算与AI > 临床AI与医疗大模型 > 病程质控与编码辅助
+TECH_AI_RWE_001,ai,计算与AI,RWE/因果推断/HEOR,RWD数据清洗与队列构建,数据分析与推断层,cohort building; RWD curation,计算与AI > RWE/因果推断/HEOR > RWD数据清洗与队列构建
+TECH_AI_RWE_002,ai,计算与AI,RWE/因果推断/HEOR,表型算法(计算表型),数据分析与推断层,computational phenotyping,计算与AI > RWE/因果推断/HEOR > 表型算法(计算表型)
+TECH_AI_RWE_003,ai,计算与AI,RWE/因果推断/HEOR,倾向评分匹配/加权,数据分析与推断层,propensity score matching; weighting,计算与AI > RWE/因果推断/HEOR > 倾向评分匹配/加权
+TECH_AI_RWE_004,ai,计算与AI,RWE/因果推断/HEOR,差分中的差分DID,数据分析与推断层,difference-in-differences; DiD,计算与AI > RWE/因果推断/HEOR > 差分中的差分DID
+TECH_AI_RWE_005,ai,计算与AI,RWE/因果推断/HEOR,中断时间序列ITS,数据分析与推断层,interrupted time series; ITS,计算与AI > RWE/因果推断/HEOR > 中断时间序列ITS
+TECH_AI_RWE_006,ai,计算与AI,RWE/因果推断/HEOR,工具变量IV,数据分析与推断层,instrumental variables; IV,计算与AI > RWE/因果推断/HEOR > 工具变量IV
+TECH_AI_RWE_007,ai,计算与AI,RWE/因果推断/HEOR,目标试验模拟TTE,数据分析与推断层,target trial emulation,计算与AI > RWE/因果推断/HEOR > 目标试验模拟TTE
+TECH_AI_RWE_008,ai,计算与AI,RWE/因果推断/HEOR,生存分析/风险模型,数据分析与推断层,survival analysis; hazard model,计算与AI > RWE/因果推断/HEOR > 生存分析/风险模型
+TECH_AI_RWE_009,ai,计算与AI,RWE/因果推断/HEOR,疾病进展模型,数据分析与推断层,disease progression modeling,计算与AI > RWE/因果推断/HEOR > 疾病进展模型
+TECH_AI_RWE_010,ai,计算与AI,RWE/因果推断/HEOR,医疗经济学建模(成本-效果),数据分析与推断层,cost-effectiveness modeling,计算与AI > RWE/因果推断/HEOR > 医疗经济学建模(成本-效果)
+TECH_AI_RWE_011,ai,计算与AI,RWE/因果推断/HEOR,预算影响分析BIA,数据分析与推断层,budget impact analysis; BIA,计算与AI > RWE/因果推断/HEOR > 预算影响分析BIA
+TECH_AI_RWE_012,ai,计算与AI,RWE/因果推断/HEOR,信号检测/药物警戒,数据分析与推断层,pharmacovigilance; signal detection,计算与AI > RWE/因果推断/HEOR > 信号检测/药物警戒
+TECH_AI_LAB_001,ai,计算与AI,自动化实验与仿真,机器人实验平台,实验与仿真层,robotic lab automation,计算与AI > 自动化实验与仿真 > 机器人实验平台
+TECH_AI_LAB_002,ai,计算与AI,自动化实验与仿真,高通量筛选HTS数据分析,实验与仿真层,high-throughput screening; HTS analytics,计算与AI > 自动化实验与仿真 > 高通量筛选HTS数据分析
+TECH_AI_LAB_003,ai,计算与AI,自动化实验与仿真,自动化合成/反应优化,实验与仿真层,automated synthesis; reaction optimization,计算与AI > 自动化实验与仿真 > 自动化合成/反应优化
+TECH_AI_LAB_004,ai,计算与AI,自动化实验与仿真,实验设计DoE,实验与仿真层,design of experiments; DoE,计算与AI > 自动化实验与仿真 > 实验设计DoE
+TECH_AI_LAB_005,ai,计算与AI,自动化实验与仿真,数字孪生细胞/虚拟细胞,实验与仿真层,digital twin cell; virtual cell,计算与AI > 自动化实验与仿真 > 数字孪生细胞/虚拟细胞
+TECH_AI_LAB_006,ai,计算与AI,自动化实验与仿真,工艺数字孪生,实验与仿真层,process digital twin,计算与AI > 自动化实验与仿真 > 工艺数字孪生
+TECH_AI_LAB_007,ai,计算与AI,自动化实验与仿真,仿真与优化(蒙特卡洛),实验与仿真层,simulation; Monte Carlo optimization,计算与AI > 自动化实验与仿真 > 仿真与优化(蒙特卡洛)
+TECH_SVC_CRO_PRE_001,service,医药研发服务,CRO-发现与前期研究,靶点发现与验证,研发服务与产业化层,target discovery; target validation,医药研发服务 > CRO-发现与前期研究 > 靶点发现与验证
+TECH_SVC_CRO_PRE_002,service,医药研发服务,CRO-发现与前期研究,药物筛选(HTS),研发服务与产业化层,high-throughput screening; HTS,医药研发服务 > CRO-发现与前期研究 > 药物筛选(HTS)
+TECH_SVC_CRO_PRE_003,service,医药研发服务,CRO-发现与前期研究,片段筛选FBDD,研发服务与产业化层,fragment-based drug discovery; FBDD,医药研发服务 > CRO-发现与前期研究 > 片段筛选FBDD
+TECH_SVC_CRO_PRE_004,service,医药研发服务,CRO-发现与前期研究,虚拟筛选/计算化学外包,研发服务与产业化层,in silico screening; computational chemistry CRO,医药研发服务 > CRO-发现与前期研究 > 虚拟筛选/计算化学外包
+TECH_SVC_CRO_PRE_005,service,医药研发服务,CRO-发现与前期研究,DEL(DNA编码化合物库)筛选,研发服务与产业化层,DNA-encoded library; DEL screening,医药研发服务 > CRO-发现与前期研究 > DEL(DNA编码化合物库)筛选
+TECH_SVC_CRO_PRE_006,service,医药研发服务,CRO-发现与前期研究,Hit确认与Hit-to-Lead,研发服务与产业化层,hit confirmation; hit-to-lead,医药研发服务 > CRO-发现与前期研究 > Hit确认与Hit-to-Lead
+TECH_SVC_CRO_PRE_007,service,医药研发服务,CRO-发现与前期研究,先导化合物优化,研发服务与产业化层,lead optimization,医药研发服务 > CRO-发现与前期研究 > 先导化合物优化
+TECH_SVC_CRO_PRE_008,service,医药研发服务,CRO-发现与前期研究,结构生物学(晶体/冷冻电镜),研发服务与产业化层,structural biology; X-ray crystallography; cryo-EM,医药研发服务 > CRO-发现与前期研究 > 结构生物学(晶体/冷冻电镜)
+TECH_SVC_CRO_PRE_009,service,医药研发服务,CRO-发现与前期研究,生物物理结合测定SPR/BLI,研发服务与产业化层,SPR; BLI; biophysics assays,医药研发服务 > CRO-发现与前期研究 > 生物物理结合测定SPR/BLI
+TECH_SVC_CRO_PRE_010,service,医药研发服务,CRO-发现与前期研究,体外药效模型与机制研究,研发服务与产业化层,in vitro pharmacology; MoA studies,医药研发服务 > CRO-发现与前期研究 > 体外药效模型与机制研究
+TECH_SVC_CRO_PRE_011,service,医药研发服务,CRO-发现与前期研究,体内药效/动物模型,研发服务与产业化层,in vivo pharmacology; animal models,医药研发服务 > CRO-发现与前期研究 > 体内药效/动物模型
+TECH_SVC_CRO_PRE_012,service,医药研发服务,CRO-发现与前期研究,DMPK/ADME,研发服务与产业化层,drug metabolism and pharmacokinetics; ADME; DMPK,医药研发服务 > CRO-发现与前期研究 > DMPK/ADME
+TECH_SVC_CRO_PRE_013,service,医药研发服务,CRO-发现与前期研究,安全性药理(早期),研发服务与产业化层,safety pharmacology (early),医药研发服务 > CRO-发现与前期研究 > 安全性药理(早期)
+TECH_SVC_CRO_GLP_001,service,医药研发服务,CRO-临床前与GLP,GLP毒理(单次/重复给药),研发服务与产业化层,GLP tox; single/repeat dose toxicity,医药研发服务 > CRO-临床前与GLP > GLP毒理(单次/重复给药)
+TECH_SVC_CRO_GLP_002,service,医药研发服务,CRO-临床前与GLP,遗传毒理(AMES/微核),研发服务与产业化层,genotoxicity; Ames; micronucleus test,医药研发服务 > CRO-临床前与GLP > 遗传毒理(AMES/微核)
+TECH_SVC_CRO_GLP_003,service,医药研发服务,CRO-临床前与GLP,生殖毒理/发育毒理,研发服务与产业化层,reproductive and developmental tox; DART,医药研发服务 > CRO-临床前与GLP > 生殖毒理/发育毒理
+TECH_SVC_CRO_GLP_004,service,医药研发服务,CRO-临床前与GLP,致癌性研究,研发服务与产业化层,carcinogenicity studies,医药研发服务 > CRO-临床前与GLP > 致癌性研究
+TECH_SVC_CRO_GLP_005,service,医药研发服务,CRO-临床前与GLP,免疫毒理,研发服务与产业化层,immunotoxicology,医药研发服务 > CRO-临床前与GLP > 免疫毒理
+TECH_SVC_CRO_GLP_006,service,医药研发服务,CRO-临床前与GLP,安全性药理(核心电生理),研发服务与产业化层,core safety pharmacology; hERG,医药研发服务 > CRO-临床前与GLP > 安全性药理(核心电生理)
+TECH_SVC_CRO_GLP_007,service,医药研发服务,CRO-临床前与GLP,生物分析/PK/ADA,研发服务与产业化层,bioanalysis; pharmacokinetics; anti-drug antibody; ADA,医药研发服务 > CRO-临床前与GLP > 生物分析/PK/ADA
+TECH_SVC_CRO_GLP_008,service,医药研发服务,CRO-临床前与GLP,病理评估(组织病理),研发服务与产业化层,histopathology,医药研发服务 > CRO-临床前与GLP > 病理评估(组织病理)
+TECH_SVC_CRO_GLP_009,service,医药研发服务,CRO-临床前与GLP,转化医学标志物开发,研发服务与产业化层,translational biomarkers,医药研发服务 > CRO-临床前与GLP > 转化医学标志物开发
+TECH_SVC_CRO_GLP_010,service,医药研发服务,CRO-临床前与GLP,IND资料支持(非临床部分),研发服务与产业化层,IND-enabling nonclinical package,医药研发服务 > CRO-临床前与GLP > IND资料支持(非临床部分)
+TECH_SVC_CRO_CLIN_001,service,医药研发服务,CRO-临床试验与运营,一期临床(首次人体FIM),研发服务与产业化层,Phase I; first-in-human; FIM,医药研发服务 > CRO-临床试验与运营 > 一期临床(首次人体FIM)
+TECH_SVC_CRO_CLIN_002,service,医药研发服务,CRO-临床试验与运营,二期临床,研发服务与产业化层,Phase II,医药研发服务 > CRO-临床试验与运营 > 二期临床
+TECH_SVC_CRO_CLIN_003,service,医药研发服务,CRO-临床试验与运营,三期临床,研发服务与产业化层,Phase III,医药研发服务 > CRO-临床试验与运营 > 三期临床
+TECH_SVC_CRO_CLIN_004,service,医药研发服务,CRO-临床试验与运营,四期/上市后研究,研发服务与产业化层,Phase IV; post-marketing studies,医药研发服务 > CRO-临床试验与运营 > 四期/上市后研究
+TECH_SVC_CRO_CLIN_005,service,医药研发服务,CRO-临床试验与运营,研究者发起IIT支持,研发服务与产业化层,investigator-initiated trials; IIT support,医药研发服务 > CRO-临床试验与运营 > 研究者发起IIT支持
+TECH_SVC_CRO_CLIN_006,service,医药研发服务,CRO-临床试验与运营,临床运营与项目管理,研发服务与产业化层,clinical operations; project management,医药研发服务 > CRO-临床试验与运营 > 临床运营与项目管理
+TECH_SVC_CRO_CLIN_007,service,医药研发服务,CRO-临床试验与运营,中心/受试者招募,研发服务与产业化层,site and patient recruitment,医药研发服务 > CRO-临床试验与运营 > 中心/受试者招募
+TECH_SVC_CRO_CLIN_008,service,医药研发服务,CRO-临床试验与运营,临床数据管理(DM),研发服务与产业化层,data management; DM,医药研发服务 > CRO-临床试验与运营 > 临床数据管理(DM)
+TECH_SVC_CRO_CLIN_009,service,医药研发服务,CRO-临床试验与运营,统计分析与编程(SAS/R),研发服务与产业化层,biostatistics; statistical programming,医药研发服务 > CRO-临床试验与运营 > 统计分析与编程(SAS/R)
+TECH_SVC_CRO_CLIN_010,service,医药研发服务,CRO-临床试验与运营,医学写作(方案/CSR),研发服务与产业化层,medical writing; protocol; CSR,医药研发服务 > CRO-临床试验与运营 > 医学写作(方案/CSR)
+TECH_SVC_CRO_CLIN_011,service,医药研发服务,CRO-临床试验与运营,临床监察CRA,研发服务与产业化层,clinical research associate; CRA monitoring,医药研发服务 > CRO-临床试验与运营 > 临床监察CRA
+TECH_SVC_CRO_CLIN_012,service,医药研发服务,CRO-临床试验与运营,药物警戒PV(临床阶段),研发服务与产业化层,pharmacovigilance; PV,医药研发服务 > CRO-临床试验与运营 > 药物警戒PV(临床阶段)
+TECH_SVC_CRO_CLIN_013,service,医药研发服务,CRO-临床试验与运营,质量管理与稽查QA,研发服务与产业化层,quality assurance; audit,医药研发服务 > CRO-临床试验与运营 > 质量管理与稽查QA
+TECH_SVC_CRO_CLIN_014,service,医药研发服务,CRO-临床试验与运营,去中心化临床试验DCT服务,研发服务与产业化层,decentralized clinical trial services; DCT,医药研发服务 > CRO-临床试验与运营 > 去中心化临床试验DCT服务
+TECH_SVC_CRO_CLIN_015,service,医药研发服务,CRO-临床试验与运营,eCOA/ePRO/eConsent平台服务,研发服务与产业化层,eCOA; ePRO; eConsent services,医药研发服务 > CRO-临床试验与运营 > eCOA/ePRO/eConsent平台服务
+TECH_SVC_CRO_CLIN_016,service,医药研发服务,CRO-临床试验与运营,中央实验室/影像阅片,研发服务与产业化层,central lab; imaging core lab,医药研发服务 > CRO-临床试验与运营 > 中央实验室/影像阅片
+TECH_SVC_REG_001,service,医药研发服务,CRO-注册法规与申报,注册策略与法规咨询,研发服务与产业化层,regulatory strategy; regulatory affairs,医药研发服务 > CRO-注册法规与申报 > 注册策略与法规咨询
+TECH_SVC_REG_002,service,医药研发服务,CRO-注册法规与申报,IND申报支持,研发服务与产业化层,IND submission support,医药研发服务 > CRO-注册法规与申报 > IND申报支持
+TECH_SVC_REG_003,service,医药研发服务,CRO-注册法规与申报,NDA/BLA申报支持,研发服务与产业化层,NDA; BLA submission support,医药研发服务 > CRO-注册法规与申报 > NDA/BLA申报支持
+TECH_SVC_REG_004,service,医药研发服务,CRO-注册法规与申报,CTD/eCTD编制,研发服务与产业化层,CTD; eCTD publishing,医药研发服务 > CRO-注册法规与申报 > CTD/eCTD编制
+TECH_SVC_REG_005,service,医药研发服务,CRO-注册法规与申报,沟通会/Pre-IND支持,研发服务与产业化层,agency meeting support; pre-IND,医药研发服务 > CRO-注册法规与申报 > 沟通会/Pre-IND支持
+TECH_SVC_REG_006,service,医药研发服务,CRO-注册法规与申报,上市后变更与再注册,研发服务与产业化层,post-approval change management,医药研发服务 > CRO-注册法规与申报 > 上市后变更与再注册
+TECH_SVC_REG_007,service,医药研发服务,CRO-注册法规与申报,真实世界证据RWE申报支持,研发服务与产业化层,RWE regulatory support,医药研发服务 > CRO-注册法规与申报 > 真实世界证据RWE申报支持
+TECH_SVC_CDMO_SM_001,service,医药研发服务,CDMO-小分子与化学工艺,工艺开发(路线筛选),研发服务与产业化层,process development; route scouting,医药研发服务 > CDMO-小分子与化学工艺 > 工艺开发(路线筛选)
+TECH_SVC_CDMO_SM_002,service,医药研发服务,CDMO-小分子与化学工艺,工艺优化与放大,研发服务与产业化层,process optimization; scale-up,医药研发服务 > CDMO-小分子与化学工艺 > 工艺优化与放大
+TECH_SVC_CDMO_SM_003,service,医药研发服务,CDMO-小分子与化学工艺,原料药API生产,研发服务与产业化层,API manufacturing,医药研发服务 > CDMO-小分子与化学工艺 > 原料药API生产
+TECH_SVC_CDMO_SM_004,service,医药研发服务,CDMO-小分子与化学工艺,制剂开发(口服固体),研发服务与产业化层,formulation development; oral solid,医药研发服务 > CDMO-小分子与化学工艺 > 制剂开发(口服固体)
+TECH_SVC_CDMO_SM_005,service,医药研发服务,CDMO-小分子与化学工艺,制剂开发(注射/无菌),研发服务与产业化层,sterile formulation development; injectables,医药研发服务 > CDMO-小分子与化学工艺 > 制剂开发(注射/无菌)
+TECH_SVC_CDMO_SM_006,service,医药研发服务,CDMO-小分子与化学工艺,连续化生产,研发服务与产业化层,continuous manufacturing,医药研发服务 > CDMO-小分子与化学工艺 > 连续化生产
+TECH_SVC_CDMO_SM_007,service,医药研发服务,CDMO-小分子与化学工艺,杂质研究与控制,研发服务与产业化层,impurity profiling and control,医药研发服务 > CDMO-小分子与化学工艺 > 杂质研究与控制
+TECH_SVC_CDMO_SM_008,service,医药研发服务,CDMO-小分子与化学工艺,晶型/盐型筛选,研发服务与产业化层,polymorph screening; salt screening,医药研发服务 > CDMO-小分子与化学工艺 > 晶型/盐型筛选
+TECH_SVC_CDMO_SM_009,service,医药研发服务,CDMO-小分子与化学工艺,分析方法开发与验证,研发服务与产业化层,analytical method development and validation,医药研发服务 > CDMO-小分子与化学工艺 > 分析方法开发与验证
+TECH_SVC_CDMO_SM_010,service,医药研发服务,CDMO-小分子与化学工艺,稳定性研究,研发服务与产业化层,stability studies,医药研发服务 > CDMO-小分子与化学工艺 > 稳定性研究
+TECH_SVC_CDMO_SM_011,service,医药研发服务,CDMO-小分子与化学工艺,GMP生产(商业化),研发服务与产业化层,GMP commercial manufacturing,医药研发服务 > CDMO-小分子与化学工艺 > GMP生产(商业化)
+TECH_SVC_CDMO_SM_012,service,医药研发服务,CDMO-小分子与化学工艺,包装与序列化,研发服务与产业化层,packaging; serialization,医药研发服务 > CDMO-小分子与化学工艺 > 包装与序列化
+TECH_SVC_CDMO_BIO_001,service,医药研发服务,CDMO-生物药与生物工艺,细胞株构建与筛选,研发服务与产业化层,cell line development; CLD,医药研发服务 > CDMO-生物药与生物工艺 > 细胞株构建与筛选
+TECH_SVC_CDMO_BIO_002,service,医药研发服务,CDMO-生物药与生物工艺,上游工艺开发(发酵/细胞培养),研发服务与产业化层,upstream process development,医药研发服务 > CDMO-生物药与生物工艺 > 上游工艺开发(发酵/细胞培养)
+TECH_SVC_CDMO_BIO_003,service,医药研发服务,CDMO-生物药与生物工艺,下游纯化工艺开发,研发服务与产业化层,downstream purification development,医药研发服务 > CDMO-生物药与生物工艺 > 下游纯化工艺开发
+TECH_SVC_CDMO_BIO_004,service,医药研发服务,CDMO-生物药与生物工艺,工艺表征与验证PPQ,研发服务与产业化层,process characterization; PPQ,医药研发服务 > CDMO-生物药与生物工艺 > 工艺表征与验证PPQ
+TECH_SVC_CDMO_BIO_005,service,医药研发服务,CDMO-生物药与生物工艺,制剂开发(蛋白/抗体),研发服务与产业化层,biologics formulation development,医药研发服务 > CDMO-生物药与生物工艺 > 制剂开发(蛋白/抗体)
+TECH_SVC_CDMO_BIO_006,service,医药研发服务,CDMO-生物药与生物工艺,无菌灌装与冻干,研发服务与产业化层,aseptic fill-finish; lyophilization,医药研发服务 > CDMO-生物药与生物工艺 > 无菌灌装与冻干
+TECH_SVC_CDMO_BIO_007,service,医药研发服务,CDMO-生物药与生物工艺,一次性工艺系统,研发服务与产业化层,single-use systems,医药研发服务 > CDMO-生物药与生物工艺 > 一次性工艺系统
+TECH_SVC_CDMO_BIO_008,service,医药研发服务,CDMO-生物药与生物工艺,病毒清除验证,研发服务与产业化层,viral clearance validation,医药研发服务 > CDMO-生物药与生物工艺 > 病毒清除验证
+TECH_SVC_CDMO_BIO_009,service,医药研发服务,CDMO-生物药与生物工艺,生物分析(效价/纯度),研发服务与产业化层,bioassay; potency; purity,医药研发服务 > CDMO-生物药与生物工艺 > 生物分析(效价/纯度)
+TECH_SVC_CDMO_BIO_010,service,医药研发服务,CDMO-生物药与生物工艺,质量体系与放行检测,研发服务与产业化层,QC release testing,医药研发服务 > CDMO-生物药与生物工艺 > 质量体系与放行检测
+TECH_SVC_CDMO_CGT_001,service,医药研发服务,CDMO-细胞与基因治疗CGT,质粒/载体生产,研发服务与产业化层,plasmid manufacturing,医药研发服务 > CDMO-细胞与基因治疗CGT > 质粒/载体生产
+TECH_SVC_CDMO_CGT_002,service,医药研发服务,CDMO-细胞与基因治疗CGT,病毒载体AAV生产,研发服务与产业化层,AAV manufacturing,医药研发服务 > CDMO-细胞与基因治疗CGT > 病毒载体AAV生产
+TECH_SVC_CDMO_CGT_003,service,医药研发服务,CDMO-细胞与基因治疗CGT,病毒载体LV生产,研发服务与产业化层,lentiviral vector manufacturing,医药研发服务 > CDMO-细胞与基因治疗CGT > 病毒载体LV生产
+TECH_SVC_CDMO_CGT_004,service,医药研发服务,CDMO-细胞与基因治疗CGT,细胞制备(自体/异体),研发服务与产业化层,cell processing; autologous; allogeneic,医药研发服务 > CDMO-细胞与基因治疗CGT > 细胞制备(自体/异体)
+TECH_SVC_CDMO_CGT_005,service,医药研发服务,CDMO-细胞与基因治疗CGT,细胞扩增与纯化,研发服务与产业化层,cell expansion; purification,医药研发服务 > CDMO-细胞与基因治疗CGT > 细胞扩增与纯化
+TECH_SVC_CDMO_CGT_006,service,医药研发服务,CDMO-细胞与基因治疗CGT,闭环自动化生产系统,研发服务与产业化层,closed and automated manufacturing,医药研发服务 > CDMO-细胞与基因治疗CGT > 闭环自动化生产系统
+TECH_SVC_CDMO_CGT_007,service,医药研发服务,CDMO-细胞与基因治疗CGT,无菌灌装(成品),研发服务与产业化层,fill-finish for CGT,医药研发服务 > CDMO-细胞与基因治疗CGT > 无菌灌装(成品)
+TECH_SVC_CDMO_CGT_008,service,医药研发服务,CDMO-细胞与基因治疗CGT,放行检测(无菌/支原体/效价),研发服务与产业化层,release testing; sterility; mycoplasma; potency,医药研发服务 > CDMO-细胞与基因治疗CGT > 放行检测(无菌/支原体/效价)
+TECH_SVC_CDMO_CGT_009,service,医药研发服务,CDMO-细胞与基因治疗CGT,冷链与物流,研发服务与产业化层,cold chain; logistics,医药研发服务 > CDMO-细胞与基因治疗CGT > 冷链与物流
+TECH_SVC_CDMO_CGT_010,service,医药研发服务,CDMO-细胞与基因治疗CGT,工艺开发与技术转移,研发服务与产业化层,process development; tech transfer,医药研发服务 > CDMO-细胞与基因治疗CGT > 工艺开发与技术转移
+TECH_SVC_CMC_001,service,医药研发服务,CMC/质量与技术转移,CMC策略与计划,研发服务与产业化层,CMC strategy,医药研发服务 > CMC/质量与技术转移 > CMC策略与计划
+TECH_SVC_CMC_002,service,医药研发服务,CMC/质量与技术转移,技术转移(工艺/分析),研发服务与产业化层,technology transfer,医药研发服务 > CMC/质量与技术转移 > 技术转移(工艺/分析)
+TECH_SVC_CMC_003,service,医药研发服务,CMC/质量与技术转移,质量研究(QbD),研发服务与产业化层,quality by design; QbD,医药研发服务 > CMC/质量与技术转移 > 质量研究(QbD)
+TECH_SVC_CMC_004,service,医药研发服务,CMC/质量与技术转移,工艺验证与持续工艺确认CPV,研发服务与产业化层,process validation; continued process verification; CPV,医药研发服务 > CMC/质量与技术转移 > 工艺验证与持续工艺确认CPV
+TECH_SVC_CMC_005,service,医药研发服务,CMC/质量与技术转移,供应链与原辅料合规,研发服务与产业化层,supply chain qualification,医药研发服务 > CMC/质量与技术转移 > 供应链与原辅料合规
+TECH_SVC_CMC_006,service,医药研发服务,CMC/质量与技术转移,委托检验(第三方检测),研发服务与产业化层,third-party testing,医药研发服务 > CMC/质量与技术转移 > 委托检验(第三方检测)
+TECH_SVC_CMC_007,service,医药研发服务,CMC/质量与技术转移,GMP合规与审计支持,研发服务与产业化层,GMP compliance; audit support,医药研发服务 > CMC/质量与技术转移 > GMP合规与审计支持

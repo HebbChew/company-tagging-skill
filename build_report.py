@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """分析报告 docx 版式构建器（公文规范）。改内容改 CONTENT，改版式改样式函数。"""
+import os
 import docx, re
 from docx.shared import Pt, Cm, RGBColor, Inches
 from docx.oxml.ns import qn
@@ -198,5 +199,5 @@ para(doc, '（三）数据资产：196 家存疑母公司走天眼查批量穿�
 doc.add_paragraph()
 para(doc, '附件：终稿 Excel（原表+标注 / 终稿 双 sheet）｜质检清单 3 份｜方法文档与全程缓存（22.企业打标/）', '楷体', 10.5, False, indent=False, color=GRAY)
 
-doc.save('分析报告_闵行生物医药企业标注.docx')
+doc.save(os.environ.get('MHB_REPORT_DOCX', '分析报告_企业标注.docx'))
 print('设计版报告已生成')

@@ -7,7 +7,12 @@
 ## 快速开始
 
 1. 读 `SKILL.md`（完整体系规范：契约/流水线/标准/红线/质检）
-2. 改 3 处配置：源表路径（`step0_batch.py`、`merge_final.py` 的 `SRC`）、行业小类映射、分层阈值
+2. 配置（全部环境变量，零改码）：
+   - `MHB_TAG_BASE`：工作目录（默认脚本所在目录）
+   - `MHB_SOURCE_XLSX`：源表路径（必填）
+   - `MHB_FINAL_XLSX` / `MHB_REPORT_MD` / `MHB_REPORT_DOCX`：输出文件名（可选，有默认）
+   - `MHB_EXPECT_ROWS` / `MHB_EXPECT_SHEET1_ROWS`：质检预期行数（可选）
+   - 行业小类映射（`passB_rules.py` 的 HY小类）、分层阈值按需调整
 3. 试点先行：抽 50 家跑全流程，再上全量
 4. 流水线：`step0_batch.py` → Pass A（子代理）→ `merge_stage1.py` → 搜索层 → `build_merged.py` → `passB_rules.py` → `merge_final.py` → `qc_final.py` → `build_report.py`
 

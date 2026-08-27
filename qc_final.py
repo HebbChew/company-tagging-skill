@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """终稿全面质检：完整性/枚举合法性/标签合法性/格式/一致性/重复。零token。"""
-import json, csv, glob, re, collections, openpyxl
+import json, csv, glob, re, collections, openpyxl, os
 
 import os
 BASE = os.environ.get('MHB_TAG_BASE', os.path.dirname(os.path.abspath(__file__)))
-wb = openpyxl.load_workbook(f'{BASE}/full/终稿_闵行生物医药企业标注.xlsx', read_only=True)
+FINAL_XLSX = os.environ.get('MHB_FINAL_XLSX', f'{BASE}/full/终稿_企业标注.xlsx')
+wb = openpyxl.load_workbook(FINAL_XLSX, read_only=True)
 ws = wb['终稿']
 rows = list(ws.iter_rows(min_row=2, values_only=True))
 # sheet1（原表+标注）行数校验
 if '原表+标注' in wb.sheetnames:
     n0 = wb['原表+标注'].max_row - 1
-    if n0 != 2703: print(f'注意：原表+标注行数 {n0} ≠ 2703')
+    if EXP0 and n0 != EXP0: print(f'注意：原表+标注行数 {n0} ≠ 预期 {EXP0}')
 HDR = [c.value for c in next(wb['终稿'].iter_rows(min_row=1, max_row=1))]
 ix = {h: i for i, h in enumerate(HDR)}
 def g(r, c): return r[ix[c]] if r[ix[c]] is not None else ''
@@ -20,7 +21,9 @@ issues = []
 
 # 1) 完整性
 ids = [g(r, '序号') for r in rows]
-if len(ids) != 2698: issues.append(f'行数 {len(ids)} ≠ 2698')
+EXP = int(os.environ.get('MHB_EXPECT_ROWS', '0'))
+EXP0 = int(os.environ.get('MHB_EXPECT_SHEET1_ROWS', '0'))
+if EXP and len(ids) != EXP: issues.append(f'行数 {len(ids)} ≠ 预期 {EXP}')
 dups = [k for k, v in collections.Counter(ids).items() if v > 1]
 if dups: issues.append(f'序号重复: {dups}')
 src_ids = set()

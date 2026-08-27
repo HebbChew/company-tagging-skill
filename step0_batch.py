@@ -3,7 +3,7 @@
 """步骤0：全量切批。源表P1 → 去重/过滤/聚类/分批 → full/batches/batch_fXX.tsv + 清洗报告"""
 import openpyxl, re, os, json, collections
 
-SRC = '/Users/hebb_zhu/.kimi-code/sessions/wd_workspace_18c1a35d90f3/session_131ad57b-1f07-412a-9bdc-7e2965e53ccc/attachments/f_1b4d128f-50f2-4341-95a0-4ac947830247-闵行区生物医药企业最终名单及筛选标准（领导汇报版）V17.xlsx'
+SRC = os.environ.get('MHB_SOURCE_XLSX', '')  # 源表路径，必填环境变量
 import os
 BASE = os.environ.get('MHB_TAG_BASE', os.path.dirname(os.path.abspath(__file__)))
 OUT = f'{BASE}/full/batches'

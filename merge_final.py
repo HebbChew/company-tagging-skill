@@ -205,7 +205,7 @@ for i, w in enumerate(widths, 1):
     ws.column_dimensions[openpyxl.utils.get_column_letter(i)].width = w
 
 # ---------- Sheet1: 原表+标注（原表列序不动、原始顺序、右侧拼接标注列）----------
-SRC = '/Users/hebb_zhu/.kimi-code/sessions/wd_workspace_18c1a35d90f3/session_131ad57b-1f07-412a-9bdc-7e2965e53ccc/attachments/f_1b4d128f-50f2-4341-95a0-4ac947830247-闵行区生物医药企业最终名单及筛选标准（领导汇报版）V17.xlsx'
+SRC = os.environ.get('MHB_SOURCE_XLSX', '')  # 源表路径，必填环境变量
 swb = openpyxl.load_workbook(SRC, read_only=True)
 sws = swb['P1强相关企业']
 src_rows = list(sws.iter_rows(values_only=True))
@@ -276,7 +276,8 @@ ws0.freeze_panes = 'C2'
 ws0.column_dimensions['B'].width = 30
 print(f'原表+标注 sheet: {n_orig} 行（含非存续 5 家）')
 
-wb.save(f'{BASE}/full/终稿_闵行生物医药企业标注.xlsx')
+FINAL_XLSX = os.environ.get('MHB_FINAL_XLSX', f'{BASE}/full/终稿_企业标注.xlsx')
+wb.save(FINAL_XLSX)
 
 print(f'终稿行数: {n}, 地位词闸门清空: {gate_dropped}')
 for k, v in sorted(qc.items()):

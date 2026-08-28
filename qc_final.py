@@ -6,6 +6,8 @@ import json, csv, glob, re, collections, openpyxl, os
 import os
 BASE = os.environ.get('MHB_TAG_BASE', os.path.dirname(os.path.abspath(__file__)))
 FINAL_XLSX = os.environ.get('MHB_FINAL_XLSX', f'{BASE}/full/终稿_企业标注.xlsx')
+EXP = int(os.environ.get('MHB_EXPECT_ROWS', '0'))
+EXP0 = int(os.environ.get('MHB_EXPECT_SHEET1_ROWS', '0'))
 wb = openpyxl.load_workbook(FINAL_XLSX, read_only=True)
 ws = wb['终稿']
 rows = list(ws.iter_rows(min_row=2, values_only=True))
@@ -21,8 +23,6 @@ issues = []
 
 # 1) 完整性
 ids = [g(r, '序号') for r in rows]
-EXP = int(os.environ.get('MHB_EXPECT_ROWS', '0'))
-EXP0 = int(os.environ.get('MHB_EXPECT_SHEET1_ROWS', '0'))
 if EXP and len(ids) != EXP: issues.append(f'行数 {len(ids)} ≠ 预期 {EXP}')
 dups = [k for k, v in collections.Counter(ids).items() if v > 1]
 if dups: issues.append(f'序号重复: {dups}')
@@ -47,7 +47,12 @@ for col, valid in ENUMS.items():
 valid_l2 = set()
 with open(f'{BASE}/技术标签词表.csv', encoding='utf-8-sig') as f:
     for r in csv.DictReader(f): valid_l2.add(r['二级'])
-valid_l2 |= {'医药流通与供应链','医药供应链上游配套','材料应用','食品应用','农牧应用','其他应用','复杂制剂','药物递送技术'}
+valid_l2 |= {'医药流通与供应链','医药供应链上游配套','材料应用','食品应用','农牧应用','其他应用','复杂制剂','药物递送技术',
+            '制剂技术','科研试剂耗材','科研仪器设备','数据与自动化','模型系统与平台','数字生命','合成生物学（医药应用）'}
+import csv as _csv2
+with open(f'{BASE}/method/标签归一.csv', encoding='utf-8-sig') as _f:
+    for _r in _csv2.DictReader(_f):
+        if _r['新二级']: valid_l2.add(_r['新二级'])
 bad_l2 = collections.Counter()
 for r in rows:
     for c in ('二级标签主','二级标签副'):
@@ -59,7 +64,10 @@ if bad_l2: issues.append(f'二级标签不在词表/补充清单: {dict(bad_l2)}
 valid_l3 = set()
 with open(f'{BASE}/技术标签词表.csv', encoding='utf-8-sig') as f:
     for r in csv.DictReader(f): valid_l3.add(r['三级'])
-valid_l3 |= {'制药装备及部件','医用及工业气体','洁净工程','制药公用工程','上游耗材配套','批发零售','冷链物流','进出口贸易','CSO','细胞培养肉','生物基材料','脂质体','微球','纳米粒','复杂注射剂','长效缓释','LNP递送','纳米递送','外泌体递送','靶向递送','递送载体'}
+valid_l3 |= {'制药装备及耗材','医用及工业气体','洁净工程','制药公用工程','上游耗材配套','批发零售','冷链物流','进出口贸易','CSO','细胞培养肉','生物基材料','脂质体','微球','纳米粒','复杂注射剂','长效缓释','LNP递送','纳米递送','外泌体递送','靶向递送','递送载体','口服制剂'}
+with open(f'{BASE}/method/标签归一.csv', encoding='utf-8-sig') as _f:
+    for _r in _csv2.DictReader(_f):
+        if (_r['新三级'] or '').strip(): valid_l3.add(_r['新三级'].strip())
 bad_l3 = collections.Counter(g(r, '三级标签') for r in rows if g(r, '三级标签') and g(r, '三级标签') not in valid_l3)
 if bad_l3: issues.append(f'三级标签不在词表/补充清单 ({sum(bad_l3.values())}家): {dict(bad_l3.most_common(15))}')
 

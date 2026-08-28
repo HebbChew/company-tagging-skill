@@ -15,12 +15,33 @@ with open(f'{BASE}/技术标签词表.csv', encoding='utf-8-sig') as f:
         m12[(r['体系'], r['二级'])] = r['一级']
         sys2l1.setdefault(r['体系'], r['一级'])
 SYNBIO = {'材料应用', '食品应用', '农牧应用', '其他应用'}
-RENAME_L1 = {'生物制造与递送': '生物制造'}   # 用户裁定：砍"递送"（定名不合理）
+RENAME_L1 = {'生物制造与递送': '合成生物与生物制造', '合成生物学': '合成生物与生物制造'}
+# 标签归一映射（method/标签归一.csv）：(原体系,原二级) → (新体系,新一级,新二级,新三级)
+TAG_MAP = {}
+TAG_MAP3 = {}
+with open(f'{BASE}/method/标签归一.csv', encoding='utf-8-sig') as f:
+    for r in csv.DictReader(f):
+        key2 = r['原二级']
+        if '|三级:' in key2:
+            base2, l3v = key2.split('|三级:')
+            TAG_MAP3[(r['原体系'], base2, l3v)] = (r['新体系'], r['新一级'], r['新二级'], (r['新三级'] or '').strip())
+        else:
+            TAG_MAP[(r['原体系'], key2)] = (r['新体系'], r['新一级'], r['新二级'], (r['新三级'] or '').strip())
+def tag_norm(sys_, l2, l3):
+    m3 = TAG_MAP3.get((sys_, l2, l3 or ''))
+    if m3: return m3[0], m3[1], m3[2], m3[3], m3[1]
+    m = TAG_MAP.get((sys_, l2))
+    if m: return m[0], m[1], m[2], (m[3] or l3), m[1]
+    return sys_, None, l2, l3, None
+SUP_L1 = {'科研试剂耗材': '生物技术与上游试剂耗材设备', '科研仪器设备': '生物技术与上游试剂耗材设备',
+          '模型系统与平台': '生物技术与上游试剂耗材设备', '类器官与器官芯片': '生物技术与上游试剂耗材设备'}
 def lvl1(s, l2):
     if s == '周边配套': return '周边配套'
-    if l2 in ('医药供应链上游配套', '医药流通与供应链'): return '医药供应链与流通（补充）'
-    if l2 in SYNBIO: return '合成生物学'
-    return RENAME_L1.get(m12.get((s, l2), sys2l1.get(s, '')), m12.get((s, l2), sys2l1.get(s, '')))
+    if l2 in ('医药供应链上游配套', '医药流通与供应链'): return RENAME_L1.get('医药供应链与流通（补充）', '医药供应链与流通（补充）')
+    if l2 in SYNBIO: return RENAME_L1.get('合成生物学', '合成生物学')
+    if l2 in SUP_L1: return SUP_L1[l2]
+    v = m12.get((s, l2), sys2l1.get(s, ''))
+    return RENAME_L1.get(v, v)
 
 # 人工复核修正表（质检发现的问题逐条修正，优先级最高）
 OVERRIDE = {}
@@ -184,8 +205,11 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
                     bb[_dst] = ov[_src].strip()
             if any((ov.get(_f) or '').strip() for _f in ('主体系','二级标签主','三级标签')):
                 bb['标签依据'] = ov['标签依据']
+        _ns, _nl1, _nl2, _nl3, _ = tag_norm(bb['主体系'], bb['二级标签主'], bb['三级标签'])
+        if _nl1 is None:
+            _ns, _nl1, _nl2, _nl3 = bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签']
         ws.append([k, a['公司名称'], rel, (s.get('边界理由') if s else '') or '',
-                   bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['二级标签副'], bb['三级标签'],
+                   _ns, _nl1, _nl2, bb['二级标签副'], _nl3,
                    bb['规则置信度'], bb.get('标签依据', ''), norm_intro(intro), status,
                    parent, parconf, a['知名度'], (s.get('层级') if s else '未搜索'), info,
                    ev, remark, TODAY])
@@ -260,7 +284,10 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         intro = a.get('一句话简介', '')
         if not intro and not has_content:
             intro = fallback_intro(hy_map.get(k, ''), searched=bool(s))
-        annot[k] = [rel, bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签'],
+        _ns, _nl1, _nl2, _nl3, _ = tag_norm(bb['主体系'], bb['二级标签主'], bb['三级标签'])
+        if _nl1 is None:
+            _ns, _nl1, _nl2, _nl3 = bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签']
+        annot[k] = [rel, _ns, _nl1, _nl2, _nl3,
                     bb['规则置信度'], norm_intro(intro), status, parent,
                     (s.get('母公司置信度_终稿') if s else '') or a.get('母公司置信度', ''),
                     (s.get('层级') if s else '未搜索'), info]

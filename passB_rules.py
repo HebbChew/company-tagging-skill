@@ -22,10 +22,20 @@ BATCH = sys.argv[1] if len(sys.argv) > 1 else 'batch_001_v2'
 TSV = BATCH.split('_v')[0]
 
 STOP = {'其他', '服务', '技术', '研发', '生产', '销售', '制造', '无', ''}
+# 标签归一映射（method/标签归一.csv）：原体系二级 → 新体系/二级/三级（一级在合并层处理）
+TAG_MAP = {}
+with open(f'{BASE}/method/标签归一.csv', encoding='utf-8-sig') as f:
+    for r in csv.DictReader(f):
+        TAG_MAP[(r['原体系'], r['原二级'])] = (r['新体系'], r['新二级'], (r['新三级'] or '').strip())
+def remap(sys_, l2, l3):
+    m = TAG_MAP.get((sys_, l2))
+    if m: return m[0], m[1], (m[2] or l3)
+    return sys_, l2, l3
+
 kw_index = []   # (kw, 体系, 二级, 三级, 权重, 级别, 来源)  级别2=二级名 3=三级/别名; 来源 dict|map
 with open(f'{BASE}/技术标签词表.csv', encoding='utf-8-sig') as f:
     for r in csv.DictReader(f):
-        sys_, l2, l3 = r['体系'], r['二级'], r['三级']
+        sys_, l2, l3 = remap(r['体系'], r['二级'], r['三级'])
         kws = set()
         if l3 and l3 not in STOP: kws.add((l3, 3, 3))
         if l2 and l2 not in STOP: kws.add((l2, 2, 2))
@@ -41,10 +51,11 @@ with open(f'{BASE}/method/通用词映射.csv', encoding='utf-8-sig') as f:
 # v3.1: 补充二级/三级纳入匹配索引（source='sup'）——模型技术关键词常用补充清单标准名，
 # 不纳入则正确关键词匹配不到、被通用词带偏（利和/毕科案例）
 SUP_L2 = {
-    '医药流通与供应链': ('service', ''), '医药供应链上游配套': ('service', ''), '复杂制剂': ('drug', ''), '药物递送技术': ('drug', ''),
+    '医药流通与供应链': ('service', ''), '医药供应链上游配套': ('service', ''), '复杂制剂': ('drug', ''), '药物递送技术': ('drug', ''), '制剂技术': ('drug', ''),
+    '科研试剂耗材': ('enabling', ''), '科研仪器设备': ('enabling', ''),
     '材料应用': ('enabling', ''), '食品应用': ('enabling', ''), '农牧应用': ('enabling', ''), '其他应用': ('enabling', ''),
 }
-SUP_L3 = {'制药装备及部件': ('service', '医药供应链上游配套'), '医用及工业气体': ('service', '医药供应链上游配套'),
+SUP_L3 = {'制药装备及耗材': ('service', '医药供应链上游配套'), '医用及工业气体': ('service', '医药供应链上游配套'),
           '洁净工程': ('service', '医药供应链上游配套'), '制药公用工程': ('service', '医药供应链上游配套'),
           '上游耗材配套': ('service', '医药供应链上游配套'),
           '批发零售': ('service', '医药流通与供应链'), '冷链物流': ('service', '医药流通与供应链'),
@@ -130,6 +141,10 @@ for r in rows:
         prose_l2 = {h[1] for h in prose_hits if h[1]}
         主hits.sort(key=lambda h: (-(1 if h[1] in prose_l2 else 0), -(1 if h[2] else 0), -h[4]))
         二级主, 三级 = 主hits[0][1] or '', 主hits[0][2] or ''
+        if not 三级:  # v3.2: 三级为空时从 prose 同二级命中补（东富龙=制药装备及耗材）
+            for h in prose_hits:
+                if h[1] == 二级主 and h[2]:
+                    三级 = h[2]; break
         副hits = [h for h in hits if h[0] != 主体系]
         二级副 = 副hits[0][1] if 副hits else ''
         src0 = 主hits[0][5]          # dict | map

@@ -27,7 +27,9 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         a = json.loads(l)
         fl = flags[a['序号']]
         hard = fl['专精特新'] == '是' or float(fl['营收亿'] or 0) >= 1 or kc90(fl['科创分']) or float(fl['注册资本万'] or 0) >= 10000
-        if a['知名度'] in ('普通', '未知') and hard:
+        if float(fl['注册资本万'] or 0) <= 100:
+            tier = '不搜'
+        elif a['知名度'] in ('普通', '未知') and hard:
             tier = 'S2'
         elif a['知名度'] == '知名' or a.get('母公司置信度') == '疑似' or fl['规上'] == '是':
             tier = 'S1'

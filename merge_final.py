@@ -48,11 +48,17 @@ OVERRIDE = {}
 import csv as _csv
 with open(f'{BASE}/method/人工复核修正.csv', encoding='utf-8-sig') as _f:
     for _r in _csv.DictReader(_f):
-        OVERRIDE[int(_r['序号'])] = _r
+        OVERRIDE[(int(_r['序号']), (_r.get('公司名称') or '').strip())] = _r
 
 # 搜索结果
+import re as _re
+_OURS = _re.compile(r'^(full_S2_part\d+|full_S1_part\d+|full_S0A_A\d+|full_S0B_B\d+|full_S0C_C\d+-\d+|full_S0C_C3a|refind_R\d+|audit_fix|reverify_3家|full_S0A_组|full_S0B_组|full_S0C_批|full_S1_组|full_S2_组|full_S0W_W)')
+def _our_search_files():
+    import glob as _g
+    return [p for p in _g.glob(f'{BASE}/cache/search/*.jsonl') if _OURS.match(p.split('/')[-1])]
+
 S = {}
-for p in glob.glob(f'{BASE}/cache/search/full_S*.jsonl'):
+for p in _our_search_files():
     for l in open(p, encoding='utf-8'):
         try: r = json.loads(l)
         except: continue
@@ -167,8 +173,9 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         parent = PARENT_ALIAS.get(parent, parent)
         parconf = (s.get('母公司置信度_终稿') if s else '') or a.get('母公司置信度', '')
         p_override = None
-        if k in OVERRIDE and (OVERRIDE[k].get('母公司') or '').strip():
-            p_override = (OVERRIDE[k]['母公司'].strip(), (OVERRIDE[k].get('母公司置信度') or '').strip() or None)
+        _ovk = (k, a['公司名称'].strip())
+        if _ovk in OVERRIDE and (OVERRIDE[_ovk].get('母公司') or '').strip():
+            p_override = (OVERRIDE[_ovk]['母公司'].strip(), (OVERRIDE[_ovk].get('母公司置信度') or '').strip() or None)
         if p_override:
             parent = p_override[0]
             if p_override[1]: parconf = p_override[1]
@@ -176,11 +183,14 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         if s and s.get('证据'):
             ev = '；'.join(f"{e.get('来源','')}:{e.get('URL','')}:{e.get('摘要','')[:30]}" for e in s['证据'][:2])
         rel = (s.get('相关度') if s else '') or a.get('相关度', '')
+        # 无信息/未搜索企业：相关度不留默认R0，如实置空=未判定（用户裁定 2026-08-28）
+        if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）'):
+            rel = ''
         # QC修复1: R3/R4 不打领域标签（杂类不进标签库）
         if rel in ('R3', 'R4'):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '二级标签副': '', '三级标签': '', '规则置信度': '', '标签依据': ''})
         # QC修复2: 无公开信息企业只保留登记信息标签
-        if info == '无公开信息' and bb.get('标签依据') != '登记信息':
+        if info == '无公开信息' and not (bb.get('标签依据') or '').startswith(('登记信息', '名称规则')):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '二级标签副': '', '三级标签': '', '规则置信度': '', '标签依据': ''})
         # QC修复3: 地位词闸门全量执行——无搜索记录或无证据URL一律清空
         if status:
@@ -195,8 +205,9 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         if weak_status:
             info = '存疑待核'
             remark = (remark + '；地位词信源偏弱待核').strip('；')
-        if k in OVERRIDE:  # 人工复核修正优先
-            ov = OVERRIDE[k]
+        _ovk = (k, a['公司名称'].strip())
+        if _ovk in OVERRIDE:  # 人工复核修正优先（序号+公司名双键，防跨名单碰撞）
+            ov = OVERRIDE[_ovk]
             bb = dict(bb)
             _flds = {'主体系': '主体系', '二级标签主': '二级标签主', '三级标签': '三级标签',
                      '标签置信度': '规则置信度', '标签依据': '标签依据'}
@@ -208,6 +219,8 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         _ns, _nl1, _nl2, _nl3, _ = tag_norm(bb['主体系'], bb['二级标签主'], bb['三级标签'])
         if _nl1 is None:
             _ns, _nl1, _nl2, _nl3 = bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签']
+        if _ovk in OVERRIDE and (OVERRIDE[_ovk].get('一级') or '').strip():
+            _nl1 = OVERRIDE[_ovk]['一级'].strip()
         ws.append([k, a['公司名称'], rel, (s.get('边界理由') if s else '') or '',
                    _ns, _nl1, _nl2, bb['二级标签副'], _nl3,
                    bb['规则置信度'], bb.get('标签依据', ''), norm_intro(intro), status,
@@ -253,8 +266,9 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         a, bb, s = A[k], Bm[k], S.get(k)
         parent, _ = norm_parent((s.get('母公司_终稿') if s else '') or a.get('母公司', ''))
         parent = PARENT_ALIAS.get(parent, parent)
-        if k in OVERRIDE and (OVERRIDE[k].get('母公司') or '').strip():
-            parent = OVERRIDE[k]['母公司'].strip()
+        _ovk = (k, a['公司名称'].strip())
+        if _ovk in OVERRIDE and (OVERRIDE[_ovk].get('母公司') or '').strip():
+            parent = OVERRIDE[_ovk]['母公司'].strip()
         has_content = bool((a.get('主营业务') or '').strip())
         if s:
             info = '已核验' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '部分核验')
@@ -263,12 +277,16 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         if a.get('母公司置信度') == '疑似' or (s and s.get('母公司置信度_终稿') == '疑似'):
             info = '存疑待核'
         rel = (s.get('相关度') if s else '') or a.get('相关度', '')
+        # 无信息/未搜索企业：相关度不留默认R0，如实置空=未判定（用户裁定 2026-08-28）
+        if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）'):
+            rel = ''
         if rel in ('R3', 'R4'):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '三级标签': '', '规则置信度': ''})
-        if info == '无公开信息' and bb.get('标签依据') != '登记信息':
+        if info == '无公开信息' and not (bb.get('标签依据') or '').startswith(('登记信息', '名称规则')):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '三级标签': '', '规则置信度': ''})
-        if k in OVERRIDE:  # 人工复核修正优先
-            ov = OVERRIDE[k]
+        _ovk = (k, a['公司名称'].strip())
+        if _ovk in OVERRIDE:  # 人工复核修正优先（序号+公司名双键，防跨名单碰撞）
+            ov = OVERRIDE[_ovk]
             bb = dict(bb)
             _flds = {'主体系': '主体系', '二级标签主': '二级标签主', '三级标签': '三级标签',
                      '标签置信度': '规则置信度', '标签依据': '标签依据'}

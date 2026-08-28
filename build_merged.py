@@ -8,8 +8,14 @@ import os
 BASE = os.environ.get('MHB_TAG_BASE', os.path.dirname(os.path.abspath(__file__)))
 
 # 搜索结果汇总：先常规层，后复找层（复找=更深搜索，覆盖空记录）
+import re as _re
+_OURS = _re.compile(r'^(full_S2_part\d+|full_S1_part\d+|full_S0A_A\d+|full_S0B_B\d+|full_S0C_C\d+-\d+|full_S0C_C3a|refind_R\d+|audit_fix|reverify_3家|full_S0A_组|full_S0B_组|full_S0C_批|full_S1_组|full_S2_组|full_S0W_W)')
+def _our_search_files():
+    import glob as _g
+    return [p for p in _g.glob(f'{BASE}/cache/search/*.jsonl') if _OURS.match(p.split('/')[-1])]
+
 S = {}
-for p in sorted(glob.glob(f'{BASE}/cache/search/full_S*.jsonl')):
+for p in sorted(_our_search_files()):
     for l in open(p, encoding='utf-8'):
         try: r = json.loads(l)
         except: continue

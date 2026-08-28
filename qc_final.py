@@ -20,6 +20,17 @@ ix = {h: i for i, h in enumerate(HDR)}
 def g(r, c): return r[ix[c]] if r[ix[c]] is not None else ''
 
 issues = []
+# 搜索缓存跨文件序号冲突检查：同一序号对应不同公司名 = 外来名单混入（2026-08-28 污染事件）
+_name_of = {}
+for _p in glob.glob(f'{BASE}/cache/search/*.jsonl'):
+    for _l in open(_p, encoding='utf-8'):
+        try: _r = json.loads(_l)
+        except: continue
+        _sid, _nm = _r.get('序号'), _r.get('公司名称')
+        if _sid is None or not _nm: continue
+        if _sid in _name_of and _name_of[_sid][0] != _nm:
+            issues.append(f'序号冲突: {_sid} "{_name_of[_sid][0]}"({ _name_of[_sid][1]}) vs "{_nm}"({_p.split("/")[-1][:20]})')
+        _name_of.setdefault(_sid, (_nm, _p.split('/')[-1][:20]))
 
 # 1) 完整性
 ids = [g(r, '序号') for r in rows]
@@ -94,7 +105,10 @@ for r in rows:
     s = g(r, '一句话简介')
     if s and len(s) > 10 and '暂无公开经营信息' not in s and '未搜索' not in s:
         intro_map[s].append(g(r, '序号'))
-dup_intro = {k: v for k, v in intro_map.items() if len(v) > 1}
+dup_intro = {}
+for k, v in intro_map.items():
+    if len(v) > 1 and not re.search(r'连锁|门店|药房|门诊部|诊所|康复医院|康复专科', k):   # 连锁业态同文案属预期
+        dup_intro[k] = v
 if dup_intro: issues.append(f'简介重复: {list(dup_intro.items())[:5]}')
 
 # 8) 兜底句统计
@@ -104,7 +118,7 @@ print(f'兜底句: {fb} 家（其中行业笼统 {fb_vague}）')
 
 # 9) 无公开信息但有内容字段（违反铁律）
 viol = [(g(r,'序号'), g(r,'公司名称')[:12]) for r in rows
-        if g(r,'信息状态') == '无公开信息' and g(r,'主体系') and g(r,'标签依据') not in ('登记信息',)]
+        if g(r,'信息状态') == '无公开信息' and g(r,'主体系') and not str(g(r,'标签依据')).startswith(('登记信息','名称规则'))]
 if viol: issues.append(f'无信息却有标签(非登记依据): {viol[:8]}')
 
 print('\n=== 问题清单 ===')

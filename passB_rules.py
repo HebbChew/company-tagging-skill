@@ -182,8 +182,19 @@ for r in rows:
         主体系, conf = '周边配套', '低'
         basis = '周边规则'
     else:
+        # 名称规则：门诊/诊所/医院/药房/药店/健康管理类，不搜索直接打体系级标签（无二级）
+        _nm = r.get('公司名称', '')
+        if re.search(r'门诊部|诊所|医院|护理院', _nm):
+            主体系, conf, resid = 'service', '低', False
+            basis = '名称规则-医疗服务'
+        elif re.search(r'药房|药店|大药房', _nm):
+            主体系, conf, resid = 'service', '低', False
+            basis = '名称规则-药品零售'
+        elif re.search(r'健康管理|健康咨询', _nm):
+            主体系, conf, resid = 'service', '低', False
+            basis = '名称规则-健康服务'
         x = hy.get(r['序号'], '')
-        if x in HY小类:
+        if resid and x in HY小类:
             主体系, 二级主 = HY小类[x][0], HY小类[x][1]
             conf = '登记' if ('批发' in x or '零售' in x) else '低'
             basis = '登记信息'

@@ -14,7 +14,7 @@
    - `MHB_EXPECT_ROWS` / `MHB_EXPECT_SHEET1_ROWS`：质检预期行数（可选）
    - 行业小类映射（`passB_rules.py` 的 HY小类）、分层阈值按需调整
 3. 试点先行：抽 50 家跑全流程，再上全量
-4. 流水线：`step0_batch.py` → Pass A（子代理）→ `merge_stage1.py` → 搜索层 → `build_merged.py` → `passB_rules.py` → `merge_final.py` → `qc_final.py` → `build_report.py`
+4. 流水线：`step0_batch.py` → Pass A（子代理）→ `merge_stage1.py` → 搜索层 → `build_merged.py` → `passB_rules.py` → `merge_final.py` → `qc_final.py` + `qc_adversarial.py`（对抗审查）→ `build_report.py`
 
 ## 目录
 

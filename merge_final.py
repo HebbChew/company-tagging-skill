@@ -170,13 +170,13 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             ev = '；'.join(f"{e.get('来源','')}:{e.get('URL','')}:{e.get('摘要','')[:30]}" for e in s['证据'][:2])
         has_ev = bool(ev) and '暂无' not in ev and '未见' not in ev
         if s:
-            info = '已核验' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '部分核验')
+            info = '已核实' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '有线索')
             if info == '无公开信息' and has_ev:
-                info = '部分核验'  # 有搜索证据不得标"无公开信息"（用户裁定 2026-08-31）
+                info = '有线索'  # 有搜索证据不得标"无公开信息"（用户裁定 2026-08-31）
         else:
             info = '未搜索(≤100万不搜)'
         if a.get('母公司置信度') == '疑似' or (s and s.get('母公司置信度_终稿') == '疑似'):
-            info = '存疑待核'
+            info = '已核实'  # 存疑信号下沉到母公司置信度/备注，不再占用状态列（2026-08-31）
         intro = a.get('一句话简介', '')
         if not intro and not has_content:
             # 有搜索证据时禁止用占位语（会盖住证据），改用待回填标记（用户裁定 2026-08-31）
@@ -217,13 +217,13 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             has_ev = bool(s) and any((e.get('URL') or '').startswith('http') for e in (s.get('证据') or []))
             if not has_ev:
                 status = ''; gate_dropped += 1
-        # QC修复4: 最高级地位词仅弱信源 → 标存疑待核
+        # QC修复4: 最高级地位词仅弱信源 → 记存疑备注
         weak_status = bool(status) and SUPER.search(status) and WEAK_SRC.search(ev) and not STRONG_SRC.search(ev)
         remark = ((s.get('备注') if s else '') or '')
         if pnote:
             remark = (remark + '；' + pnote).strip('；')
         if weak_status:
-            info = '存疑待核'
+            info = '已核实'  # 存疑信号下沉到母公司置信度/备注，不再占用状态列（2026-08-31）
             remark = (remark + '；地位词信源偏弱待核').strip('；')
         _ovk = (k, a['公司名称'].strip())
         if _ovk in OVERRIDE:  # 人工复核修正优先（序号+公司名双键，防跨名单碰撞）
@@ -256,7 +256,7 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             boundary.append((k, a['公司名称'], rel, (s.get('边界理由') if s else '') or ''))
         if info == '无公开信息':
             noinfo_list.append((k, a['公司名称'], base_map[k]['注册资本万']))
-        if info == '存疑待核':
+        if parconf == '疑似' or '地位词信源偏弱待核' in remark:
             doubts.append((k, a['公司名称']))
 ws.freeze_panes = 'C2'
 widths = [6, 28, 6, 20, 9, 14, 17, 14, 14, 8, 10, 46, 26, 24, 9, 7, 8, 10, 50, 30, 10]
@@ -293,11 +293,11 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             parent = OVERRIDE[_ovk]['母公司'].strip()
         has_content = bool((a.get('主营业务') or '').strip())
         if s:
-            info = '已核验' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '部分核验')
+            info = '已核实' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '有线索')
         else:
             info = '未搜索(≤100万不搜)'
         if a.get('母公司置信度') == '疑似' or (s and s.get('母公司置信度_终稿') == '疑似'):
-            info = '存疑待核'
+            info = '已核实'  # 存疑信号下沉到母公司置信度/备注，不再占用状态列（2026-08-31）
         rel = (s.get('相关度') if s else '') or a.get('相关度', '')
         # 无信息/未搜索企业：相关度不留默认R0，如实置空=未判定（用户裁定 2026-08-28）
         if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）') \

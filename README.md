@@ -14,6 +14,12 @@
    - `MHB_EXPECT_ROWS` / `MHB_EXPECT_SHEET1_ROWS`：质检预期行数（可选）
    - 行业小类映射（`passB_rules.py` 的 HY小类）、分层阈值按需调整
 3. 试点先行：抽 50 家跑全流程，再上全量
+
+## 复用到其他领域/名单的三个改动点
+
+1. **行业词表**：`技术标签词表.csv` 是生物医药专用的——换行业必须换词表和 `method/标签归一.csv`、`method/通用词映射.csv`、`method/二级清单.txt`，体系方法论不变
+2. **报告文案**：`build_report.py` 的 CONTENT 是闵行项目的公文叙事，新项目重写 CONTENT 即可，版式函数通用；报告数字必须现算（SKILL.md 铁律 4.6）
+3. **直标规则**：机构类型/名称规则按新名单的属性列调整（merge_final.py 的 `_apply_institution_type`）
 4. 流水线：`step0_batch.py` → Pass A（子代理）→ `merge_stage1.py` → 搜索层 → `build_merged.py` → `passB_rules.py` → `merge_final.py` → `qc_final.py` + `qc_adversarial.py`（对抗审查）→ `build_report.py`
 
 ## 目录

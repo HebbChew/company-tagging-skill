@@ -452,131 +452,131 @@ TECH_DEV_MAT_010,device,医疗器械,医用材料与耗材,一次性无菌耗材
 TECH_DEV_MAT_011,device,医疗器械,医用材料与耗材,一次性无菌耗材(导尿管),产品与系统层,urinary catheter,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(导尿管)
 TECH_DEV_MAT_012,device,医疗器械,医用材料与耗材,一次性无菌耗材(引流管),产品与系统层,drainage tube,医疗器械 > 医用材料与耗材 > 一次性无菌耗材(引流管)
 TECH_DEV_MAT_013,device,医疗器械,医用材料与耗材,手套/口罩/防护用品,产品与系统层,PPE,医疗器械 > 医用材料与耗材 > 手套/口罩/防护用品
-TECH_DIG_INF_001,digital,数字医疗,医疗IT基础设施,HIS医院信息系统,医疗信息系统层,hospital information system; HIS,数字医疗 > 医疗IT基础设施 > HIS医院信息系统
-TECH_DIG_INF_002,digital,数字医疗,医疗IT基础设施,EMR电子病历,医疗信息系统层,electronic medical record; EMR,数字医疗 > 医疗IT基础设施 > EMR电子病历
-TECH_DIG_INF_003,digital,数字医疗,医疗IT基础设施,EHR区域健康档案,医疗信息系统层,electronic health record; EHR,数字医疗 > 医疗IT基础设施 > EHR区域健康档案
-TECH_DIG_INF_004,digital,数字医疗,医疗IT基础设施,LIS检验信息系统,医疗信息系统层,laboratory information system; LIS,数字医疗 > 医疗IT基础设施 > LIS检验信息系统
-TECH_DIG_INF_005,digital,数字医疗,医疗IT基础设施,RIS放射信息系统,医疗信息系统层,radiology information system; RIS,数字医疗 > 医疗IT基础设施 > RIS放射信息系统
-TECH_DIG_INF_006,digital,数字医疗,医疗IT基础设施,PACS影像归档与通信,医疗信息系统层,PACS,数字医疗 > 医疗IT基础设施 > PACS影像归档与通信
-TECH_DIG_INF_007,digital,数字医疗,医疗IT基础设施,AIMS麻醉信息系统,医疗信息系统层,anesthesia information management system; AIMS,数字医疗 > 医疗IT基础设施 > AIMS麻醉信息系统
-TECH_DIG_INF_008,digital,数字医疗,医疗IT基础设施,NIS护理信息系统,医疗信息系统层,nursing information system; NIS,数字医疗 > 医疗IT基础设施 > NIS护理信息系统
-TECH_DIG_INF_009,digital,数字医疗,医疗IT基础设施,CPOE医嘱系统,医疗信息系统层,computerized physician order entry; CPOE,数字医疗 > 医疗IT基础设施 > CPOE医嘱系统
-TECH_DIG_INF_010,digital,数字医疗,医疗IT基础设施,药房信息系统PIS,医疗信息系统层,pharmacy information system; PIS,数字医疗 > 医疗IT基础设施 > 药房信息系统PIS
-TECH_DIG_INF_011,digital,数字医疗,医疗IT基础设施,互联互通/HL7,医疗信息系统层,HL7 interoperability,数字医疗 > 医疗IT基础设施 > 互联互通/HL7
-TECH_DIG_INF_012,digital,数字医疗,医疗IT基础设施,FHIR标准,医疗信息系统层,FHIR,数字医疗 > 医疗IT基础设施 > FHIR标准
-TECH_DIG_INF_013,digital,数字医疗,医疗IT基础设施,DICOM标准,医疗信息系统层,DICOM,数字医疗 > 医疗IT基础设施 > DICOM标准
-TECH_DIG_INF_014,digital,数字医疗,医疗IT基础设施,EMPI主索引,医疗信息系统层,enterprise master patient index; EMPI,数字医疗 > 医疗IT基础设施 > EMPI主索引
-TECH_DIG_INF_015,digital,数字医疗,医疗IT基础设施,主数据管理MDM,医疗信息系统层,master data management; MDM,数字医疗 > 医疗IT基础设施 > 主数据管理MDM
-TECH_DIG_INF_016,digital,数字医疗,医疗IT基础设施,数据中台/数据仓库,医疗信息系统层,health data warehouse; data platform,数字医疗 > 医疗IT基础设施 > 数据中台/数据仓库
-TECH_DIG_INF_017,digital,数字医疗,医疗IT基础设施,医疗数据治理与质量,医疗信息系统层,data governance; data quality,数字医疗 > 医疗IT基础设施 > 医疗数据治理与质量
-TECH_DIG_INF_018,digital,数字医疗,医疗IT基础设施,隐私计算,医疗信息系统层,privacy-preserving computation,数字医疗 > 医疗IT基础设施 > 隐私计算
-TECH_DIG_INF_019,digital,数字医疗,医疗IT基础设施,联邦学习,医疗信息系统层,federated learning,数字医疗 > 医疗IT基础设施 > 联邦学习
-TECH_DIG_INF_020,digital,数字医疗,医疗IT基础设施,零信任安全,医疗信息系统层,zero trust security,数字医疗 > 医疗IT基础设施 > 零信任安全
-TECH_DIG_INF_021,digital,数字医疗,医疗IT基础设施,身份认证与IAM,医疗信息系统层,identity and access management; IAM,数字医疗 > 医疗IT基础设施 > 身份认证与IAM
-TECH_DIG_INF_022,digital,数字医疗,医疗IT基础设施,日志审计与合规,医疗信息系统层,audit logging; compliance,数字医疗 > 医疗IT基础设施 > 日志审计与合规
-TECH_DIG_APP_001,digital,数字医疗,临床与患者应用,CDSS临床决策支持,医疗信息系统层,clinical decision support system; CDSS,数字医疗 > 临床与患者应用 > CDSS临床决策支持
-TECH_DIG_APP_002,digital,数字医疗,临床与患者应用,AI影像辅助诊断,医疗信息系统层,AI imaging diagnosis,数字医疗 > 临床与患者应用 > AI影像辅助诊断
-TECH_DIG_APP_003,digital,数字医疗,临床与患者应用,病理AI/数字病理,医疗信息系统层,digital pathology; pathology AI,数字医疗 > 临床与患者应用 > 病理AI/数字病理
-TECH_DIG_APP_004,digital,数字医疗,临床与患者应用,智能分诊导诊,医疗信息系统层,AI triage,数字医疗 > 临床与患者应用 > 智能分诊导诊
-TECH_DIG_APP_005,digital,数字医疗,临床与患者应用,互联网医院/远程门诊,医疗信息系统层,internet hospital; telemedicine,数字医疗 > 临床与患者应用 > 互联网医院/远程门诊
-TECH_DIG_APP_006,digital,数字医疗,临床与患者应用,远程会诊,医疗信息系统层,remote consultation,数字医疗 > 临床与患者应用 > 远程会诊
-TECH_DIG_APP_007,digital,数字医疗,临床与患者应用,远程患者监测RPM,医疗信息系统层,remote patient monitoring; RPM,数字医疗 > 临床与患者应用 > 远程患者监测RPM
-TECH_DIG_APP_008,digital,数字医疗,临床与患者应用,慢病管理平台,医疗信息系统层,chronic disease management,数字医疗 > 临床与患者应用 > 慢病管理平台
-TECH_DIG_APP_009,digital,数字医疗,临床与患者应用,用药依从性管理,医疗信息系统层,medication adherence,数字医疗 > 临床与患者应用 > 用药依从性管理
-TECH_DIG_APP_010,digital,数字医疗,临床与患者应用,患者随访管理,医疗信息系统层,patient follow-up management,数字医疗 > 临床与患者应用 > 患者随访管理
-TECH_DIG_APP_011,digital,数字医疗,临床与患者应用,患者教育与内容平台,医疗信息系统层,patient education platform,数字医疗 > 临床与患者应用 > 患者教育与内容平台
-TECH_DIG_APP_012,digital,数字医疗,临床与患者应用,数字疗法DTx,医疗信息系统层,digital therapeutics; DTx,数字医疗 > 临床与患者应用 > 数字疗法DTx
-TECH_DIG_APP_013,digital,数字医疗,临床与患者应用,可穿戴数据接入,医疗信息系统层,wearable data integration,数字医疗 > 临床与患者应用 > 可穿戴数据接入
-TECH_DIG_APP_014,digital,数字医疗,临床与患者应用,居家护理调度,医疗信息系统层,home care scheduling,数字医疗 > 临床与患者应用 > 居家护理调度
-TECH_DIG_APP_015,digital,数字医疗,临床与患者应用,医保结算对接,医疗信息系统层,insurance claims integration,数字医疗 > 临床与患者应用 > 医保结算对接
-TECH_DIG_APP_016,digital,数字医疗,临床与患者应用,医院运营管理(绩效/排班),医疗信息系统层,hospital operations management,数字医疗 > 临床与患者应用 > 医院运营管理(绩效/排班)
-TECH_DIG_APP_017,digital,数字医疗,临床与患者应用,临床路径管理,医疗信息系统层,clinical pathway management,数字医疗 > 临床与患者应用 > 临床路径管理
-TECH_DIG_APP_018,digital,数字医疗,临床与患者应用,质控与不良事件上报,医疗信息系统层,quality control; adverse event reporting,数字医疗 > 临床与患者应用 > 质控与不良事件上报
-TECH_DIG_APP_019,digital,数字医疗,临床与患者应用,临床试验ePRO/eCOA,医疗信息系统层,ePRO; eCOA,数字医疗 > 临床与患者应用 > 临床试验ePRO/eCOA
-TECH_DIG_APP_020,digital,数字医疗,临床与患者应用,去中心化临床试验DCT,医疗信息系统层,decentralized clinical trials; DCT,数字医疗 > 临床与患者应用 > 去中心化临床试验DCT
-TECH_DIG_APP_021,digital,数字医疗,临床与患者应用,真实世界研究平台RWE/RWD,医疗信息系统层,real-world evidence/data platform,数字医疗 > 临床与患者应用 > 真实世界研究平台RWE/RWD
-TECH_AI_DRUG_001,ai,计算与AI,AI制药-分子层,小分子虚拟筛选,算法与模型层,virtual screening; docking-based screening,计算与AI > AI制药-分子层 > 小分子虚拟筛选
-TECH_AI_DRUG_002,ai,计算与AI,AI制药-分子层,结构基础药物设计SBDD,算法与模型层,structure-based drug design; SBDD,计算与AI > AI制药-分子层 > 结构基础药物设计SBDD
-TECH_AI_DRUG_003,ai,计算与AI,AI制药-分子层,配体基础药物设计LBDD,算法与模型层,ligand-based drug design; LBDD,计算与AI > AI制药-分子层 > 配体基础药物设计LBDD
-TECH_AI_DRUG_004,ai,计算与AI,AI制药-分子层,分子生成模型(扩散/Flow),算法与模型层,molecular generative model; diffusion; flow matching,计算与AI > AI制药-分子层 > 分子生成模型(扩散/Flow)
-TECH_AI_DRUG_005,ai,计算与AI,AI制药-分子层,分子生成模型(VAE/GAN),算法与模型层,VAE; GAN for molecule generation,计算与AI > AI制药-分子层 > 分子生成模型(VAE/GAN)
-TECH_AI_DRUG_006,ai,计算与AI,AI制药-分子层,多目标优化(活性/ADMET/合成),算法与模型层,multi-objective optimization; activity ADMET synth,计算与AI > AI制药-分子层 > 多目标优化(活性/ADMET/合成)
-TECH_AI_DRUG_007,ai,计算与AI,AI制药-分子层,ADMET预测,算法与模型层,ADMET prediction,计算与AI > AI制药-分子层 > ADMET预测
-TECH_AI_DRUG_008,ai,计算与AI,AI制药-分子层,毒性预测,算法与模型层,toxicity prediction,计算与AI > AI制药-分子层 > 毒性预测
-TECH_AI_DRUG_009,ai,计算与AI,AI制药-分子层,溶解度/渗透性预测,算法与模型层,solubility; permeability prediction,计算与AI > AI制药-分子层 > 溶解度/渗透性预测
-TECH_AI_DRUG_010,ai,计算与AI,AI制药-分子层,蛋白-配体亲和力预测,算法与模型层,binding affinity prediction,计算与AI > AI制药-分子层 > 蛋白-配体亲和力预测
-TECH_AI_DRUG_011,ai,计算与AI,AI制药-分子层,反应路径预测,算法与模型层,reaction prediction,计算与AI > AI制药-分子层 > 反应路径预测
-TECH_AI_DRUG_012,ai,计算与AI,AI制药-分子层,逆合成规划,算法与模型层,retrosynthesis planning,计算与AI > AI制药-分子层 > 逆合成规划
-TECH_AI_DRUG_013,ai,计算与AI,AI制药-分子层,可合成性评分/合成可行性,算法与模型层,synthetic accessibility; feasibility scoring,计算与AI > AI制药-分子层 > 可合成性评分/合成可行性
-TECH_AI_DRUG_014,ai,计算与AI,AI制药-分子层,分子动力学模拟MD,算法与模型层,molecular dynamics; MD simulation,计算与AI > AI制药-分子层 > 分子动力学模拟MD
-TECH_AI_DRUG_015,ai,计算与AI,AI制药-分子层,自由能计算FEP,算法与模型层,free energy perturbation; FEP,计算与AI > AI制药-分子层 > 自由能计算FEP
-TECH_AI_DRUG_016,ai,计算与AI,AI制药-分子层,量子化学计算DFT,算法与模型层,density functional theory; DFT,计算与AI > AI制药-分子层 > 量子化学计算DFT
-TECH_AI_PROT_001,ai,计算与AI,AI制药-蛋白层,蛋白结构预测,算法与模型层,protein structure prediction,计算与AI > AI制药-蛋白层 > 蛋白结构预测
-TECH_AI_PROT_002,ai,计算与AI,AI制药-蛋白层,蛋白序列生成,算法与模型层,protein sequence generation,计算与AI > AI制药-蛋白层 > 蛋白序列生成
-TECH_AI_PROT_003,ai,计算与AI,AI制药-蛋白层,蛋白功能注释,算法与模型层,protein function annotation,计算与AI > AI制药-蛋白层 > 蛋白功能注释
-TECH_AI_PROT_004,ai,计算与AI,AI制药-蛋白层,蛋白-蛋白相互作用预测PPI,算法与模型层,protein-protein interaction; PPI prediction,计算与AI > AI制药-蛋白层 > 蛋白-蛋白相互作用预测PPI
-TECH_AI_PROT_005,ai,计算与AI,AI制药-蛋白层,蛋白-核酸相互作用预测,算法与模型层,protein-nucleic acid interaction prediction,计算与AI > AI制药-蛋白层 > 蛋白-核酸相互作用预测
-TECH_AI_PROT_006,ai,计算与AI,AI制药-蛋白层,抗体序列设计,算法与模型层,antibody sequence design,计算与AI > AI制药-蛋白层 > 抗体序列设计
-TECH_AI_PROT_007,ai,计算与AI,AI制药-蛋白层,抗体可开发性评估,算法与模型层,developability assessment,计算与AI > AI制药-蛋白层 > 抗体可开发性评估
-TECH_AI_PROT_008,ai,计算与AI,AI制药-蛋白层,抗体亲和力成熟,算法与模型层,affinity maturation,计算与AI > AI制药-蛋白层 > 抗体亲和力成熟
-TECH_AI_PROT_009,ai,计算与AI,AI制药-蛋白层,抗体构象建模/对接,算法与模型层,antibody modeling; docking,计算与AI > AI制药-蛋白层 > 抗体构象建模/对接
-TECH_AI_PROT_010,ai,计算与AI,AI制药-蛋白层,蛋白稳定性/聚集预测,算法与模型层,protein stability; aggregation prediction,计算与AI > AI制药-蛋白层 > 蛋白稳定性/聚集预测
-TECH_AI_PROT_011,ai,计算与AI,AI制药-蛋白层,蛋白工程位点设计,算法与模型层,protein engineering site design,计算与AI > AI制药-蛋白层 > 蛋白工程位点设计
-TECH_AI_PROT_012,ai,计算与AI,AI制药-蛋白层,酶工程与定向进化设计,算法与模型层,enzyme engineering; directed evolution design,计算与AI > AI制药-蛋白层 > 酶工程与定向进化设计
-TECH_AI_OMICS_001,ai,计算与AI,多组学与生物信息,单细胞数据分析,算法与模型层,single-cell analysis,计算与AI > 多组学与生物信息 > 单细胞数据分析
-TECH_AI_OMICS_002,ai,计算与AI,多组学与生物信息,空间组学分析,算法与模型层,spatial omics analysis,计算与AI > 多组学与生物信息 > 空间组学分析
-TECH_AI_OMICS_003,ai,计算与AI,多组学与生物信息,多组学整合,算法与模型层,multi-omics integration,计算与AI > 多组学与生物信息 > 多组学整合
-TECH_AI_OMICS_004,ai,计算与AI,多组学与生物信息,差异表达与通路富集,算法与模型层,DEG; pathway enrichment,计算与AI > 多组学与生物信息 > 差异表达与通路富集
-TECH_AI_OMICS_005,ai,计算与AI,多组学与生物信息,网络生物学/调控网络,算法与模型层,network biology; regulatory network,计算与AI > 多组学与生物信息 > 网络生物学/调控网络
-TECH_AI_OMICS_006,ai,计算与AI,多组学与生物信息,变异检测/基因分型,算法与模型层,variant calling; genotyping,计算与AI > 多组学与生物信息 > 变异检测/基因分型
-TECH_AI_OMICS_007,ai,计算与AI,多组学与生物信息,基因表达去卷积,算法与模型层,deconvolution,计算与AI > 多组学与生物信息 > 基因表达去卷积
-TECH_AI_OMICS_008,ai,计算与AI,多组学与生物信息,表型-基因关联,算法与模型层,genotype-phenotype association,计算与AI > 多组学与生物信息 > 表型-基因关联
-TECH_AI_OMICS_009,ai,计算与AI,多组学与生物信息,GWAS/PRS风险评分,算法与模型层,GWAS; polygenic risk score; PRS,计算与AI > 多组学与生物信息 > GWAS/PRS风险评分
-TECH_AI_OMICS_010,ai,计算与AI,多组学与生物信息,蛋白质组定量与识别,算法与模型层,proteomics quantification; identification,计算与AI > 多组学与生物信息 > 蛋白质组定量与识别
-TECH_AI_OMICS_011,ai,计算与AI,多组学与生物信息,代谢组峰识别与注释,算法与模型层,metabolomics peak picking; annotation,计算与AI > 多组学与生物信息 > 代谢组峰识别与注释
-TECH_AI_KG_001,ai,计算与AI,知识图谱与RAG,药物-靶点-疾病知识图谱,语义与知识层,drug-target-disease knowledge graph,计算与AI > 知识图谱与RAG > 药物-靶点-疾病知识图谱
-TECH_AI_KG_002,ai,计算与AI,知识图谱与RAG,临床指南/路径知识图谱,语义与知识层,clinical guideline knowledge graph,计算与AI > 知识图谱与RAG > 临床指南/路径知识图谱
-TECH_AI_KG_003,ai,计算与AI,知识图谱与RAG,科研文献知识图谱,语义与知识层,literature knowledge graph,计算与AI > 知识图谱与RAG > 科研文献知识图谱
-TECH_AI_KG_004,ai,计算与AI,知识图谱与RAG,企业/专利/投融资知识图谱,语义与知识层,industry knowledge graph,计算与AI > 知识图谱与RAG > 企业/专利/投融资知识图谱
-TECH_AI_KG_005,ai,计算与AI,知识图谱与RAG,本体构建与对齐(OWL/RDF),语义与知识层,ontology; OWL; RDF alignment,计算与AI > 知识图谱与RAG > 本体构建与对齐(OWL/RDF)
-TECH_AI_KG_006,ai,计算与AI,知识图谱与RAG,实体识别NER,语义与知识层,named entity recognition; NER,计算与AI > 知识图谱与RAG > 实体识别NER
-TECH_AI_KG_007,ai,计算与AI,知识图谱与RAG,关系抽取RE,语义与知识层,relation extraction; RE,计算与AI > 知识图谱与RAG > 关系抽取RE
-TECH_AI_KG_008,ai,计算与AI,知识图谱与RAG,事件抽取/事件时间线,语义与知识层,event extraction; timeline,计算与AI > 知识图谱与RAG > 事件抽取/事件时间线
-TECH_AI_KG_009,ai,计算与AI,知识图谱与RAG,实体消歧/指代消解,语义与知识层,entity disambiguation; coreference resolution,计算与AI > 知识图谱与RAG > 实体消歧/指代消解
-TECH_AI_KG_010,ai,计算与AI,知识图谱与RAG,向量检索/语义召回,语义与知识层,vector search; semantic retrieval,计算与AI > 知识图谱与RAG > 向量检索/语义召回
-TECH_AI_KG_011,ai,计算与AI,知识图谱与RAG,RAG检索增强生成,语义与知识层,retrieval-augmented generation; RAG,计算与AI > 知识图谱与RAG > RAG检索增强生成
-TECH_AI_KG_012,ai,计算与AI,知识图谱与RAG,重排序Rerank,语义与知识层,reranking; cross-encoder rerank,计算与AI > 知识图谱与RAG > 重排序Rerank
-TECH_AI_CLIN_001,ai,计算与AI,临床AI与医疗大模型,医学影像分割,应用智能层,medical image segmentation,计算与AI > 临床AI与医疗大模型 > 医学影像分割
-TECH_AI_CLIN_002,ai,计算与AI,临床AI与医疗大模型,医学影像检测/分类,应用智能层,medical image detection; classification,计算与AI > 临床AI与医疗大模型 > 医学影像检测/分类
-TECH_AI_CLIN_003,ai,计算与AI,临床AI与医疗大模型,数字病理WSI分析,应用智能层,whole slide imaging; WSI analysis,计算与AI > 临床AI与医疗大模型 > 数字病理WSI分析
-TECH_AI_CLIN_004,ai,计算与AI,临床AI与医疗大模型,放射组学建模,应用智能层,radiomics modeling,计算与AI > 临床AI与医疗大模型 > 放射组学建模
-TECH_AI_CLIN_005,ai,计算与AI,临床AI与医疗大模型,临床文本结构化,应用智能层,clinical NLP; structuring,计算与AI > 临床AI与医疗大模型 > 临床文本结构化
-TECH_AI_CLIN_006,ai,计算与AI,临床AI与医疗大模型,医学问答/助手,应用智能层,medical QA assistant,计算与AI > 临床AI与医疗大模型 > 医学问答/助手
-TECH_AI_CLIN_007,ai,计算与AI,临床AI与医疗大模型,病历摘要与随访生成,应用智能层,clinical summarization; follow-up generation,计算与AI > 临床AI与医疗大模型 > 病历摘要与随访生成
-TECH_AI_CLIN_008,ai,计算与AI,临床AI与医疗大模型,临床决策支持CDSS(LLM),应用智能层,LLM-based CDSS,计算与AI > 临床AI与医疗大模型 > 临床决策支持CDSS(LLM)
-TECH_AI_CLIN_009,ai,计算与AI,临床AI与医疗大模型,多模态医疗大模型,应用智能层,multimodal medical foundation model,计算与AI > 临床AI与医疗大模型 > 多模态医疗大模型
-TECH_AI_CLIN_010,ai,计算与AI,临床AI与医疗大模型,智能分诊与导诊,应用智能层,AI triage; navigation,计算与AI > 临床AI与医疗大模型 > 智能分诊与导诊
-TECH_AI_CLIN_011,ai,计算与AI,临床AI与医疗大模型,药事审方与用药安全,应用智能层,medication review; safety,计算与AI > 临床AI与医疗大模型 > 药事审方与用药安全
-TECH_AI_CLIN_012,ai,计算与AI,临床AI与医疗大模型,病程质控与编码辅助,应用智能层,clinical quality control; coding assist,计算与AI > 临床AI与医疗大模型 > 病程质控与编码辅助
-TECH_AI_RWE_001,ai,计算与AI,RWE/因果推断/HEOR,RWD数据清洗与队列构建,数据分析与推断层,cohort building; RWD curation,计算与AI > RWE/因果推断/HEOR > RWD数据清洗与队列构建
-TECH_AI_RWE_002,ai,计算与AI,RWE/因果推断/HEOR,表型算法(计算表型),数据分析与推断层,computational phenotyping,计算与AI > RWE/因果推断/HEOR > 表型算法(计算表型)
-TECH_AI_RWE_003,ai,计算与AI,RWE/因果推断/HEOR,倾向评分匹配/加权,数据分析与推断层,propensity score matching; weighting,计算与AI > RWE/因果推断/HEOR > 倾向评分匹配/加权
-TECH_AI_RWE_004,ai,计算与AI,RWE/因果推断/HEOR,差分中的差分DID,数据分析与推断层,difference-in-differences; DiD,计算与AI > RWE/因果推断/HEOR > 差分中的差分DID
-TECH_AI_RWE_005,ai,计算与AI,RWE/因果推断/HEOR,中断时间序列ITS,数据分析与推断层,interrupted time series; ITS,计算与AI > RWE/因果推断/HEOR > 中断时间序列ITS
-TECH_AI_RWE_006,ai,计算与AI,RWE/因果推断/HEOR,工具变量IV,数据分析与推断层,instrumental variables; IV,计算与AI > RWE/因果推断/HEOR > 工具变量IV
-TECH_AI_RWE_007,ai,计算与AI,RWE/因果推断/HEOR,目标试验模拟TTE,数据分析与推断层,target trial emulation,计算与AI > RWE/因果推断/HEOR > 目标试验模拟TTE
-TECH_AI_RWE_008,ai,计算与AI,RWE/因果推断/HEOR,生存分析/风险模型,数据分析与推断层,survival analysis; hazard model,计算与AI > RWE/因果推断/HEOR > 生存分析/风险模型
-TECH_AI_RWE_009,ai,计算与AI,RWE/因果推断/HEOR,疾病进展模型,数据分析与推断层,disease progression modeling,计算与AI > RWE/因果推断/HEOR > 疾病进展模型
-TECH_AI_RWE_010,ai,计算与AI,RWE/因果推断/HEOR,医疗经济学建模(成本-效果),数据分析与推断层,cost-effectiveness modeling,计算与AI > RWE/因果推断/HEOR > 医疗经济学建模(成本-效果)
-TECH_AI_RWE_011,ai,计算与AI,RWE/因果推断/HEOR,预算影响分析BIA,数据分析与推断层,budget impact analysis; BIA,计算与AI > RWE/因果推断/HEOR > 预算影响分析BIA
-TECH_AI_RWE_012,ai,计算与AI,RWE/因果推断/HEOR,信号检测/药物警戒,数据分析与推断层,pharmacovigilance; signal detection,计算与AI > RWE/因果推断/HEOR > 信号检测/药物警戒
-TECH_AI_LAB_001,ai,计算与AI,自动化实验与仿真,机器人实验平台,实验与仿真层,robotic lab automation,计算与AI > 自动化实验与仿真 > 机器人实验平台
-TECH_AI_LAB_002,ai,计算与AI,自动化实验与仿真,高通量筛选HTS数据分析,实验与仿真层,high-throughput screening; HTS analytics,计算与AI > 自动化实验与仿真 > 高通量筛选HTS数据分析
-TECH_AI_LAB_003,ai,计算与AI,自动化实验与仿真,自动化合成/反应优化,实验与仿真层,automated synthesis; reaction optimization,计算与AI > 自动化实验与仿真 > 自动化合成/反应优化
-TECH_AI_LAB_004,ai,计算与AI,自动化实验与仿真,实验设计DoE,实验与仿真层,design of experiments; DoE,计算与AI > 自动化实验与仿真 > 实验设计DoE
-TECH_AI_LAB_005,ai,计算与AI,自动化实验与仿真,数字孪生细胞/虚拟细胞,实验与仿真层,digital twin cell; virtual cell,计算与AI > 自动化实验与仿真 > 数字孪生细胞/虚拟细胞
-TECH_AI_LAB_006,ai,计算与AI,自动化实验与仿真,工艺数字孪生,实验与仿真层,process digital twin,计算与AI > 自动化实验与仿真 > 工艺数字孪生
-TECH_AI_LAB_007,ai,计算与AI,自动化实验与仿真,仿真与优化(蒙特卡洛),实验与仿真层,simulation; Monte Carlo optimization,计算与AI > 自动化实验与仿真 > 仿真与优化(蒙特卡洛)
+TECH_DIG_INF_001,digital,数字医疗与AI,医疗IT基础设施,HIS医院信息系统,医疗信息系统层,hospital information system; HIS,数字医疗 > 医疗IT基础设施 > HIS医院信息系统
+TECH_DIG_INF_002,digital,数字医疗与AI,医疗IT基础设施,EMR电子病历,医疗信息系统层,electronic medical record; EMR,数字医疗 > 医疗IT基础设施 > EMR电子病历
+TECH_DIG_INF_003,digital,数字医疗与AI,医疗IT基础设施,EHR区域健康档案,医疗信息系统层,electronic health record; EHR,数字医疗 > 医疗IT基础设施 > EHR区域健康档案
+TECH_DIG_INF_004,digital,数字医疗与AI,医疗IT基础设施,LIS检验信息系统,医疗信息系统层,laboratory information system; LIS,数字医疗 > 医疗IT基础设施 > LIS检验信息系统
+TECH_DIG_INF_005,digital,数字医疗与AI,医疗IT基础设施,RIS放射信息系统,医疗信息系统层,radiology information system; RIS,数字医疗 > 医疗IT基础设施 > RIS放射信息系统
+TECH_DIG_INF_006,digital,数字医疗与AI,医疗IT基础设施,PACS影像归档与通信,医疗信息系统层,PACS,数字医疗 > 医疗IT基础设施 > PACS影像归档与通信
+TECH_DIG_INF_007,digital,数字医疗与AI,医疗IT基础设施,AIMS麻醉信息系统,医疗信息系统层,anesthesia information management system; AIMS,数字医疗 > 医疗IT基础设施 > AIMS麻醉信息系统
+TECH_DIG_INF_008,digital,数字医疗与AI,医疗IT基础设施,NIS护理信息系统,医疗信息系统层,nursing information system; NIS,数字医疗 > 医疗IT基础设施 > NIS护理信息系统
+TECH_DIG_INF_009,digital,数字医疗与AI,医疗IT基础设施,CPOE医嘱系统,医疗信息系统层,computerized physician order entry; CPOE,数字医疗 > 医疗IT基础设施 > CPOE医嘱系统
+TECH_DIG_INF_010,digital,数字医疗与AI,医疗IT基础设施,药房信息系统PIS,医疗信息系统层,pharmacy information system; PIS,数字医疗 > 医疗IT基础设施 > 药房信息系统PIS
+TECH_DIG_INF_011,digital,数字医疗与AI,医疗IT基础设施,互联互通/HL7,医疗信息系统层,HL7 interoperability,数字医疗 > 医疗IT基础设施 > 互联互通/HL7
+TECH_DIG_INF_012,digital,数字医疗与AI,医疗IT基础设施,FHIR标准,医疗信息系统层,FHIR,数字医疗 > 医疗IT基础设施 > FHIR标准
+TECH_DIG_INF_013,digital,数字医疗与AI,医疗IT基础设施,DICOM标准,医疗信息系统层,DICOM,数字医疗 > 医疗IT基础设施 > DICOM标准
+TECH_DIG_INF_014,digital,数字医疗与AI,医疗IT基础设施,EMPI主索引,医疗信息系统层,enterprise master patient index; EMPI,数字医疗 > 医疗IT基础设施 > EMPI主索引
+TECH_DIG_INF_015,digital,数字医疗与AI,医疗IT基础设施,主数据管理MDM,医疗信息系统层,master data management; MDM,数字医疗 > 医疗IT基础设施 > 主数据管理MDM
+TECH_DIG_INF_016,digital,数字医疗与AI,医疗IT基础设施,数据中台/数据仓库,医疗信息系统层,health data warehouse; data platform,数字医疗 > 医疗IT基础设施 > 数据中台/数据仓库
+TECH_DIG_INF_017,digital,数字医疗与AI,医疗IT基础设施,医疗数据治理与质量,医疗信息系统层,data governance; data quality,数字医疗 > 医疗IT基础设施 > 医疗数据治理与质量
+TECH_DIG_INF_018,digital,数字医疗与AI,医疗IT基础设施,隐私计算,医疗信息系统层,privacy-preserving computation,数字医疗 > 医疗IT基础设施 > 隐私计算
+TECH_DIG_INF_019,digital,数字医疗与AI,医疗IT基础设施,联邦学习,医疗信息系统层,federated learning,数字医疗 > 医疗IT基础设施 > 联邦学习
+TECH_DIG_INF_020,digital,数字医疗与AI,医疗IT基础设施,零信任安全,医疗信息系统层,zero trust security,数字医疗 > 医疗IT基础设施 > 零信任安全
+TECH_DIG_INF_021,digital,数字医疗与AI,医疗IT基础设施,身份认证与IAM,医疗信息系统层,identity and access management; IAM,数字医疗 > 医疗IT基础设施 > 身份认证与IAM
+TECH_DIG_INF_022,digital,数字医疗与AI,医疗IT基础设施,日志审计与合规,医疗信息系统层,audit logging; compliance,数字医疗 > 医疗IT基础设施 > 日志审计与合规
+TECH_DIG_APP_001,digital,数字医疗与AI,临床与患者应用,CDSS临床决策支持,医疗信息系统层,clinical decision support system; CDSS,数字医疗 > 临床与患者应用 > CDSS临床决策支持
+TECH_DIG_APP_002,digital,数字医疗与AI,临床与患者应用,AI影像辅助诊断,医疗信息系统层,AI imaging diagnosis,数字医疗 > 临床与患者应用 > AI影像辅助诊断
+TECH_DIG_APP_003,digital,数字医疗与AI,临床与患者应用,病理AI/数字病理,医疗信息系统层,digital pathology; pathology AI,数字医疗 > 临床与患者应用 > 病理AI/数字病理
+TECH_DIG_APP_004,digital,数字医疗与AI,临床与患者应用,智能分诊导诊,医疗信息系统层,AI triage,数字医疗 > 临床与患者应用 > 智能分诊导诊
+TECH_DIG_APP_005,digital,数字医疗与AI,临床与患者应用,互联网医院/远程门诊,医疗信息系统层,internet hospital; telemedicine,数字医疗 > 临床与患者应用 > 互联网医院/远程门诊
+TECH_DIG_APP_006,digital,数字医疗与AI,临床与患者应用,远程会诊,医疗信息系统层,remote consultation,数字医疗 > 临床与患者应用 > 远程会诊
+TECH_DIG_APP_007,digital,数字医疗与AI,临床与患者应用,远程患者监测RPM,医疗信息系统层,remote patient monitoring; RPM,数字医疗 > 临床与患者应用 > 远程患者监测RPM
+TECH_DIG_APP_008,digital,数字医疗与AI,临床与患者应用,慢病管理平台,医疗信息系统层,chronic disease management,数字医疗 > 临床与患者应用 > 慢病管理平台
+TECH_DIG_APP_009,digital,数字医疗与AI,临床与患者应用,用药依从性管理,医疗信息系统层,medication adherence,数字医疗 > 临床与患者应用 > 用药依从性管理
+TECH_DIG_APP_010,digital,数字医疗与AI,临床与患者应用,患者随访管理,医疗信息系统层,patient follow-up management,数字医疗 > 临床与患者应用 > 患者随访管理
+TECH_DIG_APP_011,digital,数字医疗与AI,临床与患者应用,患者教育与内容平台,医疗信息系统层,patient education platform,数字医疗 > 临床与患者应用 > 患者教育与内容平台
+TECH_DIG_APP_012,digital,数字医疗与AI,临床与患者应用,数字疗法DTx,医疗信息系统层,digital therapeutics; DTx,数字医疗 > 临床与患者应用 > 数字疗法DTx
+TECH_DIG_APP_013,digital,数字医疗与AI,临床与患者应用,可穿戴数据接入,医疗信息系统层,wearable data integration,数字医疗 > 临床与患者应用 > 可穿戴数据接入
+TECH_DIG_APP_014,digital,数字医疗与AI,临床与患者应用,居家护理调度,医疗信息系统层,home care scheduling,数字医疗 > 临床与患者应用 > 居家护理调度
+TECH_DIG_APP_015,digital,数字医疗与AI,临床与患者应用,医保结算对接,医疗信息系统层,insurance claims integration,数字医疗 > 临床与患者应用 > 医保结算对接
+TECH_DIG_APP_016,digital,数字医疗与AI,临床与患者应用,医院运营管理(绩效/排班),医疗信息系统层,hospital operations management,数字医疗 > 临床与患者应用 > 医院运营管理(绩效/排班)
+TECH_DIG_APP_017,digital,数字医疗与AI,临床与患者应用,临床路径管理,医疗信息系统层,clinical pathway management,数字医疗 > 临床与患者应用 > 临床路径管理
+TECH_DIG_APP_018,digital,数字医疗与AI,临床与患者应用,质控与不良事件上报,医疗信息系统层,quality control; adverse event reporting,数字医疗 > 临床与患者应用 > 质控与不良事件上报
+TECH_DIG_APP_019,digital,数字医疗与AI,临床与患者应用,临床试验ePRO/eCOA,医疗信息系统层,ePRO; eCOA,数字医疗 > 临床与患者应用 > 临床试验ePRO/eCOA
+TECH_DIG_APP_020,digital,数字医疗与AI,临床与患者应用,去中心化临床试验DCT,医疗信息系统层,decentralized clinical trials; DCT,数字医疗 > 临床与患者应用 > 去中心化临床试验DCT
+TECH_DIG_APP_021,digital,数字医疗与AI,临床与患者应用,真实世界研究平台RWE/RWD,医疗信息系统层,real-world evidence/data platform,数字医疗 > 临床与患者应用 > 真实世界研究平台RWE/RWD
+TECH_AI_DRUG_001,ai,数字医疗与AI,AI制药-分子层,小分子虚拟筛选,算法与模型层,virtual screening; docking-based screening,计算与AI > AI制药-分子层 > 小分子虚拟筛选
+TECH_AI_DRUG_002,ai,数字医疗与AI,AI制药-分子层,结构基础药物设计SBDD,算法与模型层,structure-based drug design; SBDD,计算与AI > AI制药-分子层 > 结构基础药物设计SBDD
+TECH_AI_DRUG_003,ai,数字医疗与AI,AI制药-分子层,配体基础药物设计LBDD,算法与模型层,ligand-based drug design; LBDD,计算与AI > AI制药-分子层 > 配体基础药物设计LBDD
+TECH_AI_DRUG_004,ai,数字医疗与AI,AI制药-分子层,分子生成模型(扩散/Flow),算法与模型层,molecular generative model; diffusion; flow matching,计算与AI > AI制药-分子层 > 分子生成模型(扩散/Flow)
+TECH_AI_DRUG_005,ai,数字医疗与AI,AI制药-分子层,分子生成模型(VAE/GAN),算法与模型层,VAE; GAN for molecule generation,计算与AI > AI制药-分子层 > 分子生成模型(VAE/GAN)
+TECH_AI_DRUG_006,ai,数字医疗与AI,AI制药-分子层,多目标优化(活性/ADMET/合成),算法与模型层,multi-objective optimization; activity ADMET synth,计算与AI > AI制药-分子层 > 多目标优化(活性/ADMET/合成)
+TECH_AI_DRUG_007,ai,数字医疗与AI,AI制药-分子层,ADMET预测,算法与模型层,ADMET prediction,计算与AI > AI制药-分子层 > ADMET预测
+TECH_AI_DRUG_008,ai,数字医疗与AI,AI制药-分子层,毒性预测,算法与模型层,toxicity prediction,计算与AI > AI制药-分子层 > 毒性预测
+TECH_AI_DRUG_009,ai,数字医疗与AI,AI制药-分子层,溶解度/渗透性预测,算法与模型层,solubility; permeability prediction,计算与AI > AI制药-分子层 > 溶解度/渗透性预测
+TECH_AI_DRUG_010,ai,数字医疗与AI,AI制药-分子层,蛋白-配体亲和力预测,算法与模型层,binding affinity prediction,计算与AI > AI制药-分子层 > 蛋白-配体亲和力预测
+TECH_AI_DRUG_011,ai,数字医疗与AI,AI制药-分子层,反应路径预测,算法与模型层,reaction prediction,计算与AI > AI制药-分子层 > 反应路径预测
+TECH_AI_DRUG_012,ai,数字医疗与AI,AI制药-分子层,逆合成规划,算法与模型层,retrosynthesis planning,计算与AI > AI制药-分子层 > 逆合成规划
+TECH_AI_DRUG_013,ai,数字医疗与AI,AI制药-分子层,可合成性评分/合成可行性,算法与模型层,synthetic accessibility; feasibility scoring,计算与AI > AI制药-分子层 > 可合成性评分/合成可行性
+TECH_AI_DRUG_014,ai,数字医疗与AI,AI制药-分子层,分子动力学模拟MD,算法与模型层,molecular dynamics; MD simulation,计算与AI > AI制药-分子层 > 分子动力学模拟MD
+TECH_AI_DRUG_015,ai,数字医疗与AI,AI制药-分子层,自由能计算FEP,算法与模型层,free energy perturbation; FEP,计算与AI > AI制药-分子层 > 自由能计算FEP
+TECH_AI_DRUG_016,ai,数字医疗与AI,AI制药-分子层,量子化学计算DFT,算法与模型层,density functional theory; DFT,计算与AI > AI制药-分子层 > 量子化学计算DFT
+TECH_AI_PROT_001,ai,数字医疗与AI,AI制药-蛋白层,蛋白结构预测,算法与模型层,protein structure prediction,计算与AI > AI制药-蛋白层 > 蛋白结构预测
+TECH_AI_PROT_002,ai,数字医疗与AI,AI制药-蛋白层,蛋白序列生成,算法与模型层,protein sequence generation,计算与AI > AI制药-蛋白层 > 蛋白序列生成
+TECH_AI_PROT_003,ai,数字医疗与AI,AI制药-蛋白层,蛋白功能注释,算法与模型层,protein function annotation,计算与AI > AI制药-蛋白层 > 蛋白功能注释
+TECH_AI_PROT_004,ai,数字医疗与AI,AI制药-蛋白层,蛋白-蛋白相互作用预测PPI,算法与模型层,protein-protein interaction; PPI prediction,计算与AI > AI制药-蛋白层 > 蛋白-蛋白相互作用预测PPI
+TECH_AI_PROT_005,ai,数字医疗与AI,AI制药-蛋白层,蛋白-核酸相互作用预测,算法与模型层,protein-nucleic acid interaction prediction,计算与AI > AI制药-蛋白层 > 蛋白-核酸相互作用预测
+TECH_AI_PROT_006,ai,数字医疗与AI,AI制药-蛋白层,抗体序列设计,算法与模型层,antibody sequence design,计算与AI > AI制药-蛋白层 > 抗体序列设计
+TECH_AI_PROT_007,ai,数字医疗与AI,AI制药-蛋白层,抗体可开发性评估,算法与模型层,developability assessment,计算与AI > AI制药-蛋白层 > 抗体可开发性评估
+TECH_AI_PROT_008,ai,数字医疗与AI,AI制药-蛋白层,抗体亲和力成熟,算法与模型层,affinity maturation,计算与AI > AI制药-蛋白层 > 抗体亲和力成熟
+TECH_AI_PROT_009,ai,数字医疗与AI,AI制药-蛋白层,抗体构象建模/对接,算法与模型层,antibody modeling; docking,计算与AI > AI制药-蛋白层 > 抗体构象建模/对接
+TECH_AI_PROT_010,ai,数字医疗与AI,AI制药-蛋白层,蛋白稳定性/聚集预测,算法与模型层,protein stability; aggregation prediction,计算与AI > AI制药-蛋白层 > 蛋白稳定性/聚集预测
+TECH_AI_PROT_011,ai,数字医疗与AI,AI制药-蛋白层,蛋白工程位点设计,算法与模型层,protein engineering site design,计算与AI > AI制药-蛋白层 > 蛋白工程位点设计
+TECH_AI_PROT_012,ai,数字医疗与AI,AI制药-蛋白层,酶工程与定向进化设计,算法与模型层,enzyme engineering; directed evolution design,计算与AI > AI制药-蛋白层 > 酶工程与定向进化设计
+TECH_AI_OMICS_001,ai,数字医疗与AI,多组学与生物信息,单细胞数据分析,算法与模型层,single-cell analysis,计算与AI > 多组学与生物信息 > 单细胞数据分析
+TECH_AI_OMICS_002,ai,数字医疗与AI,多组学与生物信息,空间组学分析,算法与模型层,spatial omics analysis,计算与AI > 多组学与生物信息 > 空间组学分析
+TECH_AI_OMICS_003,ai,数字医疗与AI,多组学与生物信息,多组学整合,算法与模型层,multi-omics integration,计算与AI > 多组学与生物信息 > 多组学整合
+TECH_AI_OMICS_004,ai,数字医疗与AI,多组学与生物信息,差异表达与通路富集,算法与模型层,DEG; pathway enrichment,计算与AI > 多组学与生物信息 > 差异表达与通路富集
+TECH_AI_OMICS_005,ai,数字医疗与AI,多组学与生物信息,网络生物学/调控网络,算法与模型层,network biology; regulatory network,计算与AI > 多组学与生物信息 > 网络生物学/调控网络
+TECH_AI_OMICS_006,ai,数字医疗与AI,多组学与生物信息,变异检测/基因分型,算法与模型层,variant calling; genotyping,计算与AI > 多组学与生物信息 > 变异检测/基因分型
+TECH_AI_OMICS_007,ai,数字医疗与AI,多组学与生物信息,基因表达去卷积,算法与模型层,deconvolution,计算与AI > 多组学与生物信息 > 基因表达去卷积
+TECH_AI_OMICS_008,ai,数字医疗与AI,多组学与生物信息,表型-基因关联,算法与模型层,genotype-phenotype association,计算与AI > 多组学与生物信息 > 表型-基因关联
+TECH_AI_OMICS_009,ai,数字医疗与AI,多组学与生物信息,GWAS/PRS风险评分,算法与模型层,GWAS; polygenic risk score; PRS,计算与AI > 多组学与生物信息 > GWAS/PRS风险评分
+TECH_AI_OMICS_010,ai,数字医疗与AI,多组学与生物信息,蛋白质组定量与识别,算法与模型层,proteomics quantification; identification,计算与AI > 多组学与生物信息 > 蛋白质组定量与识别
+TECH_AI_OMICS_011,ai,数字医疗与AI,多组学与生物信息,代谢组峰识别与注释,算法与模型层,metabolomics peak picking; annotation,计算与AI > 多组学与生物信息 > 代谢组峰识别与注释
+TECH_AI_KG_001,ai,数字医疗与AI,知识图谱与RAG,药物-靶点-疾病知识图谱,语义与知识层,drug-target-disease knowledge graph,计算与AI > 知识图谱与RAG > 药物-靶点-疾病知识图谱
+TECH_AI_KG_002,ai,数字医疗与AI,知识图谱与RAG,临床指南/路径知识图谱,语义与知识层,clinical guideline knowledge graph,计算与AI > 知识图谱与RAG > 临床指南/路径知识图谱
+TECH_AI_KG_003,ai,数字医疗与AI,知识图谱与RAG,科研文献知识图谱,语义与知识层,literature knowledge graph,计算与AI > 知识图谱与RAG > 科研文献知识图谱
+TECH_AI_KG_004,ai,数字医疗与AI,知识图谱与RAG,企业/专利/投融资知识图谱,语义与知识层,industry knowledge graph,计算与AI > 知识图谱与RAG > 企业/专利/投融资知识图谱
+TECH_AI_KG_005,ai,数字医疗与AI,知识图谱与RAG,本体构建与对齐(OWL/RDF),语义与知识层,ontology; OWL; RDF alignment,计算与AI > 知识图谱与RAG > 本体构建与对齐(OWL/RDF)
+TECH_AI_KG_006,ai,数字医疗与AI,知识图谱与RAG,实体识别NER,语义与知识层,named entity recognition; NER,计算与AI > 知识图谱与RAG > 实体识别NER
+TECH_AI_KG_007,ai,数字医疗与AI,知识图谱与RAG,关系抽取RE,语义与知识层,relation extraction; RE,计算与AI > 知识图谱与RAG > 关系抽取RE
+TECH_AI_KG_008,ai,数字医疗与AI,知识图谱与RAG,事件抽取/事件时间线,语义与知识层,event extraction; timeline,计算与AI > 知识图谱与RAG > 事件抽取/事件时间线
+TECH_AI_KG_009,ai,数字医疗与AI,知识图谱与RAG,实体消歧/指代消解,语义与知识层,entity disambiguation; coreference resolution,计算与AI > 知识图谱与RAG > 实体消歧/指代消解
+TECH_AI_KG_010,ai,数字医疗与AI,知识图谱与RAG,向量检索/语义召回,语义与知识层,vector search; semantic retrieval,计算与AI > 知识图谱与RAG > 向量检索/语义召回
+TECH_AI_KG_011,ai,数字医疗与AI,知识图谱与RAG,RAG检索增强生成,语义与知识层,retrieval-augmented generation; RAG,计算与AI > 知识图谱与RAG > RAG检索增强生成
+TECH_AI_KG_012,ai,数字医疗与AI,知识图谱与RAG,重排序Rerank,语义与知识层,reranking; cross-encoder rerank,计算与AI > 知识图谱与RAG > 重排序Rerank
+TECH_AI_CLIN_001,ai,数字医疗与AI,临床AI与医疗大模型,医学影像分割,应用智能层,medical image segmentation,计算与AI > 临床AI与医疗大模型 > 医学影像分割
+TECH_AI_CLIN_002,ai,数字医疗与AI,临床AI与医疗大模型,医学影像检测/分类,应用智能层,medical image detection; classification,计算与AI > 临床AI与医疗大模型 > 医学影像检测/分类
+TECH_AI_CLIN_003,ai,数字医疗与AI,临床AI与医疗大模型,数字病理WSI分析,应用智能层,whole slide imaging; WSI analysis,计算与AI > 临床AI与医疗大模型 > 数字病理WSI分析
+TECH_AI_CLIN_004,ai,数字医疗与AI,临床AI与医疗大模型,放射组学建模,应用智能层,radiomics modeling,计算与AI > 临床AI与医疗大模型 > 放射组学建模
+TECH_AI_CLIN_005,ai,数字医疗与AI,临床AI与医疗大模型,临床文本结构化,应用智能层,clinical NLP; structuring,计算与AI > 临床AI与医疗大模型 > 临床文本结构化
+TECH_AI_CLIN_006,ai,数字医疗与AI,临床AI与医疗大模型,医学问答/助手,应用智能层,medical QA assistant,计算与AI > 临床AI与医疗大模型 > 医学问答/助手
+TECH_AI_CLIN_007,ai,数字医疗与AI,临床AI与医疗大模型,病历摘要与随访生成,应用智能层,clinical summarization; follow-up generation,计算与AI > 临床AI与医疗大模型 > 病历摘要与随访生成
+TECH_AI_CLIN_008,ai,数字医疗与AI,临床AI与医疗大模型,临床决策支持CDSS(LLM),应用智能层,LLM-based CDSS,计算与AI > 临床AI与医疗大模型 > 临床决策支持CDSS(LLM)
+TECH_AI_CLIN_009,ai,数字医疗与AI,临床AI与医疗大模型,多模态医疗大模型,应用智能层,multimodal medical foundation model,计算与AI > 临床AI与医疗大模型 > 多模态医疗大模型
+TECH_AI_CLIN_010,ai,数字医疗与AI,临床AI与医疗大模型,智能分诊与导诊,应用智能层,AI triage; navigation,计算与AI > 临床AI与医疗大模型 > 智能分诊与导诊
+TECH_AI_CLIN_011,ai,数字医疗与AI,临床AI与医疗大模型,药事审方与用药安全,应用智能层,medication review; safety,计算与AI > 临床AI与医疗大模型 > 药事审方与用药安全
+TECH_AI_CLIN_012,ai,数字医疗与AI,临床AI与医疗大模型,病程质控与编码辅助,应用智能层,clinical quality control; coding assist,计算与AI > 临床AI与医疗大模型 > 病程质控与编码辅助
+TECH_AI_RWE_001,ai,数字医疗与AI,RWE/因果推断/HEOR,RWD数据清洗与队列构建,数据分析与推断层,cohort building; RWD curation,计算与AI > RWE/因果推断/HEOR > RWD数据清洗与队列构建
+TECH_AI_RWE_002,ai,数字医疗与AI,RWE/因果推断/HEOR,表型算法(计算表型),数据分析与推断层,computational phenotyping,计算与AI > RWE/因果推断/HEOR > 表型算法(计算表型)
+TECH_AI_RWE_003,ai,数字医疗与AI,RWE/因果推断/HEOR,倾向评分匹配/加权,数据分析与推断层,propensity score matching; weighting,计算与AI > RWE/因果推断/HEOR > 倾向评分匹配/加权
+TECH_AI_RWE_004,ai,数字医疗与AI,RWE/因果推断/HEOR,差分中的差分DID,数据分析与推断层,difference-in-differences; DiD,计算与AI > RWE/因果推断/HEOR > 差分中的差分DID
+TECH_AI_RWE_005,ai,数字医疗与AI,RWE/因果推断/HEOR,中断时间序列ITS,数据分析与推断层,interrupted time series; ITS,计算与AI > RWE/因果推断/HEOR > 中断时间序列ITS
+TECH_AI_RWE_006,ai,数字医疗与AI,RWE/因果推断/HEOR,工具变量IV,数据分析与推断层,instrumental variables; IV,计算与AI > RWE/因果推断/HEOR > 工具变量IV
+TECH_AI_RWE_007,ai,数字医疗与AI,RWE/因果推断/HEOR,目标试验模拟TTE,数据分析与推断层,target trial emulation,计算与AI > RWE/因果推断/HEOR > 目标试验模拟TTE
+TECH_AI_RWE_008,ai,数字医疗与AI,RWE/因果推断/HEOR,生存分析/风险模型,数据分析与推断层,survival analysis; hazard model,计算与AI > RWE/因果推断/HEOR > 生存分析/风险模型
+TECH_AI_RWE_009,ai,数字医疗与AI,RWE/因果推断/HEOR,疾病进展模型,数据分析与推断层,disease progression modeling,计算与AI > RWE/因果推断/HEOR > 疾病进展模型
+TECH_AI_RWE_010,ai,数字医疗与AI,RWE/因果推断/HEOR,医疗经济学建模(成本-效果),数据分析与推断层,cost-effectiveness modeling,计算与AI > RWE/因果推断/HEOR > 医疗经济学建模(成本-效果)
+TECH_AI_RWE_011,ai,数字医疗与AI,RWE/因果推断/HEOR,预算影响分析BIA,数据分析与推断层,budget impact analysis; BIA,计算与AI > RWE/因果推断/HEOR > 预算影响分析BIA
+TECH_AI_RWE_012,ai,数字医疗与AI,RWE/因果推断/HEOR,信号检测/药物警戒,数据分析与推断层,pharmacovigilance; signal detection,计算与AI > RWE/因果推断/HEOR > 信号检测/药物警戒
+TECH_AI_LAB_001,ai,数字医疗与AI,自动化实验与仿真,机器人实验平台,实验与仿真层,robotic lab automation,计算与AI > 自动化实验与仿真 > 机器人实验平台
+TECH_AI_LAB_002,ai,数字医疗与AI,自动化实验与仿真,高通量筛选HTS数据分析,实验与仿真层,high-throughput screening; HTS analytics,计算与AI > 自动化实验与仿真 > 高通量筛选HTS数据分析
+TECH_AI_LAB_003,ai,数字医疗与AI,自动化实验与仿真,自动化合成/反应优化,实验与仿真层,automated synthesis; reaction optimization,计算与AI > 自动化实验与仿真 > 自动化合成/反应优化
+TECH_AI_LAB_004,ai,数字医疗与AI,自动化实验与仿真,实验设计DoE,实验与仿真层,design of experiments; DoE,计算与AI > 自动化实验与仿真 > 实验设计DoE
+TECH_AI_LAB_005,ai,数字医疗与AI,自动化实验与仿真,数字孪生细胞/虚拟细胞,实验与仿真层,digital twin cell; virtual cell,计算与AI > 自动化实验与仿真 > 数字孪生细胞/虚拟细胞
+TECH_AI_LAB_006,ai,数字医疗与AI,自动化实验与仿真,工艺数字孪生,实验与仿真层,process digital twin,计算与AI > 自动化实验与仿真 > 工艺数字孪生
+TECH_AI_LAB_007,ai,数字医疗与AI,自动化实验与仿真,仿真与优化(蒙特卡洛),实验与仿真层,simulation; Monte Carlo optimization,计算与AI > 自动化实验与仿真 > 仿真与优化(蒙特卡洛)
 TECH_SVC_CRO_PRE_001,service,医药研发服务,CRO-发现与前期研究,靶点发现与验证,研发服务与产业化层,target discovery; target validation,医药研发服务 > CRO-发现与前期研究 > 靶点发现与验证
 TECH_SVC_CRO_PRE_002,service,医药研发服务,CRO-发现与前期研究,药物筛选(HTS),研发服务与产业化层,high-throughput screening; HTS,医药研发服务 > CRO-发现与前期研究 > 药物筛选(HTS)
 TECH_SVC_CRO_PRE_003,service,医药研发服务,CRO-发现与前期研究,片段筛选FBDD,研发服务与产业化层,fragment-based drug discovery; FBDD,医药研发服务 > CRO-发现与前期研究 > 片段筛选FBDD

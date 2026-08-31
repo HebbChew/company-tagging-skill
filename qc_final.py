@@ -118,7 +118,7 @@ print(f'兜底句: {fb} 家（其中行业笼统 {fb_vague}）')
 
 # 9) 无公开信息但有内容字段（违反铁律）
 viol = [(g(r,'序号'), g(r,'公司名称')[:12]) for r in rows
-        if g(r,'信息状态') == '无公开信息' and g(r,'主体系') and not str(g(r,'标签依据')).startswith(('登记信息','名称规则'))]
+        if g(r,'信息状态') == '无公开信息' and g(r,'主体系') and not str(g(r,'标签依据')).startswith(('登记信息','名称规则','机构类型直标'))]
 if viol: issues.append(f'无信息却有标签(非登记依据): {viol[:8]}')
 
 print('\n=== 问题清单 ===')

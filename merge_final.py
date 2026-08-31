@@ -81,6 +81,11 @@ def fallback_intro(hy, searched):
         return f'（登记行业：{hy}）经搜索暂无公开经营信息'
     return '（登记行业信息笼统）经搜索暂无公开经营信息'
 
+# 搜索层级归一：封闭枚举为 深挖/核验/打底/追挖/未搜索（2026-08-31 重命名，兼容旧码 S2/S1/S0/S0+）
+LEVEL_NORM = {'S2': '深挖', 'S1': '核验', 'S0': '打底', 'S0+': '追挖', '复找': '追挖', '': '未搜索',
+              '深挖': '深挖', '核验': '核验', '打底': '打底', '追挖': '追挖', '未搜索': '未搜索'}
+def norm_level(lv):
+    return LEVEL_NORM.get(str(lv or ''), '追挖')
 # 格式归一
 def norm_intro(s):
     if not s: return ''
@@ -160,15 +165,25 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
                 status = ''; gate_dropped += 1
         # 信息状态
         has_content = bool((a.get('主营业务') or '').strip())
+        ev = ''
+        if s and s.get('证据'):
+            ev = '；'.join(f"{e.get('来源','')}:{e.get('URL','')}:{e.get('摘要','')[:30]}" for e in s['证据'][:2])
+        has_ev = bool(ev) and '暂无' not in ev and '未见' not in ev
         if s:
             info = '已核验' if s.get('地位核验') in ('确认', '修正') else ('无公开信息' if not has_content else '部分核验')
+            if info == '无公开信息' and has_ev:
+                info = '部分核验'  # 有搜索证据不得标"无公开信息"（用户裁定 2026-08-31）
         else:
             info = '未搜索(≤100万不搜)'
         if a.get('母公司置信度') == '疑似' or (s and s.get('母公司置信度_终稿') == '疑似'):
             info = '存疑待核'
         intro = a.get('一句话简介', '')
         if not intro and not has_content:
-            intro = fallback_intro(base_map[k]['行业小类'], searched=bool(s))
+            # 有搜索证据时禁止用占位语（会盖住证据），改用待回填标记（用户裁定 2026-08-31）
+            if has_ev:
+                intro = '（搜索有证据，简介待回填）'
+            else:
+                intro = fallback_intro(base_map[k]['行业小类'], searched=bool(s))
         parent, pnote = norm_parent((s.get('母公司_终稿') if s else '') or a.get('母公司', ''))
         parent = PARENT_ALIAS.get(parent, parent)
         parconf = (s.get('母公司置信度_终稿') if s else '') or a.get('母公司置信度', '')
@@ -179,18 +194,23 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         if p_override:
             parent = p_override[0]
             if p_override[1]: parconf = p_override[1]
-        ev = ''
-        if s and s.get('证据'):
-            ev = '；'.join(f"{e.get('来源','')}:{e.get('URL','')}:{e.get('摘要','')[:30]}" for e in s['证据'][:2])
         rel = (s.get('相关度') if s else '') or a.get('相关度', '')
-        # 无信息/未搜索企业：相关度不留默认R0，如实置空=未判定（用户裁定 2026-08-28）
-        if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）'):
+        # 零证据（无搜索证据且非母公司确证）→ 相关度一律置空=未判定（用户裁定 2026-08-31，扩展原仅R0规则）
+        if rel and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）') \
+                and not has_ev and parconf not in ('确定', '疑似'):
             rel = ''
+        # 机构类型直标/名称规则/医疗流通服务类属名单核心：补 R0
+        if rel == '' and ((bb.get('标签依据') or '').startswith(('机构类型直标', '名称规则-药品零售', '名称规则-医疗服务'))
+                          or (bb['主体系'] == 'service' and re.search(r'药房|药店|门诊部|诊所|医院', a['公司名称']))):
+            rel = 'R0'
         # QC修复1: R3/R4 不打领域标签（杂类不进标签库）
         if rel in ('R3', 'R4'):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '二级标签副': '', '三级标签': '', '规则置信度': '', '标签依据': ''})
-        # QC修复2: 无公开信息企业只保留登记信息标签
-        if info == '无公开信息' and not (bb.get('标签依据') or '').startswith(('登记信息', '名称规则')):
+        # QC修复2: 无公开信息企业只保留登记信息标签；零证据行一律不打（机构类型/名称规则等登记直标除外）（2026-08-31 强化）
+        zero_ev = info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）') and not has_ev
+        if zero_ev and not (bb.get('标签依据') or '').startswith(('机构类型', '名称规则')):
+            bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '二级标签副': '', '三级标签': '', '规则置信度': '', '标签依据': ''})
+        elif info == '无公开信息' and not (bb.get('标签依据') or '').startswith(('登记信息', '名称规则', '机构类型')):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '二级标签副': '', '三级标签': '', '规则置信度': '', '标签依据': ''})
         # QC修复3: 地位词闸门全量执行——无搜索记录或无证据URL一律清空
         if status:
@@ -219,12 +239,14 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         _ns, _nl1, _nl2, _nl3, _ = tag_norm(bb['主体系'], bb['二级标签主'], bb['三级标签'])
         if _nl1 is None:
             _ns, _nl1, _nl2, _nl3 = bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签']
+        if (bb.get('标签依据') or '') == '名称规则-医疗服务':
+            _nl1 = '医疗服务（补充）'
         if _ovk in OVERRIDE and (OVERRIDE[_ovk].get('一级') or '').strip():
             _nl1 = OVERRIDE[_ovk]['一级'].strip()
         ws.append([k, a['公司名称'], rel, (s.get('边界理由') if s else '') or '',
                    _ns, _nl1, _nl2, bb['二级标签副'], _nl3,
                    bb['规则置信度'], bb.get('标签依据', ''), norm_intro(intro), status,
-                   parent, parconf, a['知名度'], (s.get('层级') if s else '未搜索'), info,
+                   parent, parconf, a['知名度'], norm_level(s.get('层级') if s else '未搜索'), info,
                    ev, remark, TODAY])
         n += 1
         qc[f"相关度_{rel or '空'}"] += 1
@@ -278,8 +300,13 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             info = '存疑待核'
         rel = (s.get('相关度') if s else '') or a.get('相关度', '')
         # 无信息/未搜索企业：相关度不留默认R0，如实置空=未判定（用户裁定 2026-08-28）
-        if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）'):
+        if rel == 'R0' and info in ('无公开信息', '未搜索(≤100万不搜)', '未核验（待补搜）') \
+                and parconf not in ('确定', '疑似'):
             rel = ''
+        # 机构类型直标/名称规则/医疗流通服务类属名单核心：补 R0
+        if rel == '' and ((bb.get('标签依据') or '').startswith(('机构类型直标', '名称规则-药品零售', '名称规则-医疗服务'))
+                          or (bb['主体系'] == 'service' and re.search(r'药房|药店|门诊部|诊所|医院', a['公司名称']))):
+            rel = 'R0'
         if rel in ('R3', 'R4'):
             bb = dict(bb); bb.update({'主体系': '', '二级标签主': '', '三级标签': '', '规则置信度': ''})
         if info == '无公开信息' and not (bb.get('标签依据') or '').startswith(('登记信息', '名称规则')):
@@ -305,10 +332,12 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
         _ns, _nl1, _nl2, _nl3, _ = tag_norm(bb['主体系'], bb['二级标签主'], bb['三级标签'])
         if _nl1 is None:
             _ns, _nl1, _nl2, _nl3 = bb['主体系'], lvl1(bb['主体系'], bb['二级标签主']), bb['二级标签主'], bb['三级标签']
+        if (bb.get('标签依据') or '') == '名称规则-医疗服务':
+            _nl1 = '医疗服务（补充）'
         annot[k] = [rel, _ns, _nl1, _nl2, _nl3,
                     bb['规则置信度'], norm_intro(intro), status, parent,
                     (s.get('母公司置信度_终稿') if s else '') or a.get('母公司置信度', ''),
-                    (s.get('层级') if s else '未搜索'), info]
+                    norm_level(s.get('层级') if s else '未搜索'), info]
 n_orig = 0
 for row in src_rows[1:]:
     sid = row[0]
@@ -322,7 +351,80 @@ ws0.column_dimensions['B'].width = 30
 print(f'原表+标注 sheet: {n_orig} 行（含非存续 5 家）')
 
 FINAL_XLSX = os.environ.get('MHB_FINAL_XLSX', f'{BASE}/full/终稿_企业标注.xlsx')
+
+# ---- 机构类型直标（收尾步骤）----
+def _apply_institution_type():
+    swb = openpyxl.load_workbook(SRC, read_only=True)
+    sws = swb[swb.sheetnames[0]]  # 取源表第一个 sheet，兼容不同名单表名
+    hdr0 = [c for c in next(sws.iter_rows(min_row=1, max_row=1, values_only=True))]
+    ix0 = {h: i for i, h in enumerate(hdr0)}
+    if '机构类型' not in ix0:
+        return 0, 0, 0
+    orgtype = {int(r[ix0['序号']]): str(r[ix0['机构类型']] or '').strip() for r in sws.iter_rows(min_row=2, values_only=True)}
+    def tag_of(ot):
+        if ot in ('医院', '门诊部', '诊所', '基层医疗', '其他卫生', '医疗管理', '健康管理'):
+            return ('service', '医疗服务（补充）', '机构类型直标')
+        if ot in ('药房', '药店'):
+            return ('service', '医药供应链与流通（补充）', '机构类型直标')
+        return None
+    wb2 = openpyxl.load_workbook(FINAL_XLSX)
+    direct, applied, wait = 0, 0, 0
+    ws = wb2['终稿']
+    HDRX = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
+    jx = {h: i for i, h in enumerate(HDRX)}
+    colx = {h: jx[h] + 1 for h in HDRX}
+    for r in ws.iter_rows(min_row=2):
+        sid = int(r[colx['序号'] - 1].value)
+        ot = orgtype.get(sid, '')
+        searched = str(r[colx['搜索层级'] - 1].value or '') not in ('', '未搜索')
+        info = str(r[colx['信息状态'] - 1].value or '')
+        has_tag = bool(str(r[colx['主体系'] - 1].value or ''))
+        rel_v = str(r[colx['相关度'] - 1].value or '')
+        if not searched:
+            if rel_v in ('R3', 'R4'):
+                continue
+            if ot and tag_of(ot):
+                sys_, l1, basis = tag_of(ot)
+                r[colx['主体系'] - 1].value = sys_
+                r[colx['一级'] - 1].value = l1
+                r[colx['标签置信度'] - 1].value = '低'
+                r[colx['标签依据'] - 1].value = basis
+                r[colx['信息状态'] - 1].value = '未核验（机构类型直标）'
+                direct += 1
+            else:
+                r[colx['信息状态'] - 1].value = '未核验（待补搜）'
+                wait += 1
+        elif info == '无公开信息' and ot and not has_tag and tag_of(ot) and rel_v not in ('R3', 'R4'):
+            sys_, l1, basis = tag_of(ot)
+            r[colx['主体系'] - 1].value = sys_
+            r[colx['一级'] - 1].value = l1
+            r[colx['标签置信度'] - 1].value = '低'
+            r[colx['标签依据'] - 1].value = basis
+            applied += 1
+    if '原表+标注' in wb2.sheetnames:
+        ws0 = wb2['原表+标注']
+        H0 = [c.value for c in next(ws0.iter_rows(min_row=1, max_row=1))]
+        k0 = {h: i for i, h in enumerate(H0)}
+        c0 = {h: k0[h] + 1 for h in H0}
+        for r in ws0.iter_rows(min_row=2):
+            sid = int(r[c0['序号'] - 1].value)
+            ot = orgtype.get(sid, '')
+            searched = str(r[c0['搜索层级'] - 1].value or '') not in ('', '未搜索')
+            if not searched:
+                if ot and tag_of(ot):
+                    sys_, l1, _ = tag_of(ot)
+                    r[c0['主体系'] - 1].value = sys_
+                    r[c0['一级'] - 1].value = l1
+                    r[c0['标签置信度'] - 1].value = '低'
+                    r[c0['信息状态'] - 1].value = '未核验（机构类型直标）'
+                else:
+                    r[c0['信息状态'] - 1].value = '未核验（待补搜）'
+    wb2.save(FINAL_XLSX)
+    return direct, applied, wait
+
 wb.save(FINAL_XLSX)
+_d, _a, _w = _apply_institution_type()
+print(f'机构类型直标: 未核验直标 {_d}, 无信息补标 {_a}, 待补搜 {_w}')
 
 print(f'终稿行数: {n}, 地位词闸门清空: {gate_dropped}')
 for k, v in sorted(qc.items()):

@@ -662,3 +662,4 @@ TECH_SVC_CMC_004,service,医药研发服务,CMC/质量与技术转移,工艺验�
 TECH_SVC_CMC_005,service,医药研发服务,CMC/质量与技术转移,供应链与原辅料合规,研发服务与产业化层,supply chain qualification,医药研发服务 > CMC/质量与技术转移 > 供应链与原辅料合规
 TECH_SVC_CMC_006,service,医药研发服务,CMC/质量与技术转移,委托检验(第三方检测),研发服务与产业化层,third-party testing,医药研发服务 > CMC/质量与技术转移 > 委托检验(第三方检测)
 TECH_SVC_CMC_007,service,医药研发服务,CMC/质量与技术转移,GMP合规与审计支持,研发服务与产业化层,GMP compliance; audit support,医药研发服务 > CMC/质量与技术转移 > GMP合规与审计支持
+TECH_DEVICE_TIC_001,device,医疗器械,检验检测与认证服务,器械检验检测,服务层,device testing; GB9706; TIC,医疗器械 > 检验检测与认证服务 > 器械检验检测

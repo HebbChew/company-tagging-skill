@@ -663,3 +663,5 @@ TECH_SVC_CMC_005,service,医药研发服务,CMC/质量与技术转移,供应链�
 TECH_SVC_CMC_006,service,医药研发服务,CMC/质量与技术转移,委托检验(第三方检测),研发服务与产业化层,third-party testing,医药研发服务 > CMC/质量与技术转移 > 委托检验(第三方检测)
 TECH_SVC_CMC_007,service,医药研发服务,CMC/质量与技术转移,GMP合规与审计支持,研发服务与产业化层,GMP compliance; audit support,医药研发服务 > CMC/质量与技术转移 > GMP合规与审计支持
 TECH_DEVICE_TIC_001,device,医疗器械,检验检测与认证服务,器械检验检测,服务层,device testing; GB9706; TIC,医疗器械 > 检验检测与认证服务 > 器械检验检测
+TECH_DEVICE_RT_001,device,医疗器械,放疗设备,硼中子俘获治疗装置,产品层,BNCT,医疗器械 > 放疗设备 > 硼中子俘获治疗装置
+TECH_SVC_CDMO_DEV_001,service,医药研发服务,CDMO-器械,器械CDMO,服务层,device CDMO,医药研发服务 > CDMO-器械 > 器械CDMO

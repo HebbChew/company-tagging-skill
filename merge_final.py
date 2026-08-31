@@ -179,11 +179,12 @@ for tsv in sorted(glob.glob(f'{BASE}/full/batches/batch_f*.tsv')):
             info = '已核实'  # 存疑信号下沉到母公司置信度/备注，不再占用状态列（2026-08-31）
         intro = a.get('一句话简介', '')
         if not intro and not has_content:
-            # 有搜索证据时禁止用占位语（会盖住证据），改用待回填标记（用户裁定 2026-08-31）
+            # 有搜索证据时禁止用占位语（会盖住证据），改用待回填标记；零证据简介一律留空
+            # （过程状态由"信息状态"列表达，简介列不放兜底废话，用户裁定 2026-08-31）
             if has_ev:
                 intro = '（搜索有证据，简介待回填）'
             else:
-                intro = fallback_intro(base_map[k]['行业小类'], searched=bool(s))
+                intro = ''
         parent, pnote = norm_parent((s.get('母公司_终稿') if s else '') or a.get('母公司', ''))
         parent = PARENT_ALIAS.get(parent, parent)
         parconf = (s.get('母公司置信度_终稿') if s else '') or a.get('母公司置信度', '')
